@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="EzyScribe Login Suite">
+<listeners>
+    <listener class-name="listeners.TestListener"/>
+</listeners>
+  <test name="LoginTests">
+    <classes>
+   		 <class name="tests.LoginTests"/>   
+     	 <class name="tests.DoctorDashboardTest">
+       <!--  <methods>
+          <include name="verifyViewTaskHidesRow"/>
+        </methods>-->
+      </class>    
+    </classes>
+  </test>
+</suite>
