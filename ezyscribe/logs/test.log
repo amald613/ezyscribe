@@ -620,3 +620,824 @@
 2025-07-24 14:43:26 WARN  DoctorDashboardPage:215 - Task ID 120083 not found in list
 2025-07-24 14:43:26 INFO  DoctorDashboardTest:58 - Refreshing page after test
 2025-07-24 14:43:27 INFO  DoctorDashboardTest:66 - Closing browser
+2025-07-25 16:45:07 INFO  LoginTests:23 - Loading login test data from Excel...
+2025-07-25 16:45:12 INFO  LoginTests:29 - Starting test case: TC01
+2025-07-25 16:45:13 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-25 16:45:13 INFO  LoginPage:44 - Entered password.
+2025-07-25 16:45:13 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 16:45:13 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 16:45:13 INFO  LoginTests:46 - Expecting successful login...
+2025-07-25 16:45:15 INFO  LoginTests:52 - Login successful for: testprovider@gmail.com
+2025-07-25 16:45:15 INFO  LoginTests:88 - Finished test case: TC01
+2025-07-25 16:45:19 INFO  LoginTests:29 - Starting test case: TC02
+2025-07-25 16:45:19 INFO  LoginPage:33 - Entered email: wrongemail@example.com
+2025-07-25 16:45:19 INFO  LoginPage:44 - Entered password.
+2025-07-25 16:45:19 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 16:45:19 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 16:45:19 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 16:45:20 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-25 16:45:20 INFO  LoginTests:88 - Finished test case: TC02
+2025-07-25 16:45:24 INFO  LoginTests:29 - Starting test case: TC03
+2025-07-25 16:45:24 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-25 16:45:24 INFO  LoginPage:44 - Entered password.
+2025-07-25 16:45:24 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 16:45:24 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 16:45:24 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 16:45:25 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-25 16:45:25 INFO  LoginTests:88 - Finished test case: TC03
+2025-07-25 16:45:29 INFO  LoginTests:29 - Starting test case: TC04
+2025-07-25 16:45:29 INFO  LoginPage:33 - Entered email: 
+2025-07-25 16:45:29 INFO  LoginPage:44 - Entered password.
+2025-07-25 16:45:29 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 16:45:29 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 16:45:29 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 16:45:30 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-25 16:45:30 INFO  LoginTests:88 - Finished test case: TC04
+2025-07-25 16:45:34 INFO  LoginTests:29 - Starting test case: TC05
+2025-07-25 16:45:34 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-25 16:45:34 INFO  LoginPage:44 - Entered password.
+2025-07-25 16:45:34 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 16:45:34 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 16:45:34 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 16:45:35 INFO  LoginPage:62 - Captured error message: Password must be at least 8 characters.
+2025-07-25 16:45:35 INFO  LoginTests:88 - Finished test case: TC05
+2025-07-25 16:45:39 INFO  LoginTests:29 - Starting test case: TC06
+2025-07-25 16:45:39 INFO  LoginPage:33 - Entered email: 
+2025-07-25 16:45:39 INFO  LoginPage:44 - Entered password.
+2025-07-25 16:45:39 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 16:45:39 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 16:45:39 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 16:45:40 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-25 16:45:40 INFO  LoginTests:88 - Finished test case: TC06
+2025-07-25 16:45:44 INFO  LoginTests:29 - Starting test case: TC07
+2025-07-25 16:45:44 INFO  LoginPage:33 - Entered email: doctor@@example
+2025-07-25 16:45:44 INFO  LoginPage:44 - Entered password.
+2025-07-25 16:45:44 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 16:45:44 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 16:45:44 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 16:45:45 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-25 16:45:45 INFO  LoginTests:88 - Finished test case: TC07
+2025-07-25 16:45:48 INFO  LoginTests:29 - Starting test case: TC10
+2025-07-25 16:45:49 INFO  LoginPage:33 - Entered email: special@!#$.com
+2025-07-25 16:45:49 INFO  LoginPage:44 - Entered password.
+2025-07-25 16:45:49 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 16:45:49 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 16:45:49 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 16:45:50 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-25 16:45:50 INFO  LoginTests:88 - Finished test case: TC10
+2025-07-25 16:45:53 INFO  LoginTests:29 - Starting test case: TC11
+2025-07-25 16:45:54 INFO  LoginPage:33 - Entered email: verylongemail@exampletoolonglonglongdomain.com
+2025-07-25 16:45:54 INFO  LoginPage:44 - Entered password.
+2025-07-25 16:45:54 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 16:45:54 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 16:45:54 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 16:45:55 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-25 16:45:55 INFO  LoginTests:88 - Finished test case: TC11
+2025-07-25 16:45:58 INFO  LoginTests:29 - Starting test case: TC12
+2025-07-25 16:45:58 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-25 16:45:59 INFO  LoginPage:44 - Entered password.
+2025-07-25 16:45:59 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 16:45:59 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 16:45:59 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 16:46:00 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-25 16:46:00 INFO  LoginTests:88 - Finished test case: TC12
+2025-07-25 16:46:03 INFO  LoginTests:29 - Starting test case: TC15
+2025-07-25 16:46:03 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-25 16:46:03 INFO  LoginPage:44 - Entered password.
+2025-07-25 16:46:03 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 16:46:04 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 16:46:04 INFO  LoginTests:46 - Expecting successful login...
+2025-07-25 16:46:05 INFO  LoginTests:52 - Login successful for: testprovider@gmail.com
+2025-07-25 16:46:05 INFO  LoginTests:81 - Waiting to prevent rate-limiting...
+2025-07-25 16:46:10 INFO  LoginTests:88 - Finished test case: TC15
+2025-07-25 16:46:14 INFO  LoginTests:29 - Starting test case: TC19
+2025-07-25 16:46:14 INFO  LoginPage:33 - Entered email: Testprovider@gmail.com
+2025-07-25 16:46:14 INFO  LoginPage:44 - Entered password.
+2025-07-25 16:46:14 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 16:46:14 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 16:46:14 INFO  LoginTests:46 - Expecting successful login...
+2025-07-25 16:46:16 INFO  LoginTests:52 - Login successful for: Testprovider@gmail.com
+2025-07-25 16:46:16 INFO  LoginTests:88 - Finished test case: TC19
+2025-07-25 16:46:19 INFO  LoginTests:29 - Starting test case: TC20
+2025-07-25 16:46:19 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-25 16:46:19 INFO  LoginPage:44 - Entered password.
+2025-07-25 16:46:19 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 16:46:20 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 16:46:20 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 16:46:21 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-25 16:46:21 INFO  LoginTests:88 - Finished test case: TC20
+2025-07-25 16:46:25 INFO  LoginTests:29 - Starting test case: TC23
+2025-07-25 16:46:26 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-25 16:46:26 INFO  LoginPage:44 - Entered password.
+2025-07-25 16:46:26 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 16:46:26 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 16:46:26 INFO  LoginTests:46 - Expecting successful login...
+2025-07-25 16:46:27 INFO  LoginTests:52 - Login successful for: testprovider@gmail.com
+2025-07-25 16:46:27 INFO  LoginTests:81 - Waiting to prevent rate-limiting...
+2025-07-25 16:46:32 INFO  LoginTests:88 - Finished test case: TC23
+2025-07-25 16:46:36 INFO  LoginTests:29 - Starting test case: TC24
+2025-07-25 16:46:36 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-07-25 16:46:36 INFO  LoginPage:44 - Entered password.
+2025-07-25 16:46:36 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 16:46:36 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 16:46:36 INFO  LoginTests:46 - Expecting successful login...
+2025-07-25 16:46:38 INFO  LoginTests:52 - Login successful for: testscribe@gmail.com
+2025-07-25 16:46:38 INFO  LoginTests:88 - Finished test case: TC24
+2025-07-25 16:46:41 INFO  LoginTests:93 - Starting TC09 - Forgot Password flow
+2025-07-25 16:46:41 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-25 16:46:41 INFO  LoginTests:102 - Clicked 'Forgot Password'
+2025-07-25 16:46:43 INFO  LoginTests:109 - Reset password alert displayed successfully
+2025-07-25 16:46:46 INFO  LoginTests:114 - Starting TC25 - Epic Login Redirect test
+2025-07-25 16:46:46 INFO  LoginPage:88 - Clicked Epic login button.
+2025-07-25 16:46:59 INFO  LoginPage:90 - Redirected to Epic login URL.
+2025-07-25 16:46:59 INFO  LoginTests:123 - Epic login redirect successful
+2025-07-25 16:46:59 INFO  DoctorDashboardTest:31 - Setting up browser and logging in as Doctor
+2025-07-25 16:47:04 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-25 16:47:04 INFO  LoginPage:44 - Entered password.
+2025-07-25 16:47:04 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 16:47:04 INFO  DoctorDashboardTest:53 - Login successful
+2025-07-25 16:47:04 INFO  DoctorDashboardTest:73 - Executing TC07 - Language Toggle
+2025-07-25 16:47:06 INFO  DoctorDashboardTest:77 - Language toggle dropdown clicked
+2025-07-25 16:47:06 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-25 16:47:08 INFO  DoctorDashboardTest:82 - Executing TC08 - Dark to Light Theme Toggle
+2025-07-25 16:47:08 INFO  DoctorDashboardPage:35 - Selecting Dark Mode
+2025-07-25 16:47:08 INFO  DoctorDashboardPage:39 - Dark Mode selected
+2025-07-25 16:47:08 INFO  DoctorDashboardTest:84 - Dark mode selected
+2025-07-25 16:47:09 INFO  DoctorDashboardPage:43 - Selecting Light Mode
+2025-07-25 16:47:09 INFO  DoctorDashboardPage:47 - Light Mode selected
+2025-07-25 16:47:09 INFO  DoctorDashboardTest:87 - Light mode selected
+2025-07-25 16:47:11 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-25 16:47:11 INFO  DoctorDashboardTest:93 - Executing TC09 - Filter by Task ID
+2025-07-25 16:47:11 INFO  DoctorDashboardPage:63 - Entering Task ID filter: 120061
+2025-07-25 16:47:14 INFO  DoctorDashboardTest:96 - Filtered with Task ID: 120061
+2025-07-25 16:47:24 WARN  DoctorDashboardPage:76 - Task ID 120061 not found
+2025-07-25 16:47:24 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-25 16:47:25 INFO  DoctorDashboardTest:102 - Executing TC10 - Sort by Task ID
+2025-07-25 16:47:25 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-25 16:47:28 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-25 16:47:29 INFO  DoctorDashboardTest:112 - Executing TC11 - Sort by Patient Initials
+2025-07-25 16:47:29 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-25 16:47:32 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-25 16:47:33 INFO  DoctorDashboardTest:122 - Executing TC12 - Sort by Status
+2025-07-25 16:47:33 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-25 16:47:38 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-25 16:47:39 INFO  DoctorDashboardTest:132 - Executing TC13 - Sort by Priority
+2025-07-25 16:47:39 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-25 16:47:41 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-25 16:47:42 INFO  DoctorDashboardTest:142 - Executing TC14 - Sort by Upload Date
+2025-07-25 16:47:42 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-25 16:47:45 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-25 16:47:46 INFO  DoctorDashboardTest:152 - Executing TC15 - Sort by Upload Time
+2025-07-25 16:47:46 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-25 16:47:48 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-25 16:47:49 INFO  DoctorDashboardTest:162 - Executing TC16 - Sort by Audio Duration
+2025-07-25 16:47:49 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-25 16:47:52 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-25 16:47:53 INFO  DoctorDashboardTest:172 - Executing TC17 - Filter by Status = In Progress
+2025-07-25 16:47:53 INFO  DoctorDashboardPage:115 - Filtering status: In Progress
+2025-07-25 16:48:01 ERROR DoctorDashboardPage:126 - No data or status rows not loaded
+2025-07-25 16:48:01 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-25 16:48:02 INFO  DoctorDashboardTest:180 - Executing TC18 - Filter by Priority = Medium
+2025-07-25 16:48:02 INFO  DoctorDashboardPage:154 - Filtering priority: Medium
+2025-07-25 16:48:10 ERROR DoctorDashboardPage:165 - No data or priority rows not loaded
+2025-07-25 16:48:10 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-25 16:48:11 INFO  DoctorDashboardTest:188 - Executing TC19 - View Task & Hide
+2025-07-25 16:48:13 INFO  DoctorDashboardPage:191 - First task ID: 120083
+2025-07-25 16:48:13 INFO  DoctorDashboardPage:197 - Clicking View button
+2025-07-25 16:48:13 INFO  DoctorDashboardPage:203 - Clicking first task in View dropdown
+2025-07-25 16:48:14 INFO  DoctorDashboardPage:208 - Verifying if Task ID 120083 is present in list
+2025-07-25 16:48:14 WARN  DoctorDashboardPage:215 - Task ID 120083 not found in list
+2025-07-25 16:48:14 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-25 16:48:15 INFO  DoctorDashboardTest:66 - Closing browser
+2025-07-25 21:01:37 INFO  LoginTests:23 - Loading login test data from Excel...
+2025-07-25 21:01:43 INFO  LoginTests:29 - Starting test case: TC01
+2025-07-25 21:01:43 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-25 21:01:43 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:01:43 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:01:43 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:01:43 INFO  LoginTests:46 - Expecting successful login...
+2025-07-25 21:01:45 INFO  LoginTests:52 - Login successful for: testprovider@gmail.com
+2025-07-25 21:01:45 INFO  LoginTests:88 - Finished test case: TC01
+2025-07-25 21:01:49 INFO  LoginTests:29 - Starting test case: TC02
+2025-07-25 21:01:49 INFO  LoginPage:33 - Entered email: wrongemail@example.com
+2025-07-25 21:01:49 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:01:49 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:01:49 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:01:49 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:01:50 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-25 21:01:50 INFO  LoginTests:88 - Finished test case: TC02
+2025-07-25 21:01:54 INFO  LoginTests:29 - Starting test case: TC03
+2025-07-25 21:01:55 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-25 21:01:55 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:01:55 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:01:55 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:01:55 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:01:56 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-25 21:01:56 INFO  LoginTests:88 - Finished test case: TC03
+2025-07-25 21:01:59 INFO  LoginTests:29 - Starting test case: TC04
+2025-07-25 21:02:00 INFO  LoginPage:33 - Entered email: 
+2025-07-25 21:02:00 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:02:00 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:02:00 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:02:00 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:02:01 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-25 21:02:01 INFO  LoginTests:88 - Finished test case: TC04
+2025-07-25 21:02:05 INFO  LoginTests:29 - Starting test case: TC05
+2025-07-25 21:02:05 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-25 21:02:06 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:02:06 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:02:06 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:02:06 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:02:07 INFO  LoginPage:62 - Captured error message: Password must be at least 8 characters.
+2025-07-25 21:02:07 INFO  LoginTests:88 - Finished test case: TC05
+2025-07-25 21:02:10 INFO  LoginTests:29 - Starting test case: TC06
+2025-07-25 21:02:11 INFO  LoginPage:33 - Entered email: 
+2025-07-25 21:02:11 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:02:11 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:02:11 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:02:11 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:02:12 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-25 21:02:12 INFO  LoginTests:88 - Finished test case: TC06
+2025-07-25 21:02:15 INFO  LoginTests:29 - Starting test case: TC07
+2025-07-25 21:02:16 INFO  LoginPage:33 - Entered email: doctor@@example
+2025-07-25 21:02:16 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:02:16 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:02:16 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:02:16 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:02:17 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-25 21:02:17 INFO  LoginTests:88 - Finished test case: TC07
+2025-07-25 21:02:20 INFO  LoginTests:29 - Starting test case: TC10
+2025-07-25 21:02:21 INFO  LoginPage:33 - Entered email: special@!#$.com
+2025-07-25 21:02:21 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:02:21 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:02:21 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:02:21 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:02:22 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-25 21:02:22 INFO  LoginTests:88 - Finished test case: TC10
+2025-07-25 21:02:25 INFO  LoginTests:29 - Starting test case: TC11
+2025-07-25 21:02:26 INFO  LoginPage:33 - Entered email: verylongemail@exampletoolonglonglongdomain.com
+2025-07-25 21:02:26 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:02:26 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:02:26 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:02:26 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:02:27 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-25 21:02:27 INFO  LoginTests:88 - Finished test case: TC11
+2025-07-25 21:02:31 INFO  LoginTests:29 - Starting test case: TC12
+2025-07-25 21:02:31 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-25 21:02:31 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:02:31 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:02:31 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:02:31 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:02:32 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-25 21:02:32 INFO  LoginTests:88 - Finished test case: TC12
+2025-07-25 21:02:36 INFO  LoginTests:29 - Starting test case: TC15
+2025-07-25 21:02:36 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-25 21:02:36 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:02:36 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:02:36 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:02:36 INFO  LoginTests:46 - Expecting successful login...
+2025-07-25 21:02:38 INFO  LoginTests:52 - Login successful for: testprovider@gmail.com
+2025-07-25 21:02:38 INFO  LoginTests:81 - Waiting to prevent rate-limiting...
+2025-07-25 21:02:43 INFO  LoginTests:88 - Finished test case: TC15
+2025-07-25 21:02:46 INFO  LoginTests:29 - Starting test case: TC19
+2025-07-25 21:02:47 INFO  LoginPage:33 - Entered email: Testprovider@gmail.com
+2025-07-25 21:02:47 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:02:47 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:02:47 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:02:47 INFO  LoginTests:46 - Expecting successful login...
+2025-07-25 21:02:49 INFO  LoginTests:52 - Login successful for: Testprovider@gmail.com
+2025-07-25 21:02:49 INFO  LoginTests:88 - Finished test case: TC19
+2025-07-25 21:02:55 INFO  LoginTests:29 - Starting test case: TC20
+2025-07-25 21:02:55 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-25 21:02:55 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:02:55 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:02:55 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:02:55 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:02:56 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-25 21:02:56 INFO  LoginTests:88 - Finished test case: TC20
+2025-07-25 21:03:00 INFO  LoginTests:29 - Starting test case: TC23
+2025-07-25 21:03:00 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-25 21:03:00 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:03:00 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:03:00 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:03:00 INFO  LoginTests:46 - Expecting successful login...
+2025-07-25 21:03:02 INFO  LoginTests:52 - Login successful for: testprovider@gmail.com
+2025-07-25 21:03:02 INFO  LoginTests:81 - Waiting to prevent rate-limiting...
+2025-07-25 21:03:07 INFO  LoginTests:88 - Finished test case: TC23
+2025-07-25 21:03:10 INFO  LoginTests:29 - Starting test case: TC24
+2025-07-25 21:03:11 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-07-25 21:03:11 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:03:11 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:03:11 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:03:11 INFO  LoginTests:46 - Expecting successful login...
+2025-07-25 21:03:12 INFO  LoginTests:52 - Login successful for: testscribe@gmail.com
+2025-07-25 21:03:12 INFO  LoginTests:88 - Finished test case: TC24
+2025-07-25 21:03:16 INFO  LoginTests:93 - Starting TC09 - Forgot Password flow
+2025-07-25 21:03:16 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-25 21:03:16 INFO  LoginTests:102 - Clicked 'Forgot Password'
+2025-07-25 21:03:18 INFO  LoginTests:109 - Reset password alert displayed successfully
+2025-07-25 21:03:21 INFO  LoginTests:114 - Starting TC25 - Epic Login Redirect test
+2025-07-25 21:03:22 INFO  LoginPage:88 - Clicked Epic login button.
+2025-07-25 21:03:37 INFO  LoginPage:90 - Redirected to Epic login URL.
+2025-07-25 21:03:37 INFO  LoginTests:123 - Epic login redirect successful
+2025-07-25 21:03:37 INFO  ScribeDashboardTest:29 - Setting up browser and logging in as Scribe
+2025-07-25 21:03:42 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-07-25 21:03:42 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:03:42 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:03:42 INFO  ScribeDashboardTest:51 - Login successful
+2025-07-25 21:03:42 INFO  ScribeDashboardTest:71 - Executing TC07 - Language Toggle
+2025-07-25 21:03:52 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:13:30 INFO  LoginTests:23 - Loading login test data from Excel...
+2025-07-25 21:13:35 INFO  LoginTests:29 - Starting test case: TC01
+2025-07-25 21:13:35 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-25 21:13:36 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:13:36 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:13:36 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:13:36 INFO  LoginTests:46 - Expecting successful login...
+2025-07-25 21:13:37 INFO  LoginTests:52 - Login successful for: testprovider@gmail.com
+2025-07-25 21:13:37 INFO  LoginTests:88 - Finished test case: TC01
+2025-07-25 21:13:42 INFO  LoginTests:29 - Starting test case: TC02
+2025-07-25 21:13:43 INFO  LoginPage:33 - Entered email: wrongemail@example.com
+2025-07-25 21:13:43 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:13:43 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:13:43 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:13:43 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:13:44 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-25 21:13:44 INFO  LoginTests:88 - Finished test case: TC02
+2025-07-25 21:13:47 INFO  LoginTests:29 - Starting test case: TC03
+2025-07-25 21:13:48 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-25 21:13:48 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:13:48 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:13:48 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:13:48 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:13:49 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-25 21:13:49 INFO  LoginTests:88 - Finished test case: TC03
+2025-07-25 21:13:53 INFO  LoginTests:29 - Starting test case: TC04
+2025-07-25 21:13:53 INFO  LoginPage:33 - Entered email: 
+2025-07-25 21:13:53 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:13:53 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:13:53 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:13:53 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:13:54 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-25 21:13:54 INFO  LoginTests:88 - Finished test case: TC04
+2025-07-25 21:13:58 INFO  LoginTests:29 - Starting test case: TC05
+2025-07-25 21:13:58 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-25 21:13:58 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:13:58 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:13:58 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:13:58 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:13:59 INFO  LoginPage:62 - Captured error message: Password must be at least 8 characters.
+2025-07-25 21:13:59 INFO  LoginTests:88 - Finished test case: TC05
+2025-07-25 21:14:03 INFO  LoginTests:29 - Starting test case: TC06
+2025-07-25 21:14:03 INFO  LoginPage:33 - Entered email: 
+2025-07-25 21:14:03 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:14:03 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:14:03 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:14:03 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:14:04 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-25 21:14:04 INFO  LoginTests:88 - Finished test case: TC06
+2025-07-25 21:14:08 INFO  LoginTests:29 - Starting test case: TC07
+2025-07-25 21:14:08 INFO  LoginPage:33 - Entered email: doctor@@example
+2025-07-25 21:14:08 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:14:08 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:14:08 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:14:08 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:14:09 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-25 21:14:09 INFO  LoginTests:88 - Finished test case: TC07
+2025-07-25 21:14:13 INFO  LoginTests:29 - Starting test case: TC10
+2025-07-25 21:14:13 INFO  LoginPage:33 - Entered email: special@!#$.com
+2025-07-25 21:14:13 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:14:13 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:14:13 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:14:13 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:14:15 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-25 21:14:15 INFO  LoginTests:88 - Finished test case: TC10
+2025-07-25 21:14:18 INFO  LoginTests:29 - Starting test case: TC11
+2025-07-25 21:14:18 INFO  LoginPage:33 - Entered email: verylongemail@exampletoolonglonglongdomain.com
+2025-07-25 21:14:18 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:14:18 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:14:19 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:14:19 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:14:20 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-25 21:14:20 INFO  LoginTests:88 - Finished test case: TC11
+2025-07-25 21:14:23 INFO  LoginTests:29 - Starting test case: TC12
+2025-07-25 21:14:23 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-25 21:14:24 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:14:24 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:14:24 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:14:24 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:14:25 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-25 21:14:25 INFO  LoginTests:88 - Finished test case: TC12
+2025-07-25 21:14:28 INFO  LoginTests:29 - Starting test case: TC15
+2025-07-25 21:14:29 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-25 21:14:29 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:14:29 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:14:29 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:14:29 INFO  LoginTests:46 - Expecting successful login...
+2025-07-25 21:14:30 INFO  LoginTests:52 - Login successful for: testprovider@gmail.com
+2025-07-25 21:14:30 INFO  LoginTests:81 - Waiting to prevent rate-limiting...
+2025-07-25 21:14:35 INFO  LoginTests:88 - Finished test case: TC15
+2025-07-25 21:14:39 INFO  LoginTests:29 - Starting test case: TC19
+2025-07-25 21:14:39 INFO  LoginPage:33 - Entered email: Testprovider@gmail.com
+2025-07-25 21:14:40 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:14:40 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:14:40 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:14:40 INFO  LoginTests:46 - Expecting successful login...
+2025-07-25 21:14:41 INFO  LoginTests:52 - Login successful for: Testprovider@gmail.com
+2025-07-25 21:14:41 INFO  LoginTests:88 - Finished test case: TC19
+2025-07-25 21:14:46 INFO  LoginTests:29 - Starting test case: TC20
+2025-07-25 21:14:46 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-25 21:14:46 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:14:46 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:14:46 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:14:46 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:14:47 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-25 21:14:47 INFO  LoginTests:88 - Finished test case: TC20
+2025-07-25 21:14:51 INFO  LoginTests:29 - Starting test case: TC23
+2025-07-25 21:14:51 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-25 21:14:51 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:14:51 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:14:51 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:14:51 INFO  LoginTests:46 - Expecting successful login...
+2025-07-25 21:14:54 INFO  LoginTests:52 - Login successful for: testprovider@gmail.com
+2025-07-25 21:14:54 INFO  LoginTests:81 - Waiting to prevent rate-limiting...
+2025-07-25 21:14:59 INFO  LoginTests:88 - Finished test case: TC23
+2025-07-25 21:15:02 INFO  LoginTests:29 - Starting test case: TC24
+2025-07-25 21:15:02 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-07-25 21:15:03 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:15:03 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:15:03 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:15:03 INFO  LoginTests:46 - Expecting successful login...
+2025-07-25 21:15:04 INFO  LoginTests:52 - Login successful for: testscribe@gmail.com
+2025-07-25 21:15:04 INFO  LoginTests:88 - Finished test case: TC24
+2025-07-25 21:15:08 INFO  LoginTests:93 - Starting TC09 - Forgot Password flow
+2025-07-25 21:15:08 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-25 21:15:08 INFO  LoginTests:102 - Clicked 'Forgot Password'
+2025-07-25 21:15:09 INFO  LoginTests:109 - Reset password alert displayed successfully
+2025-07-25 21:15:13 INFO  LoginTests:114 - Starting TC25 - Epic Login Redirect test
+2025-07-25 21:15:13 INFO  LoginPage:88 - Clicked Epic login button.
+2025-07-25 21:15:25 INFO  LoginPage:90 - Redirected to Epic login URL.
+2025-07-25 21:15:25 INFO  LoginTests:123 - Epic login redirect successful
+2025-07-25 21:15:25 INFO  ScribeDashboardTest:29 - Setting up browser and logging in as Scribe
+2025-07-25 21:15:29 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-07-25 21:15:29 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:15:29 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:15:29 INFO  ScribeDashboardTest:51 - Login successful
+2025-07-25 21:15:29 INFO  ScribeDashboardTest:71 - Executing TC07 - Language Toggle
+2025-07-25 21:15:39 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:28:03 INFO  ScribeDashboardTest:29 - Setting up browser and logging in as Scribe
+2025-07-25 21:28:08 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-07-25 21:28:08 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:28:09 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:28:09 INFO  ScribeDashboardTest:51 - Login successful
+2025-07-25 21:28:09 INFO  ScribeDashboardTest:71 - Executing TC07 - Language Toggle
+2025-07-25 21:28:19 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:39:16 INFO  ScribeDashboardTest:29 - Setting up browser and logging in as Scribe
+2025-07-25 21:39:21 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-07-25 21:39:22 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:39:22 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:39:22 INFO  ScribeDashboardTest:51 - Login successful
+2025-07-25 21:39:22 INFO  ScribeDashboardTest:72 - Executing TC01 - Dark to Light Theme Toggle
+2025-07-25 21:39:22 INFO  ScribeDashboardPage:35 - Selecting Dark Mode
+2025-07-25 21:39:38 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:39:43 INFO  ScribeDashboardTest:83 - Executing TC02 - Filter by Task ID
+2025-07-25 21:39:43 INFO  ScribeDashboardPage:55 - Entering Task ID filter: 120061
+2025-07-25 21:39:43 INFO  ScribeDashboardTest:86 - Filtered with Task ID: 120061
+2025-07-25 21:39:53 WARN  ScribeDashboardPage:68 - Task ID 120061 not found
+2025-07-25 21:39:53 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:39:58 INFO  ScribeDashboardTest:92 - Executing TC03 - Sort by Task ID
+2025-07-25 21:39:58 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-25 21:39:58 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:40:02 INFO  ScribeDashboardTest:102 - Executing TC04 - Sort by Patient Initials
+2025-07-25 21:40:02 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-25 21:40:02 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:40:06 INFO  ScribeDashboardTest:112 - Executing TC05 - Sort by Status
+2025-07-25 21:40:06 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-25 21:40:06 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:40:10 INFO  ScribeDashboardTest:122 - Executing TC06 - Sort by Priority
+2025-07-25 21:40:10 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-25 21:40:10 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:40:14 INFO  ScribeDashboardTest:132 - Executing TC07 - Sort by Upload Date
+2025-07-25 21:40:14 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-25 21:40:14 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:40:18 INFO  ScribeDashboardTest:142 - Executing TC08 - Sort by Upload Time
+2025-07-25 21:40:18 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-25 21:40:19 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:40:22 INFO  ScribeDashboardTest:152 - Executing TC09 - Sort by Audio Duration
+2025-07-25 21:40:22 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-25 21:40:22 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:40:27 INFO  ScribeDashboardTest:162 - Executing TC10 - Filter by Status = In Progress
+2025-07-25 21:40:27 INFO  ScribeDashboardPage:107 - Filtering status: In Progress
+2025-07-25 21:40:33 ERROR ScribeDashboardPage:118 - No data or status rows not loaded
+2025-07-25 21:40:33 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:40:37 INFO  ScribeDashboardTest:170 - Executing TC11 - Filter by Priority = Medium
+2025-07-25 21:40:37 INFO  ScribeDashboardPage:146 - Filtering priority: Medium
+2025-07-25 21:40:43 ERROR ScribeDashboardPage:157 - No data or priority rows not loaded
+2025-07-25 21:40:43 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:40:47 INFO  ScribeDashboardTest:178 - Executing TC12 - View Task & Hide
+2025-07-25 21:40:47 INFO  ScribeDashboardPage:183 - First task ID: 120084
+2025-07-25 21:40:47 INFO  ScribeDashboardPage:189 - Clicking View button
+2025-07-25 21:40:47 INFO  ScribeDashboardPage:195 - Clicking first task in View dropdown
+2025-07-25 21:40:47 INFO  ScribeDashboardPage:200 - Verifying if Task ID 120084 is present in list
+2025-07-25 21:40:47 WARN  ScribeDashboardPage:207 - Task ID 120084 not found in list
+2025-07-25 21:40:47 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:40:52 INFO  ScribeDashboardTest:65 - Closing browser
+2025-07-25 21:44:02 INFO  ScribeDashboardTest:29 - Setting up browser and logging in as Scribe
+2025-07-25 21:44:07 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-07-25 21:44:07 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:44:07 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:44:07 INFO  ScribeDashboardTest:51 - Login successful
+2025-07-25 21:44:07 INFO  ScribeDashboardTest:72 - Executing TC01 - Dark to Light Theme Toggle
+2025-07-25 21:44:07 INFO  ScribeDashboardPage:35 - Selecting Dark Mode
+2025-07-25 21:44:10 INFO  ScribeDashboardPage:39 - Dark Mode selected
+2025-07-25 21:44:10 INFO  ScribeDashboardTest:74 - Dark mode selected
+2025-07-25 21:44:11 INFO  ScribeDashboardPage:43 - Selecting Light Mode
+2025-07-25 21:44:12 INFO  ScribeDashboardPage:47 - Light Mode selected
+2025-07-25 21:44:12 INFO  ScribeDashboardTest:77 - Light mode selected
+2025-07-25 21:44:13 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:44:17 INFO  ScribeDashboardTest:83 - Executing TC02 - Filter by Task ID
+2025-07-25 21:44:17 INFO  ScribeDashboardPage:55 - Entering Task ID filter: 120061
+2025-07-25 21:44:17 INFO  ScribeDashboardTest:86 - Filtered with Task ID: 120061
+2025-07-25 21:44:27 WARN  ScribeDashboardPage:68 - Task ID 120061 not found
+2025-07-25 21:44:27 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:44:31 INFO  ScribeDashboardTest:92 - Executing TC03 - Sort by Task ID
+2025-07-25 21:44:31 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-25 21:44:32 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:44:35 INFO  ScribeDashboardTest:102 - Executing TC04 - Sort by Patient Initials
+2025-07-25 21:44:35 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-25 21:44:36 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:44:39 INFO  ScribeDashboardTest:112 - Executing TC05 - Sort by Status
+2025-07-25 21:44:39 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-25 21:44:40 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:44:43 INFO  ScribeDashboardTest:122 - Executing TC06 - Sort by Priority
+2025-07-25 21:44:43 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-25 21:44:44 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:44:47 INFO  ScribeDashboardTest:132 - Executing TC07 - Sort by Upload Date
+2025-07-25 21:44:47 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-25 21:44:48 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:44:52 INFO  ScribeDashboardTest:142 - Executing TC08 - Sort by Upload Time
+2025-07-25 21:44:52 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-25 21:44:52 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:44:56 INFO  ScribeDashboardTest:152 - Executing TC09 - Sort by Audio Duration
+2025-07-25 21:44:56 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-25 21:44:56 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:45:00 INFO  ScribeDashboardTest:162 - Executing TC10 - Filter by Status = In Progress
+2025-07-25 21:45:00 INFO  ScribeDashboardPage:107 - Filtering status: In Progress
+2025-07-25 21:45:06 ERROR ScribeDashboardPage:118 - No data or status rows not loaded
+2025-07-25 21:45:06 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:45:09 INFO  ScribeDashboardTest:170 - Executing TC11 - Filter by Priority = Medium
+2025-07-25 21:45:09 INFO  ScribeDashboardPage:146 - Filtering priority: Medium
+2025-07-25 21:45:15 ERROR ScribeDashboardPage:157 - No data or priority rows not loaded
+2025-07-25 21:45:15 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:45:19 INFO  ScribeDashboardTest:178 - Executing TC12 - View Task & Hide
+2025-07-25 21:45:19 INFO  ScribeDashboardPage:183 - First task ID: 120084
+2025-07-25 21:45:19 INFO  ScribeDashboardPage:189 - Clicking View button
+2025-07-25 21:45:19 INFO  ScribeDashboardPage:195 - Clicking first task in View dropdown
+2025-07-25 21:45:19 INFO  ScribeDashboardPage:200 - Verifying if Task ID 120084 is present in list
+2025-07-25 21:45:19 WARN  ScribeDashboardPage:207 - Task ID 120084 not found in list
+2025-07-25 21:45:19 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:45:23 INFO  ScribeDashboardTest:65 - Closing browser
+2025-07-25 21:56:11 INFO  LoginTests:23 - Loading login test data from Excel...
+2025-07-25 21:56:16 INFO  LoginTests:29 - Starting test case: TC01
+2025-07-25 21:56:17 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-25 21:56:17 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:56:17 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:56:17 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:56:17 INFO  LoginTests:46 - Expecting successful login...
+2025-07-25 21:56:19 INFO  LoginTests:52 - Login successful for: testprovider@gmail.com
+2025-07-25 21:56:19 INFO  LoginTests:88 - Finished test case: TC01
+2025-07-25 21:56:22 INFO  LoginTests:29 - Starting test case: TC02
+2025-07-25 21:56:23 INFO  LoginPage:33 - Entered email: wrongemail@example.com
+2025-07-25 21:56:23 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:56:23 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:56:23 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:56:23 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:56:24 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-25 21:56:24 INFO  LoginTests:88 - Finished test case: TC02
+2025-07-25 21:56:28 INFO  LoginTests:29 - Starting test case: TC03
+2025-07-25 21:56:28 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-25 21:56:28 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:56:28 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:56:28 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:56:28 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:56:29 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-25 21:56:29 INFO  LoginTests:88 - Finished test case: TC03
+2025-07-25 21:56:33 INFO  LoginTests:29 - Starting test case: TC04
+2025-07-25 21:56:33 INFO  LoginPage:33 - Entered email: 
+2025-07-25 21:56:33 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:56:33 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:56:33 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:56:33 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:56:34 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-25 21:56:34 INFO  LoginTests:88 - Finished test case: TC04
+2025-07-25 21:56:38 INFO  LoginTests:29 - Starting test case: TC05
+2025-07-25 21:56:38 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-25 21:56:38 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:56:38 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:56:39 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:56:39 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:56:40 INFO  LoginPage:62 - Captured error message: Password must be at least 8 characters.
+2025-07-25 21:56:40 INFO  LoginTests:88 - Finished test case: TC05
+2025-07-25 21:56:43 INFO  LoginTests:29 - Starting test case: TC06
+2025-07-25 21:56:43 INFO  LoginPage:33 - Entered email: 
+2025-07-25 21:56:44 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:56:44 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:56:44 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:56:44 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:56:45 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-25 21:56:45 INFO  LoginTests:88 - Finished test case: TC06
+2025-07-25 21:56:48 INFO  LoginTests:29 - Starting test case: TC07
+2025-07-25 21:56:49 INFO  LoginPage:33 - Entered email: doctor@@example
+2025-07-25 21:56:49 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:56:49 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:56:49 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:56:49 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:56:50 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-25 21:56:50 INFO  LoginTests:88 - Finished test case: TC07
+2025-07-25 21:56:54 INFO  LoginTests:29 - Starting test case: TC10
+2025-07-25 21:56:54 INFO  LoginPage:33 - Entered email: special@!#$.com
+2025-07-25 21:56:54 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:56:54 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:56:54 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:56:54 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:56:55 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-25 21:56:55 INFO  LoginTests:88 - Finished test case: TC10
+2025-07-25 21:56:59 INFO  LoginTests:29 - Starting test case: TC11
+2025-07-25 21:56:59 INFO  LoginPage:33 - Entered email: verylongemail@exampletoolonglonglongdomain.com
+2025-07-25 21:56:59 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:56:59 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:56:59 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:56:59 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:57:00 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-25 21:57:00 INFO  LoginTests:88 - Finished test case: TC11
+2025-07-25 21:57:04 INFO  LoginTests:29 - Starting test case: TC12
+2025-07-25 21:57:04 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-25 21:57:04 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:57:04 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:57:04 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:57:04 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:57:05 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-25 21:57:05 INFO  LoginTests:88 - Finished test case: TC12
+2025-07-25 21:57:09 INFO  LoginTests:29 - Starting test case: TC15
+2025-07-25 21:57:09 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-25 21:57:09 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:57:09 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:57:09 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:57:09 INFO  LoginTests:46 - Expecting successful login...
+2025-07-25 21:57:11 INFO  LoginTests:52 - Login successful for: testprovider@gmail.com
+2025-07-25 21:57:11 INFO  LoginTests:81 - Waiting to prevent rate-limiting...
+2025-07-25 21:57:16 INFO  LoginTests:88 - Finished test case: TC15
+2025-07-25 21:57:20 INFO  LoginTests:29 - Starting test case: TC19
+2025-07-25 21:57:20 INFO  LoginPage:33 - Entered email: Testprovider@gmail.com
+2025-07-25 21:57:20 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:57:20 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:57:20 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:57:20 INFO  LoginTests:46 - Expecting successful login...
+2025-07-25 21:57:22 INFO  LoginTests:52 - Login successful for: Testprovider@gmail.com
+2025-07-25 21:57:22 INFO  LoginTests:88 - Finished test case: TC19
+2025-07-25 21:57:26 INFO  LoginTests:29 - Starting test case: TC20
+2025-07-25 21:57:26 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-25 21:57:26 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:57:26 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:57:26 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:57:26 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-25 21:57:27 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-25 21:57:27 INFO  LoginTests:88 - Finished test case: TC20
+2025-07-25 21:57:31 INFO  LoginTests:29 - Starting test case: TC23
+2025-07-25 21:57:31 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-25 21:57:31 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:57:31 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:57:31 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:57:31 INFO  LoginTests:46 - Expecting successful login...
+2025-07-25 21:57:33 INFO  LoginTests:52 - Login successful for: testprovider@gmail.com
+2025-07-25 21:57:33 INFO  LoginTests:81 - Waiting to prevent rate-limiting...
+2025-07-25 21:57:38 INFO  LoginTests:88 - Finished test case: TC23
+2025-07-25 21:57:42 INFO  LoginTests:29 - Starting test case: TC24
+2025-07-25 21:57:42 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-07-25 21:57:42 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:57:42 INFO  LoginTests:38 - Clicking submit...
+2025-07-25 21:57:42 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:57:42 INFO  LoginTests:46 - Expecting successful login...
+2025-07-25 21:57:44 INFO  LoginTests:52 - Login successful for: testscribe@gmail.com
+2025-07-25 21:57:44 INFO  LoginTests:88 - Finished test case: TC24
+2025-07-25 21:57:47 INFO  LoginTests:93 - Starting TC09 - Forgot Password flow
+2025-07-25 21:57:48 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-25 21:57:48 INFO  LoginTests:102 - Clicked 'Forgot Password'
+2025-07-25 21:57:49 INFO  LoginTests:109 - Reset password alert displayed successfully
+2025-07-25 21:57:52 INFO  LoginTests:114 - Starting TC25 - Epic Login Redirect test
+2025-07-25 21:57:53 INFO  LoginPage:88 - Clicked Epic login button.
+2025-07-25 21:58:11 INFO  LoginPage:90 - Redirected to Epic login URL.
+2025-07-25 21:58:11 INFO  LoginTests:123 - Epic login redirect successful
+2025-07-25 21:58:11 INFO  DoctorDashboardTest:31 - Setting up browser and logging in as Doctor
+2025-07-25 21:58:16 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-25 21:58:16 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:58:16 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:58:16 INFO  DoctorDashboardTest:53 - Login successful
+2025-07-25 21:58:16 INFO  DoctorDashboardTest:73 - Executing TC07 - Language Toggle
+2025-07-25 21:58:18 INFO  DoctorDashboardTest:77 - Language toggle dropdown clicked
+2025-07-25 21:58:18 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-25 21:58:20 INFO  DoctorDashboardTest:82 - Executing TC08 - Dark to Light Theme Toggle
+2025-07-25 21:58:20 INFO  DoctorDashboardPage:35 - Selecting Dark Mode
+2025-07-25 21:58:20 INFO  DoctorDashboardPage:39 - Dark Mode selected
+2025-07-25 21:58:20 INFO  DoctorDashboardTest:84 - Dark mode selected
+2025-07-25 21:58:21 INFO  DoctorDashboardPage:43 - Selecting Light Mode
+2025-07-25 21:58:22 INFO  DoctorDashboardPage:47 - Light Mode selected
+2025-07-25 21:58:22 INFO  DoctorDashboardTest:87 - Light mode selected
+2025-07-25 21:58:23 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-25 21:58:24 INFO  DoctorDashboardTest:93 - Executing TC09 - Filter by Task ID
+2025-07-25 21:58:24 INFO  DoctorDashboardPage:63 - Entering Task ID filter: 120061
+2025-07-25 21:58:27 INFO  DoctorDashboardTest:96 - Filtered with Task ID: 120061
+2025-07-25 21:58:37 WARN  DoctorDashboardPage:76 - Task ID 120061 not found
+2025-07-25 21:58:37 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-25 21:58:38 INFO  DoctorDashboardTest:102 - Executing TC10 - Sort by Task ID
+2025-07-25 21:58:38 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-25 21:58:41 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-25 21:58:42 INFO  DoctorDashboardTest:112 - Executing TC11 - Sort by Patient Initials
+2025-07-25 21:58:42 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-25 21:58:45 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-25 21:58:46 INFO  DoctorDashboardTest:122 - Executing TC12 - Sort by Status
+2025-07-25 21:58:46 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-25 21:58:48 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-25 21:58:50 INFO  DoctorDashboardTest:132 - Executing TC13 - Sort by Priority
+2025-07-25 21:58:50 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-25 21:58:52 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-25 21:58:53 INFO  DoctorDashboardTest:142 - Executing TC14 - Sort by Upload Date
+2025-07-25 21:58:53 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-25 21:58:56 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-25 21:58:57 INFO  DoctorDashboardTest:152 - Executing TC15 - Sort by Upload Time
+2025-07-25 21:58:57 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-25 21:58:59 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-25 21:59:00 INFO  DoctorDashboardTest:162 - Executing TC16 - Sort by Audio Duration
+2025-07-25 21:59:00 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-25 21:59:03 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-25 21:59:04 INFO  DoctorDashboardTest:172 - Executing TC17 - Filter by Status = In Progress
+2025-07-25 21:59:04 INFO  DoctorDashboardPage:115 - Filtering status: In Progress
+2025-07-25 21:59:12 ERROR DoctorDashboardPage:126 - No data or status rows not loaded
+2025-07-25 21:59:12 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-25 21:59:13 INFO  DoctorDashboardTest:180 - Executing TC18 - Filter by Priority = Medium
+2025-07-25 21:59:13 INFO  DoctorDashboardPage:154 - Filtering priority: Medium
+2025-07-25 21:59:21 ERROR DoctorDashboardPage:165 - No data or priority rows not loaded
+2025-07-25 21:59:21 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-25 21:59:22 INFO  DoctorDashboardTest:188 - Executing TC19 - View Task & Hide
+2025-07-25 21:59:25 INFO  DoctorDashboardPage:191 - First task ID: 120084
+2025-07-25 21:59:25 INFO  DoctorDashboardPage:197 - Clicking View button
+2025-07-25 21:59:25 INFO  DoctorDashboardPage:203 - Clicking first task in View dropdown
+2025-07-25 21:59:25 INFO  DoctorDashboardPage:208 - Verifying if Task ID 120084 is present in list
+2025-07-25 21:59:25 WARN  DoctorDashboardPage:215 - Task ID 120084 not found in list
+2025-07-25 21:59:25 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-25 21:59:26 INFO  DoctorDashboardTest:66 - Closing browser
+2025-07-25 21:59:27 INFO  ScribeDashboardTest:29 - Setting up browser and logging in as Scribe
+2025-07-25 21:59:31 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-07-25 21:59:31 INFO  LoginPage:44 - Entered password.
+2025-07-25 21:59:31 INFO  LoginPage:53 - Clicked login button.
+2025-07-25 21:59:31 INFO  ScribeDashboardTest:51 - Login successful
+2025-07-25 21:59:31 INFO  ScribeDashboardTest:72 - Executing TC01 - Dark to Light Theme Toggle
+2025-07-25 21:59:31 INFO  ScribeDashboardPage:35 - Selecting Dark Mode
+2025-07-25 21:59:35 INFO  ScribeDashboardPage:39 - Dark Mode selected
+2025-07-25 21:59:35 INFO  ScribeDashboardTest:74 - Dark mode selected
+2025-07-25 21:59:36 INFO  ScribeDashboardPage:43 - Selecting Light Mode
+2025-07-25 21:59:38 INFO  ScribeDashboardPage:47 - Light Mode selected
+2025-07-25 21:59:38 INFO  ScribeDashboardTest:77 - Light mode selected
+2025-07-25 21:59:39 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:59:42 INFO  ScribeDashboardTest:83 - Executing TC02 - Filter by Task ID
+2025-07-25 21:59:42 INFO  ScribeDashboardPage:55 - Entering Task ID filter: 120061
+2025-07-25 21:59:43 INFO  ScribeDashboardTest:86 - Filtered with Task ID: 120061
+2025-07-25 21:59:53 WARN  ScribeDashboardPage:68 - Task ID 120061 not found
+2025-07-25 21:59:53 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 21:59:56 INFO  ScribeDashboardTest:92 - Executing TC03 - Sort by Task ID
+2025-07-25 21:59:56 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-25 21:59:57 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 22:00:00 INFO  ScribeDashboardTest:102 - Executing TC04 - Sort by Patient Initials
+2025-07-25 22:00:00 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-25 22:00:01 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 22:00:04 INFO  ScribeDashboardTest:112 - Executing TC05 - Sort by Status
+2025-07-25 22:00:04 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-25 22:00:04 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 22:00:08 INFO  ScribeDashboardTest:122 - Executing TC06 - Sort by Priority
+2025-07-25 22:00:08 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-25 22:00:08 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 22:00:12 INFO  ScribeDashboardTest:132 - Executing TC07 - Sort by Upload Date
+2025-07-25 22:00:12 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-25 22:00:12 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 22:00:16 INFO  ScribeDashboardTest:142 - Executing TC08 - Sort by Upload Time
+2025-07-25 22:00:16 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-25 22:00:16 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 22:00:20 INFO  ScribeDashboardTest:152 - Executing TC09 - Sort by Audio Duration
+2025-07-25 22:00:20 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-25 22:00:20 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 22:00:24 INFO  ScribeDashboardTest:162 - Executing TC10 - Filter by Status = In Progress
+2025-07-25 22:00:24 INFO  ScribeDashboardPage:107 - Filtering status: In Progress
+2025-07-25 22:00:30 ERROR ScribeDashboardPage:118 - No data or status rows not loaded
+2025-07-25 22:00:30 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 22:00:33 INFO  ScribeDashboardTest:170 - Executing TC11 - Filter by Priority = Medium
+2025-07-25 22:00:33 INFO  ScribeDashboardPage:146 - Filtering priority: Medium
+2025-07-25 22:00:39 ERROR ScribeDashboardPage:157 - No data or priority rows not loaded
+2025-07-25 22:00:39 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 22:00:42 INFO  ScribeDashboardTest:178 - Executing TC12 - View Task & Hide
+2025-07-25 22:00:42 INFO  ScribeDashboardPage:183 - First task ID: 120084
+2025-07-25 22:00:42 INFO  ScribeDashboardPage:189 - Clicking View button
+2025-07-25 22:00:42 INFO  ScribeDashboardPage:195 - Clicking first task in View dropdown
+2025-07-25 22:00:43 INFO  ScribeDashboardPage:200 - Verifying if Task ID 120084 is present in list
+2025-07-25 22:00:43 WARN  ScribeDashboardPage:207 - Task ID 120084 not found in list
+2025-07-25 22:00:43 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-25 22:00:47 INFO  ScribeDashboardTest:65 - Closing browser

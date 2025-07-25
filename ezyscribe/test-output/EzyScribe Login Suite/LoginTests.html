@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>LoginTests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>26/4/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>34/8/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 24 14:40:28 IST 2025</td>
+<td>Started on:</td><td>Fri Jul 25 21:56:11 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>179 seconds (179274 ms)</td>
+<tr><td>Total time:</td><td>276 seconds (276522 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.DoctorDashboardTest.verifyFilterByStatusInProgress()'><b>verifyFilterByStatusInProgress</b><br>Test class: tests.DoctorDashboardTest</td>
-<td><div><pre>java.lang.AssertionError: Neither rows nor &apos;No data&apos; message appeared after filtering.
-	at pages.DoctorDashboardPage.filterStatusInProgress(DoctorDashboardPage.java:127)
-	at tests.DoctorDashboardTest.verifyFilterByStatusInProgress(DoctorDashboardTest.java:173)
+<td title='tests.ScribeDashboardTest.verifyFilterByTaskId()'><b>verifyFilterByTaskId</b><br>Test class: tests.ScribeDashboardTest</td>
+<td><div><pre>java.lang.AssertionError: Filtered task not present expected [true] but found [false]
+	at tests.ScribeDashboardTest.verifyFilterByTaskId(ScribeDashboardTest.java:87)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace815927219", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace815927219'><pre>java.lang.AssertionError: Neither rows nor &apos;No data&apos; message appeared after filtering.
-	at pages.DoctorDashboardPage.filterStatusInProgress(DoctorDashboardPage.java:127)
-	at tests.DoctorDashboardTest.verifyFilterByStatusInProgress(DoctorDashboardTest.java:173)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1217087194", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1217087194'><pre>java.lang.AssertionError: Filtered task not present expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at tests.ScribeDashboardTest.verifyFilterByTaskId(ScribeDashboardTest.java:87)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -112,15 +113,15 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>8</td>
-<td>tests.DoctorDashboardTest@31e4bb20</td></tr>
+<td>10</td>
+<td>tests.ScribeDashboardTest@463b4ac8</td></tr>
 <tr>
 <td title='tests.DoctorDashboardTest.verifyFilterByTaskId()'><b>verifyFilterByTaskId</b><br>Test class: tests.DoctorDashboardTest</td>
 <td><div><pre>java.lang.AssertionError: Filtered task not present expected [true] but found [false]
 	at tests.DoctorDashboardTest.verifyFilterByTaskId(DoctorDashboardTest.java:97)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace76933283", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace76933283'><pre>java.lang.AssertionError: Filtered task not present expected [true] but found [false]
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1981943537", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1981943537'><pre>java.lang.AssertionError: Filtered task not present expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertTrue(Assert.java:57)
@@ -152,18 +153,96 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>12</td>
-<td>tests.DoctorDashboardTest@31e4bb20</td></tr>
+<td>13</td>
+<td>tests.DoctorDashboardTest@18cebaa5</td></tr>
 <tr>
-<td title='tests.DoctorDashboardTest.verifyFilterByPriorityMedium()'><b>verifyFilterByPriorityMedium</b><br>Test class: tests.DoctorDashboardTest</td>
+<td title='tests.ScribeDashboardTest.verifyFilterByPriorityMedium()'><b>verifyFilterByPriorityMedium</b><br>Test class: tests.ScribeDashboardTest</td>
 <td><div><pre>java.lang.AssertionError: Neither rows nor &apos;No data&apos; message appeared after filtering by Medium priority.
-	at pages.DoctorDashboardPage.filterPriorityMedium(DoctorDashboardPage.java:166)
-	at tests.DoctorDashboardTest.verifyFilterByPriorityMedium(DoctorDashboardTest.java:181)
+	at pages.ScribeDashboardPage.filterPriorityMedium(ScribeDashboardPage.java:158)
+	at tests.ScribeDashboardTest.verifyFilterByPriorityMedium(ScribeDashboardTest.java:171)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace303934490", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace303934490'><pre>java.lang.AssertionError: Neither rows nor &apos;No data&apos; message appeared after filtering by Medium priority.
-	at pages.DoctorDashboardPage.filterPriorityMedium(DoctorDashboardPage.java:166)
-	at tests.DoctorDashboardTest.verifyFilterByPriorityMedium(DoctorDashboardTest.java:181)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace288043672", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace288043672'><pre>java.lang.AssertionError: Neither rows nor &apos;No data&apos; message appeared after filtering by Medium priority.
+	at pages.ScribeDashboardPage.filterPriorityMedium(ScribeDashboardPage.java:158)
+	at tests.ScribeDashboardTest.verifyFilterByPriorityMedium(ScribeDashboardTest.java:171)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>5</td>
+<td>tests.ScribeDashboardTest@463b4ac8</td></tr>
+<tr>
+<td title='tests.ScribeDashboardTest.verifyFilterByStatusInProgress()'><b>verifyFilterByStatusInProgress</b><br>Test class: tests.ScribeDashboardTest</td>
+<td><div><pre>java.lang.AssertionError: Neither rows nor &apos;No data&apos; message appeared after filtering.
+	at pages.ScribeDashboardPage.filterStatusInProgress(ScribeDashboardPage.java:119)
+	at tests.ScribeDashboardTest.verifyFilterByStatusInProgress(ScribeDashboardTest.java:163)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1946337255", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1946337255'><pre>java.lang.AssertionError: Neither rows nor &apos;No data&apos; message appeared after filtering.
+	at pages.ScribeDashboardPage.filterStatusInProgress(ScribeDashboardPage.java:119)
+	at tests.ScribeDashboardTest.verifyFilterByStatusInProgress(ScribeDashboardTest.java:163)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>5</td>
+<td>tests.ScribeDashboardTest@463b4ac8</td></tr>
+<tr>
+<td title='tests.DoctorDashboardTest.verifyFilterByStatusInProgress()'><b>verifyFilterByStatusInProgress</b><br>Test class: tests.DoctorDashboardTest</td>
+<td><div><pre>java.lang.AssertionError: Neither rows nor &apos;No data&apos; message appeared after filtering.
+	at pages.DoctorDashboardPage.filterStatusInProgress(DoctorDashboardPage.java:127)
+	at tests.DoctorDashboardTest.verifyFilterByStatusInProgress(DoctorDashboardTest.java:173)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1192166967", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1192166967'><pre>java.lang.AssertionError: Neither rows nor &apos;No data&apos; message appeared after filtering.
+	at pages.DoctorDashboardPage.filterStatusInProgress(DoctorDashboardPage.java:127)
+	at tests.DoctorDashboardTest.verifyFilterByStatusInProgress(DoctorDashboardTest.java:173)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -192,14 +271,55 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>8</td>
-<td>tests.DoctorDashboardTest@31e4bb20</td></tr>
+<td>tests.DoctorDashboardTest@18cebaa5</td></tr>
+<tr>
+<td title='tests.ScribeDashboardTest.verifySortByUploadTimeActuallySorts()'><b>verifySortByUploadTimeActuallySorts</b><br>Test class: tests.ScribeDashboardTest</td>
+<td><div><pre>java.lang.AssertionError: Upload Time column is not sorted.: Lists differ at element [0]: 02:38 PM != 04:53 PM expected [02:38 PM] but found [04:53 PM]
+	at tests.ScribeDashboardTest.verifySortByUploadTimeActuallySorts(ScribeDashboardTest.java:147)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace752383955", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace752383955'><pre>java.lang.AssertionError: Upload Time column is not sorted.: Lists differ at element [0]: 02:38 PM != 04:53 PM expected [02:38 PM] but found [04:53 PM]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:1656)
+	at tests.ScribeDashboardTest.verifySortByUploadTimeActuallySorts(ScribeDashboardTest.java:147)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.ScribeDashboardTest@463b4ac8</td></tr>
 <tr>
 <td title='tests.DoctorDashboardTest.verifySortByUploadTimeActuallySorts()'><b>verifySortByUploadTimeActuallySorts</b><br>Test class: tests.DoctorDashboardTest</td>
-<td><div><pre>java.lang.AssertionError: Upload Time column is not sorted.: Lists differ at element [2]: 08:41 PM != 08:59 PM expected [08:41 PM] but found [08:59 PM]
+<td><div><pre>java.lang.AssertionError: Upload Time column is not sorted.: Lists differ at element [0]: 02:38 PM != 04:53 PM expected [02:38 PM] but found [04:53 PM]
 	at tests.DoctorDashboardTest.verifySortByUploadTimeActuallySorts(DoctorDashboardTest.java:157)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace392226440", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace392226440'><pre>java.lang.AssertionError: Upload Time column is not sorted.: Lists differ at element [2]: 08:41 PM != 08:59 PM expected [08:41 PM] but found [08:59 PM]
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1321128627", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1321128627'><pre>java.lang.AssertionError: Upload Time column is not sorted.: Lists differ at element [0]: 02:38 PM != 04:53 PM expected [02:38 PM] but found [04:53 PM]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -233,7 +353,46 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>2</td>
-<td>tests.DoctorDashboardTest@31e4bb20</td></tr>
+<td>tests.DoctorDashboardTest@18cebaa5</td></tr>
+<tr>
+<td title='tests.DoctorDashboardTest.verifyFilterByPriorityMedium()'><b>verifyFilterByPriorityMedium</b><br>Test class: tests.DoctorDashboardTest</td>
+<td><div><pre>java.lang.AssertionError: Neither rows nor &apos;No data&apos; message appeared after filtering by Medium priority.
+	at pages.DoctorDashboardPage.filterPriorityMedium(DoctorDashboardPage.java:166)
+	at tests.DoctorDashboardTest.verifyFilterByPriorityMedium(DoctorDashboardTest.java:181)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace799151165", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace799151165'><pre>java.lang.AssertionError: Neither rows nor &apos;No data&apos; message appeared after filtering by Medium priority.
+	at pages.DoctorDashboardPage.filterPriorityMedium(DoctorDashboardPage.java:166)
+	at tests.DoctorDashboardTest.verifyFilterByPriorityMedium(DoctorDashboardTest.java:181)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>8</td>
+<td>tests.DoctorDashboardTest@18cebaa5</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -244,135 +403,175 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.LoginTests.forgotPasswordTest_TC09()'><b>forgotPasswordTest_TC09</b><br>Test class: tests.LoginTests<br>Test method: TC09 - Verify 'Forgot Password' triggers email alert</td>
-<td></td>
-<td>1</td>
-<td>tests.LoginTests@793138bd</td></tr>
-<tr>
-<td title='tests.DoctorDashboardTest.verifySortByUploadDateActuallySorts()'><b>verifySortByUploadDateActuallySorts</b><br>Test class: tests.DoctorDashboardTest</td>
-<td></td>
-<td>4</td>
-<td>tests.DoctorDashboardTest@31e4bb20</td></tr>
-<tr>
-<td title='tests.DoctorDashboardTest.verifySortByStatusActuallySorts()'><b>verifySortByStatusActuallySorts</b><br>Test class: tests.DoctorDashboardTest</td>
+<td title='tests.DoctorDashboardTest.verifyLanguageToggle()'><b>verifyLanguageToggle</b><br>Test class: tests.DoctorDashboardTest</td>
 <td></td>
 <td>2</td>
-<td>tests.DoctorDashboardTest@31e4bb20</td></tr>
+<td>tests.DoctorDashboardTest@18cebaa5</td></tr>
 <tr>
-<td title='tests.DoctorDashboardTest.verifySortByTaskIdActuallySorts()'><b>verifySortByTaskIdActuallySorts</b><br>Test class: tests.DoctorDashboardTest</td>
+<td title='tests.LoginTests.epicLoginRedirectTest()'><b>epicLoginRedirectTest</b><br>Test class: tests.LoginTests<br>Test method: TC25 - Verify Epic Login Redirect</td>
 <td></td>
-<td>2</td>
-<td>tests.DoctorDashboardTest@31e4bb20</td></tr>
+<td>18</td>
+<td>tests.LoginTests@1951b871</td></tr>
 <tr>
-<td title='tests.LoginTests.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTests<br>Test method: TC01-TC24 - Login test for various valid/invalid credentials<br>Parameters: TC12, doctor@example.com, passwordWithVeryLongText1234567890!@#, error</td>
+<td title='tests.LoginTests.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTests<br>Test method: TC01-TC24 - Login test for various valid/invalid credentials<br>Parameters: TC15, testprovider@gmail.com, 12345678, success_doctor</td>
 <td></td>
-<td>1</td>
-<td>tests.LoginTests@793138bd</td></tr>
+<td>7</td>
+<td>tests.LoginTests@1951b871</td></tr>
 <tr>
 <td title='tests.LoginTests.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTests<br>Test method: TC01-TC24 - Login test for various valid/invalid credentials<br>Parameters: TC10, special@!#$.com, special123, error</td>
 <td></td>
 <td>1</td>
-<td>tests.LoginTests@793138bd</td></tr>
+<td>tests.LoginTests@1951b871</td></tr>
 <tr>
-<td title='tests.LoginTests.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTests<br>Test method: TC01-TC24 - Login test for various valid/invalid credentials<br>Parameters: TC20, doctor@example.com, DOCPASS123, error</td>
-<td></td>
-<td>1</td>
-<td>tests.LoginTests@793138bd</td></tr>
-<tr>
-<td title='tests.DoctorDashboardTest.verifySortByPriorityActuallySorts()'><b>verifySortByPriorityActuallySorts</b><br>Test class: tests.DoctorDashboardTest</td>
+<td title='tests.LoginTests.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTests<br>Test method: TC01-TC24 - Login test for various valid/invalid credentials<br>Parameters: TC19, Testprovider@gmail.com, 12345678, success_doctor</td>
 <td></td>
 <td>2</td>
-<td>tests.DoctorDashboardTest@31e4bb20</td></tr>
-<tr>
-<td title='tests.DoctorDashboardTest.verifySortByPatientInitialsActuallySorts()'><b>verifySortByPatientInitialsActuallySorts</b><br>Test class: tests.DoctorDashboardTest</td>
-<td></td>
-<td>2</td>
-<td>tests.DoctorDashboardTest@31e4bb20</td></tr>
-<tr>
-<td title='tests.DoctorDashboardTest.verifySortByAudioDurationActuallySorts()'><b>verifySortByAudioDurationActuallySorts</b><br>Test class: tests.DoctorDashboardTest</td>
-<td></td>
-<td>2</td>
-<td>tests.DoctorDashboardTest@31e4bb20</td></tr>
-<tr>
-<td title='tests.LoginTests.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTests<br>Test method: TC01-TC24 - Login test for various valid/invalid credentials<br>Parameters: TC05, doctor@example.com, , error</td>
-<td></td>
-<td>1</td>
-<td>tests.LoginTests@793138bd</td></tr>
-<tr>
-<td title='tests.DoctorDashboardTest.verifyLanguageToggle()'><b>verifyLanguageToggle</b><br>Test class: tests.DoctorDashboardTest</td>
-<td></td>
-<td>2</td>
-<td>tests.DoctorDashboardTest@31e4bb20</td></tr>
+<td>tests.LoginTests@1951b871</td></tr>
 <tr>
 <td title='tests.DoctorDashboardTest.verifyDarkLightSystemModeSwitch()'><b>verifyDarkLightSystemModeSwitch</b><br>Test class: tests.DoctorDashboardTest</td>
 <td></td>
 <td>2</td>
-<td>tests.DoctorDashboardTest@31e4bb20</td></tr>
+<td>tests.DoctorDashboardTest@18cebaa5</td></tr>
 <tr>
-<td title='tests.LoginTests.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTests<br>Test method: TC01-TC24 - Login test for various valid/invalid credentials<br>Parameters: TC23, testprovider@gmail.com, 12345678, success_doctor</td>
-<td></td>
-<td>6</td>
-<td>tests.LoginTests@793138bd</td></tr>
-<tr>
-<td title='tests.LoginTests.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTests<br>Test method: TC01-TC24 - Login test for various valid/invalid credentials<br>Parameters: TC06, , , error</td>
-<td></td>
-<td>1</td>
-<td>tests.LoginTests@793138bd</td></tr>
-<tr>
-<td title='tests.LoginTests.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTests<br>Test method: TC01-TC24 - Login test for various valid/invalid credentials<br>Parameters: TC07, doctor@@example, DocPass123, error</td>
-<td></td>
-<td>1</td>
-<td>tests.LoginTests@793138bd</td></tr>
-<tr>
-<td title='tests.LoginTests.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTests<br>Test method: TC01-TC24 - Login test for various valid/invalid credentials<br>Parameters: TC11, verylongemail@exampletoolonglonglongdomain.com, DocPass123, error</td>
-<td></td>
-<td>1</td>
-<td>tests.LoginTests@793138bd</td></tr>
-<tr>
-<td title='tests.LoginTests.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTests<br>Test method: TC01-TC24 - Login test for various valid/invalid credentials<br>Parameters: TC24, testscribe@gmail.com, 12345678, success_scribe</td>
-<td></td>
-<td>1</td>
-<td>tests.LoginTests@793138bd</td></tr>
-<tr>
-<td title='tests.LoginTests.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTests<br>Test method: TC01-TC24 - Login test for various valid/invalid credentials<br>Parameters: TC15, testprovider@gmail.com, 12345678, success_doctor</td>
-<td></td>
-<td>6</td>
-<td>tests.LoginTests@793138bd</td></tr>
-<tr>
-<td title='tests.LoginTests.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTests<br>Test method: TC01-TC24 - Login test for various valid/invalid credentials<br>Parameters: TC01, testprovider@gmail.com, 12345678, success_doctor</td>
+<td title='tests.DoctorDashboardTest.verifySortByStatusActuallySorts()'><b>verifySortByStatusActuallySorts</b><br>Test class: tests.DoctorDashboardTest</td>
 <td></td>
 <td>2</td>
-<td>tests.LoginTests@793138bd</td></tr>
+<td>tests.DoctorDashboardTest@18cebaa5</td></tr>
+<tr>
+<td title='tests.DoctorDashboardTest.verifySortByAudioDurationActuallySorts()'><b>verifySortByAudioDurationActuallySorts</b><br>Test class: tests.DoctorDashboardTest</td>
+<td></td>
+<td>2</td>
+<td>tests.DoctorDashboardTest@18cebaa5</td></tr>
 <tr>
 <td title='tests.LoginTests.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTests<br>Test method: TC01-TC24 - Login test for various valid/invalid credentials<br>Parameters: TC02, wrongemail@example.com, DocPass123, error</td>
 <td></td>
 <td>1</td>
-<td>tests.LoginTests@793138bd</td></tr>
+<td>tests.LoginTests@1951b871</td></tr>
+<tr>
+<td title='tests.DoctorDashboardTest.verifySortByUploadDateActuallySorts()'><b>verifySortByUploadDateActuallySorts</b><br>Test class: tests.DoctorDashboardTest</td>
+<td></td>
+<td>2</td>
+<td>tests.DoctorDashboardTest@18cebaa5</td></tr>
 <tr>
 <td title='tests.LoginTests.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTests<br>Test method: TC01-TC24 - Login test for various valid/invalid credentials<br>Parameters: TC04, , DocPass123, error</td>
 <td></td>
 <td>1</td>
-<td>tests.LoginTests@793138bd</td></tr>
+<td>tests.LoginTests@1951b871</td></tr>
 <tr>
-<td title='tests.LoginTests.epicLoginRedirectTest()'><b>epicLoginRedirectTest</b><br>Test class: tests.LoginTests<br>Test method: TC25 - Verify Epic Login Redirect</td>
-<td></td>
-<td>12</td>
-<td>tests.LoginTests@793138bd</td></tr>
-<tr>
-<td title='tests.LoginTests.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTests<br>Test method: TC01-TC24 - Login test for various valid/invalid credentials<br>Parameters: TC19, Testprovider@gmail.com, 12345678, success_doctor</td>
+<td title='tests.LoginTests.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTests<br>Test method: TC01-TC24 - Login test for various valid/invalid credentials<br>Parameters: TC05, doctor@example.com, , error</td>
 <td></td>
 <td>1</td>
-<td>tests.LoginTests@793138bd</td></tr>
+<td>tests.LoginTests@1951b871</td></tr>
+<tr>
+<td title='tests.LoginTests.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTests<br>Test method: TC01-TC24 - Login test for various valid/invalid credentials<br>Parameters: TC11, verylongemail@exampletoolonglonglongdomain.com, DocPass123, error</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginTests@1951b871</td></tr>
+<tr>
+<td title='tests.ScribeDashboardTest.verifySortByAudioDurationActuallySorts()'><b>verifySortByAudioDurationActuallySorts</b><br>Test class: tests.ScribeDashboardTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ScribeDashboardTest@463b4ac8</td></tr>
+<tr>
+<td title='tests.ScribeDashboardTest.verifyDarkLightSystemModeSwitch()'><b>verifyDarkLightSystemModeSwitch</b><br>Test class: tests.ScribeDashboardTest</td>
+<td></td>
+<td>7</td>
+<td>tests.ScribeDashboardTest@463b4ac8</td></tr>
+<tr>
+<td title='tests.ScribeDashboardTest.verifySortByUploadDateActuallySorts()'><b>verifySortByUploadDateActuallySorts</b><br>Test class: tests.ScribeDashboardTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ScribeDashboardTest@463b4ac8</td></tr>
+<tr>
+<td title='tests.ScribeDashboardTest.verifyViewTaskHidesRow()'><b>verifyViewTaskHidesRow</b><br>Test class: tests.ScribeDashboardTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ScribeDashboardTest@463b4ac8</td></tr>
+<tr>
+<td title='tests.ScribeDashboardTest.verifySortByStatusActuallySorts()'><b>verifySortByStatusActuallySorts</b><br>Test class: tests.ScribeDashboardTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ScribeDashboardTest@463b4ac8</td></tr>
+<tr>
+<td title='tests.DoctorDashboardTest.verifySortByPriorityActuallySorts()'><b>verifySortByPriorityActuallySorts</b><br>Test class: tests.DoctorDashboardTest</td>
+<td></td>
+<td>2</td>
+<td>tests.DoctorDashboardTest@18cebaa5</td></tr>
+<tr>
+<td title='tests.LoginTests.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTests<br>Test method: TC01-TC24 - Login test for various valid/invalid credentials<br>Parameters: TC01, testprovider@gmail.com, 12345678, success_doctor</td>
+<td></td>
+<td>3</td>
+<td>tests.LoginTests@1951b871</td></tr>
+<tr>
+<td title='tests.LoginTests.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTests<br>Test method: TC01-TC24 - Login test for various valid/invalid credentials<br>Parameters: TC12, doctor@example.com, passwordWithVeryLongText1234567890!@#, error</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginTests@1951b871</td></tr>
+<tr>
+<td title='tests.DoctorDashboardTest.verifySortByPatientInitialsActuallySorts()'><b>verifySortByPatientInitialsActuallySorts</b><br>Test class: tests.DoctorDashboardTest</td>
+<td></td>
+<td>3</td>
+<td>tests.DoctorDashboardTest@18cebaa5</td></tr>
+<tr>
+<td title='tests.LoginTests.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTests<br>Test method: TC01-TC24 - Login test for various valid/invalid credentials<br>Parameters: TC07, doctor@@example, DocPass123, error</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginTests@1951b871</td></tr>
 <tr>
 <td title='tests.LoginTests.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTests<br>Test method: TC01-TC24 - Login test for various valid/invalid credentials<br>Parameters: TC03, doctor@example.com, wrongpass, error</td>
 <td></td>
 <td>1</td>
-<td>tests.LoginTests@793138bd</td></tr>
+<td>tests.LoginTests@1951b871</td></tr>
+<tr>
+<td title='tests.DoctorDashboardTest.verifySortByTaskIdActuallySorts()'><b>verifySortByTaskIdActuallySorts</b><br>Test class: tests.DoctorDashboardTest</td>
+<td></td>
+<td>3</td>
+<td>tests.DoctorDashboardTest@18cebaa5</td></tr>
+<tr>
+<td title='tests.LoginTests.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTests<br>Test method: TC01-TC24 - Login test for various valid/invalid credentials<br>Parameters: TC23, testprovider@gmail.com, 12345678, success_doctor</td>
+<td></td>
+<td>7</td>
+<td>tests.LoginTests@1951b871</td></tr>
+<tr>
+<td title='tests.LoginTests.forgotPasswordTest_TC09()'><b>forgotPasswordTest_TC09</b><br>Test class: tests.LoginTests<br>Test method: TC09 - Verify 'Forgot Password' triggers email alert</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginTests@1951b871</td></tr>
+<tr>
+<td title='tests.LoginTests.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTests<br>Test method: TC01-TC24 - Login test for various valid/invalid credentials<br>Parameters: TC20, doctor@example.com, DOCPASS123, error</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginTests@1951b871</td></tr>
+<tr>
+<td title='tests.LoginTests.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTests<br>Test method: TC01-TC24 - Login test for various valid/invalid credentials<br>Parameters: TC24, testscribe@gmail.com, 12345678, success_scribe</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginTests@1951b871</td></tr>
+<tr>
+<td title='tests.LoginTests.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTests<br>Test method: TC01-TC24 - Login test for various valid/invalid credentials<br>Parameters: TC06, , , error</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginTests@1951b871</td></tr>
+<tr>
+<td title='tests.ScribeDashboardTest.verifySortByPatientInitialsActuallySorts()'><b>verifySortByPatientInitialsActuallySorts</b><br>Test class: tests.ScribeDashboardTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ScribeDashboardTest@463b4ac8</td></tr>
 <tr>
 <td title='tests.DoctorDashboardTest.verifyViewTaskHidesRow()'><b>verifyViewTaskHidesRow</b><br>Test class: tests.DoctorDashboardTest</td>
 <td></td>
-<td>2</td>
-<td>tests.DoctorDashboardTest@31e4bb20</td></tr>
+<td>3</td>
+<td>tests.DoctorDashboardTest@18cebaa5</td></tr>
+<tr>
+<td title='tests.ScribeDashboardTest.verifySortByPriorityActuallySorts()'><b>verifySortByPriorityActuallySorts</b><br>Test class: tests.ScribeDashboardTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ScribeDashboardTest@463b4ac8</td></tr>
+<tr>
+<td title='tests.ScribeDashboardTest.verifySortByTaskIdActuallySorts()'><b>verifySortByTaskIdActuallySorts</b><br>Test class: tests.ScribeDashboardTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ScribeDashboardTest@463b4ac8</td></tr>
 </table><p>
 </body>
 </html>
