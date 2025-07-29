@@ -5,7 +5,7 @@
 </listeners>
   <test name="LoginTests">
     <classes>
-   		 <class name="tests.LoginTests"/> 
+   		  <class name="tests.LoginTests"/> 
      	 <class name="tests.ScribeDashboardTest"/>
      	  <class name="tests.DoctorDashboardTest"/>
      	  

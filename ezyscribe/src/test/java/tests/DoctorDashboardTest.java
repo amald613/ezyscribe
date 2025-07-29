@@ -28,21 +28,32 @@ public class DoctorDashboardTest {
 
     @BeforeClass
     public void setup() {
-        log.info("Setting up browser and logging in as Doctor");
+        log.info("Setting up Brave browser with mic permissions and logging in as Doctor");
 
         WebDriverManager.chromedriver().setup();
+
+        // Step 1: Define ChromeOptions for Brave
         ChromeOptions options = new ChromeOptions();
         options.setBinary("C:\\Users\\Amaldev\\AppData\\Local\\BraveSoftware\\Brave-Browser\\Application\\brave.exe");
 
+        // Step 2: Set permissions (auto-allow mic)
         HashMap<String, Object> prefs = new HashMap<>();
+        prefs.put("profile.default_content_setting_values.media_stream_mic", 1); // Allow microphone
         prefs.put("credentials_enable_service", false);
         prefs.put("profile.password_manager_enabled", false);
         options.setExperimentalOption("prefs", prefs);
 
+        // Step 3: Add browser-level arguments
+        options.addArguments("--use-fake-ui-for-media-stream"); // Prevent mic popup
+        options.addArguments("--disable-popup-blocking");
+        options.addArguments("user-data-dir=C:\\Temp\\BraveProfile"); // Optional: clean profile
+
+        // Step 4: Start WebDriver
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
+        // Step 5: Login
         driver.get("https://appv2.ezyscribe.com");
         LoginPage loginPage = new LoginPage(driver);
         loginPage.enterEmail("testprovider@gmail.com");
@@ -50,8 +61,9 @@ public class DoctorDashboardTest {
         loginPage.clickSubmit();
 
         doctorDashboardPage = new DoctorDashboardPage(driver);
-        log.info("Login successful");
+        log.info("Login successful and browser configured for mic access");
     }
+
 
     @AfterMethod
     public void refreshPageAfterEachTest() {
