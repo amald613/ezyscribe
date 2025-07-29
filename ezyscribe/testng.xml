@@ -5,14 +5,14 @@
 </listeners>
   <test name="LoginTests">
     <classes>
-   		  <class name="tests.LoginTests"/> 
-     	 <class name="tests.ScribeDashboardTest"/>
-     	  <class name="tests.DoctorDashboardTest"/>
+   		   <class name="tests.LoginTests"/> 
+     	 <class name="tests.DoctorDashboardTest"/> 
+     	  <class name="tests.ScribeDashboardTest">
      	  
-       <!--  <methods>
-          <include name="verifyViewTaskHidesRow"/>
-        </methods>-->
-         
+     <!-- <methods>
+          <include name="verifyFilterByTaskId"/>
+        </methods>--> 
+        </class>
     </classes>
   </test>
 </suite>

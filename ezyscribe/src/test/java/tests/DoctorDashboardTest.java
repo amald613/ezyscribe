@@ -99,15 +99,22 @@ public class DoctorDashboardTest {
         log.info("Light mode selected");
         Thread.sleep(1000);
     }
-
     @Test(priority = 3)
     public void verifyFilterByTaskId() {
-        log.info("Executing TC09 - Filter by Task ID");
-        String taskId = "120061";
+        log.info("Executing TC09 - Filter by Task ID (Dynamic)");
+
+        // Step 1: Get the first visible task ID from the page
+        String taskId = doctorDashboardPage.getFirstTaskId();
+        log.info("Captured first Task ID from list: " + taskId);
+
+        // Step 2: Enter it into the Task ID filter
         doctorDashboardPage.enterTaskIdFilter(taskId);
         log.info("Filtered with Task ID: " + taskId);
+
+        // Step 3: Verify it is shown in the filtered results
         Assert.assertTrue(doctorDashboardPage.verifyTaskIdPresent(taskId), "Filtered task not present");
     }
+
 
     @Test(priority = 4)
     public void verifySortByTaskIdActuallySorts() {

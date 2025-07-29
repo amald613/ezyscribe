@@ -6,17 +6,6 @@
   </listeners>
   <test thread-count="5" name="LoginTests(failed)">
     <classes>
-      <class name="tests.ScribeDashboardTest">
-        <methods>
-          <include name="verifyFilterByStatusInProgress"/>
-          <include name="refreshPageAfterEachTest"/>
-          <include name="verifyFilterByPriorityMedium"/>
-          <include name="verifyFilterByTaskId"/>
-          <include name="setup"/>
-          <include name="verifySortByUploadTimeActuallySorts"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- tests.ScribeDashboardTest -->
       <class name="tests.DoctorDashboardTest">
         <methods>
           <include name="verifySortByUploadTimeActuallySorts"/>
@@ -30,6 +19,17 @@
           <include name="refreshPageAfterEachTest"/>
         </methods>
       </class> <!-- tests.DoctorDashboardTest -->
+      <class name="tests.ScribeDashboardTest">
+        <methods>
+          <include name="verifyFilterByStatusInProgress"/>
+          <include name="refreshPageAfterEachTest"/>
+          <include name="verifyFilterByPriorityMedium"/>
+          <include name="setup"/>
+          <include name="verifyFilterByTaskId"/>
+          <include name="verifySortByUploadTimeActuallySorts"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.ScribeDashboardTest -->
     </classes>
   </test> <!-- LoginTests(failed) -->
 </suite> <!-- Failed suite [EzyScribe Login Suite] -->

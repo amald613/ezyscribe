@@ -80,12 +80,20 @@ public class ScribeDashboardTest {
 
     @Test(priority = 2)
     public void verifyFilterByTaskId() {
-        log.info("Executing TC02 - Filter by Task ID");
-        String taskId = "120061";
+        log.info("Executing TC09 - Filter by Task ID (Dynamic)");
+
+        // Step 1: Get the first visible task ID from the page
+        String taskId = scribeDashboardPage.getFirstTaskId();
+        log.info("Captured first Task ID from list: " + taskId);
+
+        // Step 2: Enter it into the Task ID filter
         scribeDashboardPage.enterTaskIdFilter(taskId);
         log.info("Filtered with Task ID: " + taskId);
+
+        // Step 3: Verify it is shown in the filtered results
         Assert.assertTrue(scribeDashboardPage.verifyTaskIdPresent(taskId), "Filtered task not present");
     }
+
 
     @Test(priority = 3)
     public void verifySortByTaskIdActuallySorts() {
