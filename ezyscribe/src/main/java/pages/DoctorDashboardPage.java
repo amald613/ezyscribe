@@ -215,4 +215,131 @@ public class DoctorDashboardPage {
         logger.warn("Task ID {} not found in list", taskId);
         return false;
     }
+ // ========== RECORDING FUNCTIONALITY ==========
+
+    @FindBy(xpath = "//button[contains(., 'Record')]")
+    private WebElement recordButton;
+
+    @FindBy(xpath = "//button[.//canvas]")
+    private WebElement stopButton;
+
+    @FindBy(xpath = "//button[.//*[name()='svg' and @aria-hidden='true'][.//*[name()='rect'][@rx='1']]]")
+    private WebElement pauseButton;
+
+    @FindBy(xpath = "//p[contains(@class, 'gap-5') and contains(@class, 'items-center')]")
+    private WebElement recordingTimer;
+
+    @FindBy(xpath = "//button[contains(., 'Review')]")
+    private WebElement reviewButton;
+
+    @FindBy(xpath = "//div[@role='dialog' and contains(., 'Review Recordings')]")
+    private WebElement reviewPopup;
+
+    @FindBy(xpath = "//div[@role='dialog']//button[contains(., 'Upload Recordings')]")
+    private WebElement uploadRecordingsButton;
+
+    @FindBy(xpath = "//div[@role='dialog']//button[contains(., 'Record Again')]")
+    private WebElement recordAgainButton;
+
+    @FindBy(xpath = "//div[@role='dialog']//button[contains(@class, 'lucide-trash')]")
+    private List<WebElement> deleteRecordingButtons;
+
+    @FindBy(xpath = "//div[@role='dialog']//button[contains(@class, 'lucide-play')]")
+    private List<WebElement> playRecordingButtons;
+
+    @FindBy(xpath = "//div[contains(text(),'Audio uploaded and workflow started!')]")
+    private WebElement taskCreatedNotification;
+
+    // === Recording Actions ===
+
+    public void startRecording() {
+        logger.info("Starting recording...");
+        wait.until(ExpectedConditions.elementToBeClickable(recordButton)).click();
+        wait.until(ExpectedConditions.visibilityOf(recordingTimer));
+    }
+
+    public void pauseRecording() {
+        logger.info("Pausing recording...");
+        wait.until(ExpectedConditions.elementToBeClickable(pauseButton)).click();
+        wait.until(ExpectedConditions.visibilityOf(reviewButton));
+    }
+
+    public void stopRecording() {
+        logger.info("Stopping recording...");
+        wait.until(ExpectedConditions.elementToBeClickable(stopButton)).click();
+    }
+
+    public boolean isReviewButtonVisible() {
+        try {
+            return reviewButton.isDisplayed();
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+    }
+
+    public void openReviewPopup() {
+        if (isElementDisplayed(reviewButton)) {
+            reviewButton.click();
+            wait.until(ExpectedConditions.visibilityOf(reviewPopup));
+        }
+    }
+
+    public void uploadRecordings() {
+        logger.info("Uploading recordings...");
+        wait.until(ExpectedConditions.elementToBeClickable(uploadRecordingsButton)).click();
+        wait.until(ExpectedConditions.invisibilityOf(reviewPopup));
+    }
+
+    public void recordAgain() {
+        logger.info("Clicking 'Record Again'...");
+        wait.until(ExpectedConditions.elementToBeClickable(recordAgainButton)).click();
+        wait.until(ExpectedConditions.invisibilityOf(reviewPopup));
+        
+    }
+
+    public void deleteRecording(int index) {
+        if (index < deleteRecordingButtons.size()) {
+            logger.info("Deleting recording at index {}", index);
+            deleteRecordingButtons.get(index).click();
+        }
+    }
+
+    public void playRecording(int index) {
+        if (index < playRecordingButtons.size()) {
+            logger.info("Playing recording at index {}", index);
+            playRecordingButtons.get(index).click();
+        }
+    }
+
+    public int getRecordingsCount() {
+        return deleteRecordingButtons.size();
+    }
+
+    public boolean isReviewPopupOpen() {
+        return isElementDisplayed(reviewPopup);
+    }
+
+    public boolean isRecordingAvailable() {
+        return isElementDisplayed(recordButton);
+    }
+
+    private boolean isElementDisplayed(WebElement element) {
+        try {
+            return element.isDisplayed();
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+    }
+
+    public boolean verifyTaskCreated() {
+        try {
+            wait.until(ExpectedConditions.visibilityOf(taskCreatedNotification));
+            logger.info("Task creation notification visible");
+            return true;
+        } catch (TimeoutException e) {
+            logger.warn("Task creation notification not found");
+            return false;
+        }
+    }
+
 }

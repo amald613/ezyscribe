@@ -192,5 +192,52 @@ public class DoctorDashboardTest {
         boolean stillPresent = doctorDashboardPage.isTaskIdPresentInList(taskId);
         Assert.assertFalse(stillPresent, "Task row with ID " + taskId + " still visible after view");
     }
+    @Test(priority = 14)
+    public void verifyRecordingWorkflow_ReviewAfterRecordAgain() throws Exception {
+        log.info("Executing TC15 - Record → Pause → Review → Record Again → Pause → Review → Upload");
+
+        // Step 1: Start Recording
+        log.info("Step 1: Start recording...");
+        doctorDashboardPage.startRecording();
+        Thread.sleep(2000); // wait to simulate actual audio
+
+        // Step 2: Click Pause (Pause becomes Review)
+        log.info("Step 2: Click Pause (should switch to Review)");
+        doctorDashboardPage.pauseRecording();
+        Assert.assertTrue(doctorDashboardPage.isReviewButtonVisible(),
+            "Review button should appear after pausing.");
+
+        // Step 3: Open Review popup
+        log.info("Step 3: Open review popup");
+        doctorDashboardPage.openReviewPopup();
+        Assert.assertTrue(doctorDashboardPage.isReviewPopupOpen(), "Review popup should be open");
+
+        // Step 4: Click Record Again
+        log.info("Step 4: Click 'Record Again'");
+        doctorDashboardPage.recordAgain();
+        
+     
+       
+
+        // Step 5: Click Pause (Pause becomes Review)
+        log.info("Step 2: Click Pause (should switch to Review)");
+        doctorDashboardPage.pauseRecording();
+        Assert.assertTrue(doctorDashboardPage.isReviewButtonVisible(),
+            "Review button should appear after pausing.");
+
+        // Step 6: Open Review popup
+        log.info("Step 3: Open review popup");
+        doctorDashboardPage.openReviewPopup();
+        Assert.assertTrue(doctorDashboardPage.isReviewPopupOpen(), "Review popup should be open");
+        
+        // Step 7: Upload recordings
+        log.info("Step 7: Upload the recording");
+        doctorDashboardPage.uploadRecordings();
+
+        // Step 8: Verify task created
+        Assert.assertTrue(doctorDashboardPage.verifyTaskCreated(), "Task should be created after uploading");
+    }
+
+
 }
 

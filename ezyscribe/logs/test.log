@@ -1441,3 +1441,903 @@
 2025-07-25 22:00:43 WARN  ScribeDashboardPage:207 - Task ID 120084 not found in list
 2025-07-25 22:00:43 INFO  ScribeDashboardTest:56 - Refreshing page after test
 2025-07-25 22:00:47 INFO  ScribeDashboardTest:65 - Closing browser
+2025-07-28 22:05:59 INFO  LoginTests:23 - Loading login test data from Excel...
+2025-07-28 22:06:03 INFO  LoginTests:29 - Starting test case: TC01
+2025-07-28 22:06:04 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-28 22:06:04 INFO  LoginPage:44 - Entered password.
+2025-07-28 22:06:04 INFO  LoginTests:38 - Clicking submit...
+2025-07-28 22:06:04 INFO  LoginPage:53 - Clicked login button.
+2025-07-28 22:06:04 INFO  LoginTests:46 - Expecting successful login...
+2025-07-28 22:06:05 INFO  LoginTests:52 - Login successful for: testprovider@gmail.com
+2025-07-28 22:06:05 INFO  LoginTests:88 - Finished test case: TC01
+2025-07-28 22:06:09 INFO  LoginTests:29 - Starting test case: TC02
+2025-07-28 22:06:09 INFO  LoginPage:33 - Entered email: wrongemail@example.com
+2025-07-28 22:06:09 INFO  LoginPage:44 - Entered password.
+2025-07-28 22:06:09 INFO  LoginTests:38 - Clicking submit...
+2025-07-28 22:06:09 INFO  LoginPage:53 - Clicked login button.
+2025-07-28 22:06:09 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-28 22:06:10 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-28 22:06:10 INFO  LoginTests:88 - Finished test case: TC02
+2025-07-28 22:06:13 INFO  LoginTests:29 - Starting test case: TC03
+2025-07-28 22:06:13 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-28 22:06:13 INFO  LoginPage:44 - Entered password.
+2025-07-28 22:06:13 INFO  LoginTests:38 - Clicking submit...
+2025-07-28 22:06:13 INFO  LoginPage:53 - Clicked login button.
+2025-07-28 22:06:13 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-28 22:06:15 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-28 22:06:15 INFO  LoginTests:88 - Finished test case: TC03
+2025-07-28 22:06:18 INFO  LoginTests:29 - Starting test case: TC04
+2025-07-28 22:06:18 INFO  LoginPage:33 - Entered email: 
+2025-07-28 22:06:18 INFO  LoginPage:44 - Entered password.
+2025-07-28 22:06:18 INFO  LoginTests:38 - Clicking submit...
+2025-07-28 22:06:18 INFO  LoginPage:53 - Clicked login button.
+2025-07-28 22:06:18 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-28 22:06:19 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-28 22:06:19 INFO  LoginTests:88 - Finished test case: TC04
+2025-07-28 22:06:23 INFO  LoginTests:29 - Starting test case: TC05
+2025-07-28 22:06:23 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-28 22:06:23 INFO  LoginPage:44 - Entered password.
+2025-07-28 22:06:23 INFO  LoginTests:38 - Clicking submit...
+2025-07-28 22:06:23 INFO  LoginPage:53 - Clicked login button.
+2025-07-28 22:06:23 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-28 22:06:24 INFO  LoginPage:62 - Captured error message: Password must be at least 8 characters.
+2025-07-28 22:06:24 INFO  LoginTests:88 - Finished test case: TC05
+2025-07-28 22:06:27 INFO  LoginTests:29 - Starting test case: TC06
+2025-07-28 22:06:27 INFO  LoginPage:33 - Entered email: 
+2025-07-28 22:06:27 INFO  LoginPage:44 - Entered password.
+2025-07-28 22:06:27 INFO  LoginTests:38 - Clicking submit...
+2025-07-28 22:06:27 INFO  LoginPage:53 - Clicked login button.
+2025-07-28 22:06:27 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-28 22:06:28 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-28 22:06:28 INFO  LoginTests:88 - Finished test case: TC06
+2025-07-28 22:06:32 INFO  LoginTests:29 - Starting test case: TC07
+2025-07-28 22:06:32 INFO  LoginPage:33 - Entered email: doctor@@example
+2025-07-28 22:06:32 INFO  LoginPage:44 - Entered password.
+2025-07-28 22:06:32 INFO  LoginTests:38 - Clicking submit...
+2025-07-28 22:06:32 INFO  LoginPage:53 - Clicked login button.
+2025-07-28 22:06:32 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-28 22:06:33 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-28 22:06:33 INFO  LoginTests:88 - Finished test case: TC07
+2025-07-28 22:06:36 INFO  LoginTests:29 - Starting test case: TC10
+2025-07-28 22:06:36 INFO  LoginPage:33 - Entered email: special@!#$.com
+2025-07-28 22:06:36 INFO  LoginPage:44 - Entered password.
+2025-07-28 22:06:36 INFO  LoginTests:38 - Clicking submit...
+2025-07-28 22:06:36 INFO  LoginPage:53 - Clicked login button.
+2025-07-28 22:06:36 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-28 22:06:37 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-28 22:06:37 INFO  LoginTests:88 - Finished test case: TC10
+2025-07-28 22:06:41 INFO  LoginTests:29 - Starting test case: TC11
+2025-07-28 22:06:41 INFO  LoginPage:33 - Entered email: verylongemail@exampletoolonglonglongdomain.com
+2025-07-28 22:06:41 INFO  LoginPage:44 - Entered password.
+2025-07-28 22:06:41 INFO  LoginTests:38 - Clicking submit...
+2025-07-28 22:06:41 INFO  LoginPage:53 - Clicked login button.
+2025-07-28 22:06:41 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-28 22:06:42 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-28 22:06:42 INFO  LoginTests:88 - Finished test case: TC11
+2025-07-28 22:06:45 INFO  LoginTests:29 - Starting test case: TC12
+2025-07-28 22:06:45 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-28 22:06:46 INFO  LoginPage:44 - Entered password.
+2025-07-28 22:06:46 INFO  LoginTests:38 - Clicking submit...
+2025-07-28 22:06:46 INFO  LoginPage:53 - Clicked login button.
+2025-07-28 22:06:46 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-28 22:06:47 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-28 22:06:47 INFO  LoginTests:88 - Finished test case: TC12
+2025-07-28 22:06:50 INFO  LoginTests:29 - Starting test case: TC15
+2025-07-28 22:06:50 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-28 22:06:50 INFO  LoginPage:44 - Entered password.
+2025-07-28 22:06:50 INFO  LoginTests:38 - Clicking submit...
+2025-07-28 22:06:50 INFO  LoginPage:53 - Clicked login button.
+2025-07-28 22:06:50 INFO  LoginTests:46 - Expecting successful login...
+2025-07-28 22:06:52 INFO  LoginTests:52 - Login successful for: testprovider@gmail.com
+2025-07-28 22:06:52 INFO  LoginTests:81 - Waiting to prevent rate-limiting...
+2025-07-28 22:06:57 INFO  LoginTests:88 - Finished test case: TC15
+2025-07-28 22:07:00 INFO  LoginTests:29 - Starting test case: TC19
+2025-07-28 22:07:00 INFO  LoginPage:33 - Entered email: Testprovider@gmail.com
+2025-07-28 22:07:00 INFO  LoginPage:44 - Entered password.
+2025-07-28 22:07:00 INFO  LoginTests:38 - Clicking submit...
+2025-07-28 22:07:00 INFO  LoginPage:53 - Clicked login button.
+2025-07-28 22:07:00 INFO  LoginTests:46 - Expecting successful login...
+2025-07-28 22:07:02 INFO  LoginTests:52 - Login successful for: Testprovider@gmail.com
+2025-07-28 22:07:02 INFO  LoginTests:88 - Finished test case: TC19
+2025-07-28 22:07:06 INFO  LoginTests:29 - Starting test case: TC20
+2025-07-28 22:07:06 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-28 22:07:06 INFO  LoginPage:44 - Entered password.
+2025-07-28 22:07:06 INFO  LoginTests:38 - Clicking submit...
+2025-07-28 22:07:06 INFO  LoginPage:53 - Clicked login button.
+2025-07-28 22:07:06 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-28 22:07:07 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-28 22:07:07 INFO  LoginTests:88 - Finished test case: TC20
+2025-07-28 22:07:10 INFO  LoginTests:29 - Starting test case: TC23
+2025-07-28 22:07:10 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-28 22:07:10 INFO  LoginPage:44 - Entered password.
+2025-07-28 22:07:10 INFO  LoginTests:38 - Clicking submit...
+2025-07-28 22:07:10 INFO  LoginPage:53 - Clicked login button.
+2025-07-28 22:07:10 INFO  LoginTests:46 - Expecting successful login...
+2025-07-28 22:07:12 INFO  LoginTests:52 - Login successful for: testprovider@gmail.com
+2025-07-28 22:07:12 INFO  LoginTests:81 - Waiting to prevent rate-limiting...
+2025-07-28 22:07:17 INFO  LoginTests:88 - Finished test case: TC23
+2025-07-28 22:07:20 INFO  LoginTests:29 - Starting test case: TC24
+2025-07-28 22:07:20 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-07-28 22:07:20 INFO  LoginPage:44 - Entered password.
+2025-07-28 22:07:20 INFO  LoginTests:38 - Clicking submit...
+2025-07-28 22:07:20 INFO  LoginPage:53 - Clicked login button.
+2025-07-28 22:07:20 INFO  LoginTests:46 - Expecting successful login...
+2025-07-28 22:07:34 INFO  LoginTests:93 - Starting TC09 - Forgot Password flow
+2025-07-28 22:07:34 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-28 22:07:34 INFO  LoginTests:102 - Clicked 'Forgot Password'
+2025-07-28 22:07:35 INFO  LoginTests:109 - Reset password alert displayed successfully
+2025-07-28 22:07:39 INFO  LoginTests:114 - Starting TC25 - Epic Login Redirect test
+2025-07-28 22:07:39 INFO  LoginPage:88 - Clicked Epic login button.
+2025-07-28 22:07:53 INFO  LoginPage:90 - Redirected to Epic login URL.
+2025-07-28 22:07:53 INFO  LoginTests:123 - Epic login redirect successful
+2025-07-28 22:07:54 INFO  DoctorDashboardTest:31 - Setting up browser and logging in as Doctor
+2025-07-28 22:07:57 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-28 22:07:57 INFO  LoginPage:44 - Entered password.
+2025-07-28 22:07:57 INFO  LoginPage:53 - Clicked login button.
+2025-07-28 22:07:57 INFO  DoctorDashboardTest:53 - Login successful
+2025-07-28 22:07:57 INFO  DoctorDashboardTest:73 - Executing TC07 - Language Toggle
+2025-07-28 22:08:00 INFO  DoctorDashboardTest:77 - Language toggle dropdown clicked
+2025-07-28 22:08:00 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:08:01 INFO  DoctorDashboardTest:82 - Executing TC08 - Dark to Light Theme Toggle
+2025-07-28 22:08:01 INFO  DoctorDashboardPage:35 - Selecting Dark Mode
+2025-07-28 22:08:02 INFO  DoctorDashboardPage:39 - Dark Mode selected
+2025-07-28 22:08:02 INFO  DoctorDashboardTest:84 - Dark mode selected
+2025-07-28 22:08:02 INFO  DoctorDashboardPage:43 - Selecting Light Mode
+2025-07-28 22:08:03 INFO  DoctorDashboardPage:47 - Light Mode selected
+2025-07-28 22:08:03 INFO  DoctorDashboardTest:87 - Light mode selected
+2025-07-28 22:08:04 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:08:05 INFO  DoctorDashboardTest:93 - Executing TC09 - Filter by Task ID
+2025-07-28 22:08:05 INFO  DoctorDashboardPage:63 - Entering Task ID filter: 120061
+2025-07-28 22:08:07 INFO  DoctorDashboardTest:96 - Filtered with Task ID: 120061
+2025-07-28 22:08:18 WARN  DoctorDashboardPage:76 - Task ID 120061 not found
+2025-07-28 22:08:18 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:08:18 INFO  DoctorDashboardTest:102 - Executing TC10 - Sort by Task ID
+2025-07-28 22:08:18 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-28 22:08:20 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:08:21 INFO  DoctorDashboardTest:112 - Executing TC11 - Sort by Patient Initials
+2025-07-28 22:08:21 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-28 22:08:23 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:08:24 INFO  DoctorDashboardTest:122 - Executing TC12 - Sort by Status
+2025-07-28 22:08:24 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-28 22:08:25 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:08:26 INFO  DoctorDashboardTest:132 - Executing TC13 - Sort by Priority
+2025-07-28 22:08:26 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-28 22:08:28 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:08:29 INFO  DoctorDashboardTest:142 - Executing TC14 - Sort by Upload Date
+2025-07-28 22:08:29 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-28 22:08:31 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:08:32 INFO  DoctorDashboardTest:152 - Executing TC15 - Sort by Upload Time
+2025-07-28 22:08:32 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-28 22:08:34 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:08:35 INFO  DoctorDashboardTest:162 - Executing TC16 - Sort by Audio Duration
+2025-07-28 22:08:35 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-28 22:08:36 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:08:37 INFO  DoctorDashboardTest:172 - Executing TC17 - Filter by Status = In Progress
+2025-07-28 22:08:37 INFO  DoctorDashboardPage:115 - Filtering status: In Progress
+2025-07-28 22:08:44 ERROR DoctorDashboardPage:126 - No data or status rows not loaded
+2025-07-28 22:08:44 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:08:45 INFO  DoctorDashboardTest:180 - Executing TC18 - Filter by Priority = Medium
+2025-07-28 22:08:45 INFO  DoctorDashboardPage:154 - Filtering priority: Medium
+2025-07-28 22:08:52 ERROR DoctorDashboardPage:165 - No data or priority rows not loaded
+2025-07-28 22:08:52 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:08:53 INFO  DoctorDashboardTest:188 - Executing TC19 - View Task & Hide
+2025-07-28 22:08:55 INFO  DoctorDashboardPage:191 - First task ID: 120098
+2025-07-28 22:08:55 INFO  DoctorDashboardPage:197 - Clicking View button
+2025-07-28 22:08:55 INFO  DoctorDashboardPage:203 - Clicking first task in View dropdown
+2025-07-28 22:08:55 INFO  DoctorDashboardPage:208 - Verifying if Task ID 120098 is present in list
+2025-07-28 22:08:55 WARN  DoctorDashboardPage:215 - Task ID 120098 not found in list
+2025-07-28 22:08:55 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:08:56 INFO  DoctorDashboardTest:197 - Executing TC15 - Full Recording Flow: Pause → Review → Upload
+2025-07-28 22:08:56 INFO  DoctorDashboardTest:200 - Starting recording...
+2025-07-28 22:08:56 INFO  DoctorDashboardPage:256 - Starting recording...
+2025-07-28 22:09:07 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:09:08 INFO  DoctorDashboardTest:66 - Closing browser
+2025-07-28 22:09:08 INFO  ScribeDashboardTest:29 - Setting up browser and logging in as Scribe
+2025-07-28 22:09:12 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-07-28 22:09:12 INFO  LoginPage:44 - Entered password.
+2025-07-28 22:09:12 INFO  LoginPage:53 - Clicked login button.
+2025-07-28 22:09:12 INFO  ScribeDashboardTest:51 - Login successful
+2025-07-28 22:09:12 INFO  ScribeDashboardTest:72 - Executing TC01 - Dark to Light Theme Toggle
+2025-07-28 22:09:12 INFO  ScribeDashboardPage:35 - Selecting Dark Mode
+2025-07-28 22:09:15 INFO  ScribeDashboardPage:39 - Dark Mode selected
+2025-07-28 22:09:15 INFO  ScribeDashboardTest:74 - Dark mode selected
+2025-07-28 22:09:16 INFO  ScribeDashboardPage:43 - Selecting Light Mode
+2025-07-28 22:09:17 INFO  ScribeDashboardPage:47 - Light Mode selected
+2025-07-28 22:09:17 INFO  ScribeDashboardTest:77 - Light mode selected
+2025-07-28 22:09:18 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-28 22:09:21 INFO  ScribeDashboardTest:83 - Executing TC02 - Filter by Task ID
+2025-07-28 22:09:21 INFO  ScribeDashboardPage:55 - Entering Task ID filter: 120061
+2025-07-28 22:09:21 INFO  ScribeDashboardTest:86 - Filtered with Task ID: 120061
+2025-07-28 22:09:31 WARN  ScribeDashboardPage:68 - Task ID 120061 not found
+2025-07-28 22:09:31 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-28 22:09:34 INFO  ScribeDashboardTest:92 - Executing TC03 - Sort by Task ID
+2025-07-28 22:09:34 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-28 22:09:34 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-28 22:09:37 INFO  ScribeDashboardTest:102 - Executing TC04 - Sort by Patient Initials
+2025-07-28 22:09:37 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-28 22:09:37 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-28 22:09:40 INFO  ScribeDashboardTest:112 - Executing TC05 - Sort by Status
+2025-07-28 22:09:40 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-28 22:09:40 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-28 22:09:42 INFO  ScribeDashboardTest:122 - Executing TC06 - Sort by Priority
+2025-07-28 22:09:42 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-28 22:09:42 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-28 22:09:45 INFO  ScribeDashboardTest:132 - Executing TC07 - Sort by Upload Date
+2025-07-28 22:09:45 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-28 22:09:45 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-28 22:09:48 INFO  ScribeDashboardTest:142 - Executing TC08 - Sort by Upload Time
+2025-07-28 22:09:48 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-28 22:09:48 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-28 22:09:51 INFO  ScribeDashboardTest:152 - Executing TC09 - Sort by Audio Duration
+2025-07-28 22:09:51 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-28 22:09:51 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-28 22:09:54 INFO  ScribeDashboardTest:162 - Executing TC10 - Filter by Status = In Progress
+2025-07-28 22:09:54 INFO  ScribeDashboardPage:107 - Filtering status: In Progress
+2025-07-28 22:09:59 ERROR ScribeDashboardPage:118 - No data or status rows not loaded
+2025-07-28 22:09:59 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-28 22:10:02 INFO  ScribeDashboardTest:170 - Executing TC11 - Filter by Priority = Medium
+2025-07-28 22:10:02 INFO  ScribeDashboardPage:146 - Filtering priority: Medium
+2025-07-28 22:10:07 ERROR ScribeDashboardPage:157 - No data or priority rows not loaded
+2025-07-28 22:10:07 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-28 22:10:10 INFO  ScribeDashboardTest:178 - Executing TC12 - View Task & Hide
+2025-07-28 22:10:10 INFO  ScribeDashboardPage:183 - First task ID: 120098
+2025-07-28 22:10:10 INFO  ScribeDashboardPage:189 - Clicking View button
+2025-07-28 22:10:10 INFO  ScribeDashboardPage:195 - Clicking first task in View dropdown
+2025-07-28 22:10:10 INFO  ScribeDashboardPage:200 - Verifying if Task ID 120098 is present in list
+2025-07-28 22:10:10 WARN  ScribeDashboardPage:207 - Task ID 120098 not found in list
+2025-07-28 22:10:10 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-28 22:10:13 INFO  ScribeDashboardTest:65 - Closing browser
+2025-07-28 22:38:50 INFO  DoctorDashboardTest:31 - Setting up browser and logging in as Doctor
+2025-07-28 22:38:55 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-28 22:38:55 INFO  LoginPage:44 - Entered password.
+2025-07-28 22:38:55 INFO  LoginPage:53 - Clicked login button.
+2025-07-28 22:38:55 INFO  DoctorDashboardTest:53 - Login successful
+2025-07-28 22:38:55 INFO  DoctorDashboardTest:73 - Executing TC07 - Language Toggle
+2025-07-28 22:38:57 INFO  DoctorDashboardTest:77 - Language toggle dropdown clicked
+2025-07-28 22:38:57 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:38:59 INFO  DoctorDashboardTest:82 - Executing TC08 - Dark to Light Theme Toggle
+2025-07-28 22:38:59 INFO  DoctorDashboardPage:35 - Selecting Dark Mode
+2025-07-28 22:38:59 INFO  DoctorDashboardPage:39 - Dark Mode selected
+2025-07-28 22:38:59 INFO  DoctorDashboardTest:84 - Dark mode selected
+2025-07-28 22:38:59 INFO  DoctorDashboardPage:43 - Selecting Light Mode
+2025-07-28 22:39:00 INFO  DoctorDashboardPage:47 - Light Mode selected
+2025-07-28 22:39:00 INFO  DoctorDashboardTest:87 - Light mode selected
+2025-07-28 22:39:01 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:39:02 INFO  DoctorDashboardTest:93 - Executing TC09 - Filter by Task ID
+2025-07-28 22:39:02 INFO  DoctorDashboardPage:63 - Entering Task ID filter: 120061
+2025-07-28 22:39:04 INFO  DoctorDashboardTest:96 - Filtered with Task ID: 120061
+2025-07-28 22:39:14 WARN  DoctorDashboardPage:76 - Task ID 120061 not found
+2025-07-28 22:39:14 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:39:15 INFO  DoctorDashboardTest:102 - Executing TC10 - Sort by Task ID
+2025-07-28 22:39:15 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-28 22:39:17 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:39:18 INFO  DoctorDashboardTest:112 - Executing TC11 - Sort by Patient Initials
+2025-07-28 22:39:18 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-28 22:39:20 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:39:21 INFO  DoctorDashboardTest:122 - Executing TC12 - Sort by Status
+2025-07-28 22:39:21 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-28 22:39:22 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:39:23 INFO  DoctorDashboardTest:132 - Executing TC13 - Sort by Priority
+2025-07-28 22:39:23 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-28 22:39:25 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:39:26 INFO  DoctorDashboardTest:142 - Executing TC14 - Sort by Upload Date
+2025-07-28 22:39:26 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-28 22:39:28 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:39:29 INFO  DoctorDashboardTest:152 - Executing TC15 - Sort by Upload Time
+2025-07-28 22:39:29 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-28 22:39:30 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:39:31 INFO  DoctorDashboardTest:162 - Executing TC16 - Sort by Audio Duration
+2025-07-28 22:39:31 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-28 22:39:33 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:39:34 INFO  DoctorDashboardTest:172 - Executing TC17 - Filter by Status = In Progress
+2025-07-28 22:39:34 INFO  DoctorDashboardPage:115 - Filtering status: In Progress
+2025-07-28 22:39:42 ERROR DoctorDashboardPage:126 - No data or status rows not loaded
+2025-07-28 22:39:42 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:39:43 INFO  DoctorDashboardTest:180 - Executing TC18 - Filter by Priority = Medium
+2025-07-28 22:39:43 INFO  DoctorDashboardPage:154 - Filtering priority: Medium
+2025-07-28 22:39:50 ERROR DoctorDashboardPage:165 - No data or priority rows not loaded
+2025-07-28 22:39:50 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:39:51 INFO  DoctorDashboardTest:188 - Executing TC19 - View Task & Hide
+2025-07-28 22:39:52 INFO  DoctorDashboardPage:191 - First task ID: 120098
+2025-07-28 22:39:52 INFO  DoctorDashboardPage:197 - Clicking View button
+2025-07-28 22:39:52 INFO  DoctorDashboardPage:203 - Clicking first task in View dropdown
+2025-07-28 22:39:52 INFO  DoctorDashboardPage:208 - Verifying if Task ID 120098 is present in list
+2025-07-28 22:39:53 WARN  DoctorDashboardPage:215 - Task ID 120098 not found in list
+2025-07-28 22:39:53 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:39:53 INFO  DoctorDashboardTest:197 - Executing TC15 - Full Recording Flow: Pause → Review → Upload
+2025-07-28 22:39:53 INFO  DoctorDashboardTest:200 - Starting recording...
+2025-07-28 22:39:53 INFO  DoctorDashboardPage:256 - Starting recording...
+2025-07-28 22:40:01 INFO  DoctorDashboardTest:205 - Pausing recording...
+2025-07-28 22:40:01 INFO  DoctorDashboardPage:262 - Pausing recording...
+2025-07-28 22:40:11 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:40:13 INFO  DoctorDashboardTest:66 - Closing browser
+2025-07-28 22:59:40 INFO  DoctorDashboardTest:31 - Setting up browser and logging in as Doctor
+2025-07-28 22:59:45 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-28 22:59:45 INFO  LoginPage:44 - Entered password.
+2025-07-28 22:59:45 INFO  LoginPage:53 - Clicked login button.
+2025-07-28 22:59:45 INFO  DoctorDashboardTest:53 - Login successful
+2025-07-28 22:59:45 INFO  DoctorDashboardTest:73 - Executing TC07 - Language Toggle
+2025-07-28 22:59:47 INFO  DoctorDashboardTest:77 - Language toggle dropdown clicked
+2025-07-28 22:59:47 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:59:48 INFO  DoctorDashboardTest:82 - Executing TC08 - Dark to Light Theme Toggle
+2025-07-28 22:59:48 INFO  DoctorDashboardPage:35 - Selecting Dark Mode
+2025-07-28 22:59:48 INFO  DoctorDashboardPage:39 - Dark Mode selected
+2025-07-28 22:59:48 INFO  DoctorDashboardTest:84 - Dark mode selected
+2025-07-28 22:59:49 INFO  DoctorDashboardPage:43 - Selecting Light Mode
+2025-07-28 22:59:49 INFO  DoctorDashboardPage:47 - Light Mode selected
+2025-07-28 22:59:49 INFO  DoctorDashboardTest:87 - Light mode selected
+2025-07-28 22:59:50 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 22:59:51 INFO  DoctorDashboardTest:93 - Executing TC09 - Filter by Task ID
+2025-07-28 22:59:51 INFO  DoctorDashboardPage:63 - Entering Task ID filter: 120061
+2025-07-28 22:59:53 INFO  DoctorDashboardTest:96 - Filtered with Task ID: 120061
+2025-07-28 23:00:03 WARN  DoctorDashboardPage:76 - Task ID 120061 not found
+2025-07-28 23:00:03 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 23:00:04 INFO  DoctorDashboardTest:102 - Executing TC10 - Sort by Task ID
+2025-07-28 23:00:04 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-28 23:00:06 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 23:00:07 INFO  DoctorDashboardTest:112 - Executing TC11 - Sort by Patient Initials
+2025-07-28 23:00:07 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-28 23:00:09 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 23:00:10 INFO  DoctorDashboardTest:122 - Executing TC12 - Sort by Status
+2025-07-28 23:00:10 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-28 23:00:12 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 23:00:12 INFO  DoctorDashboardTest:132 - Executing TC13 - Sort by Priority
+2025-07-28 23:00:12 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-28 23:00:14 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 23:00:15 INFO  DoctorDashboardTest:142 - Executing TC14 - Sort by Upload Date
+2025-07-28 23:00:15 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-28 23:00:17 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 23:00:18 INFO  DoctorDashboardTest:152 - Executing TC15 - Sort by Upload Time
+2025-07-28 23:00:18 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-28 23:00:20 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 23:00:21 INFO  DoctorDashboardTest:162 - Executing TC16 - Sort by Audio Duration
+2025-07-28 23:00:21 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-28 23:00:22 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 23:00:23 INFO  DoctorDashboardTest:172 - Executing TC17 - Filter by Status = In Progress
+2025-07-28 23:00:23 INFO  DoctorDashboardPage:115 - Filtering status: In Progress
+2025-07-28 23:00:31 ERROR DoctorDashboardPage:126 - No data or status rows not loaded
+2025-07-28 23:00:31 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 23:00:31 INFO  DoctorDashboardTest:180 - Executing TC18 - Filter by Priority = Medium
+2025-07-28 23:00:31 INFO  DoctorDashboardPage:154 - Filtering priority: Medium
+2025-07-28 23:00:39 ERROR DoctorDashboardPage:165 - No data or priority rows not loaded
+2025-07-28 23:00:39 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 23:00:39 INFO  DoctorDashboardTest:188 - Executing TC19 - View Task & Hide
+2025-07-28 23:00:41 INFO  DoctorDashboardPage:191 - First task ID: 120098
+2025-07-28 23:00:41 INFO  DoctorDashboardPage:197 - Clicking View button
+2025-07-28 23:00:41 INFO  DoctorDashboardPage:203 - Clicking first task in View dropdown
+2025-07-28 23:00:41 INFO  DoctorDashboardPage:208 - Verifying if Task ID 120098 is present in list
+2025-07-28 23:00:41 WARN  DoctorDashboardPage:215 - Task ID 120098 not found in list
+2025-07-28 23:00:41 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 23:00:42 INFO  DoctorDashboardTest:197 - Executing TC15 - Full Recording Flow: Pause → Review → Upload
+2025-07-28 23:00:42 INFO  DoctorDashboardTest:200 - Starting recording...
+2025-07-28 23:00:42 INFO  DoctorDashboardPage:256 - Starting recording...
+2025-07-28 23:00:49 INFO  DoctorDashboardTest:205 - Pausing recording...
+2025-07-28 23:00:49 INFO  DoctorDashboardPage:262 - Pausing recording...
+2025-07-28 23:00:49 INFO  DoctorDashboardTest:211 - Opening Review popup...
+2025-07-28 23:00:50 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-28 23:00:51 INFO  DoctorDashboardTest:66 - Closing browser
+2025-07-29 15:24:15 INFO  DoctorDashboardTest:31 - Setting up browser and logging in as Doctor
+2025-07-29 15:24:22 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-29 15:24:22 INFO  LoginPage:44 - Entered password.
+2025-07-29 15:24:22 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 15:24:22 INFO  DoctorDashboardTest:53 - Login successful
+2025-07-29 15:24:22 INFO  DoctorDashboardTest:73 - Executing TC07 - Language Toggle
+2025-07-29 15:24:24 INFO  DoctorDashboardTest:77 - Language toggle dropdown clicked
+2025-07-29 15:24:24 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 15:24:26 INFO  DoctorDashboardTest:82 - Executing TC08 - Dark to Light Theme Toggle
+2025-07-29 15:24:26 INFO  DoctorDashboardPage:35 - Selecting Dark Mode
+2025-07-29 15:24:26 INFO  DoctorDashboardPage:39 - Dark Mode selected
+2025-07-29 15:24:26 INFO  DoctorDashboardTest:84 - Dark mode selected
+2025-07-29 15:24:27 INFO  DoctorDashboardPage:43 - Selecting Light Mode
+2025-07-29 15:24:27 INFO  DoctorDashboardPage:47 - Light Mode selected
+2025-07-29 15:24:27 INFO  DoctorDashboardTest:87 - Light mode selected
+2025-07-29 15:24:28 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 15:24:30 INFO  DoctorDashboardTest:93 - Executing TC09 - Filter by Task ID
+2025-07-29 15:24:30 INFO  DoctorDashboardPage:63 - Entering Task ID filter: 120061
+2025-07-29 15:24:32 INFO  DoctorDashboardTest:96 - Filtered with Task ID: 120061
+2025-07-29 15:24:42 WARN  DoctorDashboardPage:76 - Task ID 120061 not found
+2025-07-29 15:24:42 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 15:24:43 INFO  DoctorDashboardTest:102 - Executing TC10 - Sort by Task ID
+2025-07-29 15:24:43 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-29 15:24:45 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 15:24:45 INFO  DoctorDashboardTest:112 - Executing TC11 - Sort by Patient Initials
+2025-07-29 15:24:45 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-29 15:24:47 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 15:24:48 INFO  DoctorDashboardTest:122 - Executing TC12 - Sort by Status
+2025-07-29 15:24:48 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-29 15:24:50 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 15:24:51 INFO  DoctorDashboardTest:132 - Executing TC13 - Sort by Priority
+2025-07-29 15:24:51 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-29 15:24:53 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 15:24:54 INFO  DoctorDashboardTest:142 - Executing TC14 - Sort by Upload Date
+2025-07-29 15:24:54 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-29 15:24:55 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 15:24:56 INFO  DoctorDashboardTest:152 - Executing TC15 - Sort by Upload Time
+2025-07-29 15:24:56 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-29 15:24:58 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 15:24:59 INFO  DoctorDashboardTest:162 - Executing TC16 - Sort by Audio Duration
+2025-07-29 15:24:59 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-29 15:25:01 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 15:25:02 INFO  DoctorDashboardTest:172 - Executing TC17 - Filter by Status = In Progress
+2025-07-29 15:25:02 INFO  DoctorDashboardPage:115 - Filtering status: In Progress
+2025-07-29 15:25:11 ERROR DoctorDashboardPage:126 - No data or status rows not loaded
+2025-07-29 15:25:11 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 15:25:12 INFO  DoctorDashboardTest:180 - Executing TC18 - Filter by Priority = Medium
+2025-07-29 15:25:12 INFO  DoctorDashboardPage:154 - Filtering priority: Medium
+2025-07-29 15:25:19 ERROR DoctorDashboardPage:165 - No data or priority rows not loaded
+2025-07-29 15:25:19 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 15:25:20 INFO  DoctorDashboardTest:188 - Executing TC19 - View Task & Hide
+2025-07-29 15:25:22 INFO  DoctorDashboardPage:191 - First task ID: 120098
+2025-07-29 15:25:22 INFO  DoctorDashboardPage:197 - Clicking View button
+2025-07-29 15:25:22 INFO  DoctorDashboardPage:203 - Clicking first task in View dropdown
+2025-07-29 15:25:22 INFO  DoctorDashboardPage:208 - Verifying if Task ID 120098 is present in list
+2025-07-29 15:25:22 WARN  DoctorDashboardPage:215 - Task ID 120098 not found in list
+2025-07-29 15:25:22 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 15:25:23 INFO  DoctorDashboardTest:197 - Executing TC15 - Full Recording Flow: Pause → Review → Upload
+2025-07-29 15:25:23 INFO  DoctorDashboardTest:200 - Starting recording...
+2025-07-29 15:25:23 INFO  DoctorDashboardPage:256 - Starting recording...
+2025-07-29 15:25:33 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 15:25:35 INFO  DoctorDashboardTest:66 - Closing browser
+2025-07-29 16:38:21 INFO  DoctorDashboardTest:31 - Setting up browser and logging in as Doctor
+2025-07-29 16:38:26 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-29 16:38:26 INFO  LoginPage:44 - Entered password.
+2025-07-29 16:38:26 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 16:38:26 INFO  DoctorDashboardTest:53 - Login successful
+2025-07-29 16:38:26 INFO  DoctorDashboardTest:197 - Executing TC15 - Full Recording Flow: Pause → Review → Upload
+2025-07-29 16:38:26 INFO  DoctorDashboardTest:200 - Starting recording...
+2025-07-29 16:38:26 INFO  DoctorDashboardPage:256 - Starting recording...
+2025-07-29 16:38:35 INFO  DoctorDashboardTest:205 - Pausing recording...
+2025-07-29 16:38:35 INFO  DoctorDashboardPage:262 - Pausing recording...
+2025-07-29 16:38:35 INFO  DoctorDashboardTest:211 - Opening Review popup...
+2025-07-29 16:38:36 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 16:38:37 INFO  DoctorDashboardTest:66 - Closing browser
+2025-07-29 16:42:49 INFO  DoctorDashboardTest:31 - Setting up browser and logging in as Doctor
+2025-07-29 16:42:54 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-29 16:42:54 INFO  LoginPage:44 - Entered password.
+2025-07-29 16:42:54 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 16:42:54 INFO  DoctorDashboardTest:53 - Login successful
+2025-07-29 16:42:54 INFO  DoctorDashboardTest:197 - Executing TC15 - Full Recording Flow: Pause → Review → Upload
+2025-07-29 16:42:54 INFO  DoctorDashboardTest:200 - Starting recording...
+2025-07-29 16:42:54 INFO  DoctorDashboardPage:256 - Starting recording...
+2025-07-29 16:43:03 INFO  DoctorDashboardTest:205 - Pausing recording...
+2025-07-29 16:43:03 INFO  DoctorDashboardPage:262 - Pausing recording...
+2025-07-29 16:43:03 INFO  DoctorDashboardTest:211 - Opening Review popup...
+2025-07-29 16:43:03 INFO  DoctorDashboardTest:233 - Clicking 'Record Again'...
+2025-07-29 16:43:03 INFO  DoctorDashboardPage:294 - Clicking 'Record Again'...
+2025-07-29 16:43:15 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 16:43:16 INFO  DoctorDashboardTest:66 - Closing browser
+2025-07-29 16:45:33 INFO  DoctorDashboardTest:31 - Setting up browser and logging in as Doctor
+2025-07-29 16:45:37 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-29 16:45:37 INFO  LoginPage:44 - Entered password.
+2025-07-29 16:45:37 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 16:45:37 INFO  DoctorDashboardTest:53 - Login successful
+2025-07-29 16:45:38 INFO  DoctorDashboardTest:197 - Executing TC15 - Flow: Pause → Review → Record Again → Pause → Review → Upload
+2025-07-29 16:45:38 INFO  DoctorDashboardTest:200 - Starting first recording...
+2025-07-29 16:45:38 INFO  DoctorDashboardPage:256 - Starting recording...
+2025-07-29 16:45:46 INFO  DoctorDashboardTest:205 - Pausing first recording...
+2025-07-29 16:45:46 INFO  DoctorDashboardPage:262 - Pausing recording...
+2025-07-29 16:45:47 INFO  DoctorDashboardTest:211 - Opening first review popup...
+2025-07-29 16:45:47 INFO  DoctorDashboardTest:217 - Clicking 'Record Again'...
+2025-07-29 16:45:47 INFO  DoctorDashboardPage:294 - Clicking 'Record Again'...
+2025-07-29 16:45:58 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 16:45:59 INFO  DoctorDashboardTest:66 - Closing browser
+2025-07-29 16:49:44 INFO  DoctorDashboardTest:31 - Setting up browser and logging in as Doctor
+2025-07-29 16:49:49 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-29 16:49:49 INFO  LoginPage:44 - Entered password.
+2025-07-29 16:49:49 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 16:49:49 INFO  DoctorDashboardTest:53 - Login successful
+2025-07-29 16:49:49 INFO  DoctorDashboardTest:197 - Executing TC15 - Full Record → Pause → Review → Record Again → Upload Flow
+2025-07-29 16:49:49 INFO  DoctorDashboardTest:200 - Clicking Record...
+2025-07-29 16:49:49 INFO  DoctorDashboardPage:256 - Starting recording...
+2025-07-29 16:49:58 INFO  DoctorDashboardTest:205 - Clicking Pause...
+2025-07-29 16:49:58 INFO  DoctorDashboardPage:262 - Pausing recording...
+2025-07-29 16:49:58 INFO  DoctorDashboardTest:211 - Opening Review popup...
+2025-07-29 16:49:59 INFO  DoctorDashboardTest:217 - Clicking 'Record Again'...
+2025-07-29 16:49:59 INFO  DoctorDashboardPage:294 - Clicking 'Record Again'...
+2025-07-29 16:50:10 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 16:50:11 INFO  DoctorDashboardTest:66 - Closing browser
+2025-07-29 16:51:50 INFO  DoctorDashboardTest:31 - Setting up browser and logging in as Doctor
+2025-07-29 16:51:55 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-29 16:51:55 INFO  LoginPage:44 - Entered password.
+2025-07-29 16:51:55 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 16:51:55 INFO  DoctorDashboardTest:53 - Login successful
+2025-07-29 16:51:55 INFO  DoctorDashboardTest:197 - Executing TC15 - Record → Pause → Review → Record Again → Pause → Review → Upload
+2025-07-29 16:51:55 INFO  DoctorDashboardTest:200 - Step 1: Start recording...
+2025-07-29 16:51:55 INFO  DoctorDashboardPage:256 - Starting recording...
+2025-07-29 16:52:04 INFO  DoctorDashboardTest:205 - Step 2: Click Pause (should switch to Review)
+2025-07-29 16:52:04 INFO  DoctorDashboardPage:262 - Pausing recording...
+2025-07-29 16:52:04 INFO  DoctorDashboardTest:211 - Step 3: Open review popup
+2025-07-29 16:52:04 INFO  DoctorDashboardTest:216 - Step 4: Click 'Record Again'
+2025-07-29 16:52:04 INFO  DoctorDashboardPage:294 - Clicking 'Record Again'...
+2025-07-29 16:52:16 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 16:52:17 INFO  DoctorDashboardTest:66 - Closing browser
+2025-07-29 16:53:59 INFO  DoctorDashboardTest:31 - Setting up browser and logging in as Doctor
+2025-07-29 16:54:03 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-29 16:54:03 INFO  LoginPage:44 - Entered password.
+2025-07-29 16:54:03 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 16:54:03 INFO  DoctorDashboardTest:53 - Login successful
+2025-07-29 16:54:04 INFO  DoctorDashboardTest:197 - Executing TC15 - Record → Pause → Review → Record Again → Pause → Review → Upload
+2025-07-29 16:54:04 INFO  DoctorDashboardTest:200 - Step 1: Start recording...
+2025-07-29 16:54:04 INFO  DoctorDashboardPage:256 - Starting recording...
+2025-07-29 16:54:12 INFO  DoctorDashboardTest:205 - Step 2: Click Pause (should switch to Review)
+2025-07-29 16:54:12 INFO  DoctorDashboardPage:262 - Pausing recording...
+2025-07-29 16:54:12 INFO  DoctorDashboardTest:211 - Step 3: Open review popup
+2025-07-29 16:54:13 INFO  DoctorDashboardTest:216 - Step 4: Click 'Record Again'
+2025-07-29 16:54:13 INFO  DoctorDashboardPage:294 - Clicking 'Record Again'...
+2025-07-29 16:54:23 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 16:54:25 INFO  DoctorDashboardTest:66 - Closing browser
+2025-07-29 16:58:26 INFO  DoctorDashboardTest:31 - Setting up browser and logging in as Doctor
+2025-07-29 16:58:31 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-29 16:58:31 INFO  LoginPage:44 - Entered password.
+2025-07-29 16:58:31 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 16:58:31 INFO  DoctorDashboardTest:53 - Login successful
+2025-07-29 16:58:31 INFO  DoctorDashboardTest:197 - Executing TC15 - Record → Pause → Review → Record Again → Pause → Review → Upload
+2025-07-29 16:58:31 INFO  DoctorDashboardTest:200 - Step 1: Start recording...
+2025-07-29 16:58:31 INFO  DoctorDashboardPage:256 - Starting recording...
+2025-07-29 16:58:40 INFO  DoctorDashboardTest:205 - Step 2: Click Pause (should switch to Review)
+2025-07-29 16:58:40 INFO  DoctorDashboardPage:262 - Pausing recording...
+2025-07-29 16:58:40 INFO  DoctorDashboardTest:211 - Step 3: Open review popup
+2025-07-29 16:58:41 INFO  DoctorDashboardTest:216 - Step 4: Click 'Record Again'
+2025-07-29 16:58:41 INFO  DoctorDashboardPage:294 - Clicking 'Record Again'...
+2025-07-29 16:58:52 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 16:58:54 INFO  DoctorDashboardTest:66 - Closing browser
+2025-07-29 17:00:30 INFO  DoctorDashboardTest:31 - Setting up browser and logging in as Doctor
+2025-07-29 17:00:35 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-29 17:00:35 INFO  LoginPage:44 - Entered password.
+2025-07-29 17:00:35 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 17:00:35 INFO  DoctorDashboardTest:53 - Login successful
+2025-07-29 17:00:35 INFO  DoctorDashboardTest:197 - Executing TC15 - Record → Pause → Review → Record Again → Pause → Review → Upload
+2025-07-29 17:00:35 INFO  DoctorDashboardTest:200 - Step 1: Start recording...
+2025-07-29 17:00:35 INFO  DoctorDashboardPage:256 - Starting recording...
+2025-07-29 17:00:44 INFO  DoctorDashboardTest:205 - Step 2: Click Pause (should switch to Review)
+2025-07-29 17:00:44 INFO  DoctorDashboardPage:262 - Pausing recording...
+2025-07-29 17:00:44 INFO  DoctorDashboardTest:211 - Step 3: Open review popup
+2025-07-29 17:00:45 INFO  DoctorDashboardTest:216 - Step 4: Click 'Record Again'
+2025-07-29 17:00:45 INFO  DoctorDashboardPage:294 - Clicking 'Record Again'...
+2025-07-29 17:00:55 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:00:56 INFO  DoctorDashboardTest:66 - Closing browser
+2025-07-29 17:03:11 INFO  DoctorDashboardTest:31 - Setting up browser and logging in as Doctor
+2025-07-29 17:03:16 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-29 17:03:16 INFO  LoginPage:44 - Entered password.
+2025-07-29 17:03:16 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 17:03:16 INFO  DoctorDashboardTest:53 - Login successful
+2025-07-29 17:03:17 INFO  DoctorDashboardTest:197 - Executing TC15 - Record → Pause → Review → Record Again → Pause → Review → Upload
+2025-07-29 17:03:17 INFO  DoctorDashboardTest:200 - Step 1: Start recording...
+2025-07-29 17:03:17 INFO  DoctorDashboardPage:256 - Starting recording...
+2025-07-29 17:03:27 INFO  DoctorDashboardTest:205 - Step 2: Click Pause (should switch to Review)
+2025-07-29 17:03:27 INFO  DoctorDashboardPage:262 - Pausing recording...
+2025-07-29 17:03:27 INFO  DoctorDashboardTest:211 - Step 3: Open review popup
+2025-07-29 17:03:28 INFO  DoctorDashboardTest:216 - Step 4: Click 'Record Again'
+2025-07-29 17:03:28 INFO  DoctorDashboardPage:294 - Clicking 'Record Again'...
+2025-07-29 17:03:39 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:03:40 INFO  DoctorDashboardTest:66 - Closing browser
+2025-07-29 17:09:53 INFO  DoctorDashboardTest:31 - Setting up browser and logging in as Doctor
+2025-07-29 17:09:58 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-29 17:09:58 INFO  LoginPage:44 - Entered password.
+2025-07-29 17:09:59 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 17:09:59 INFO  DoctorDashboardTest:53 - Login successful
+2025-07-29 17:09:59 INFO  DoctorDashboardTest:197 - Executing TC15 - Record → Pause → Review → Record Again → Pause → Review → Upload
+2025-07-29 17:09:59 INFO  DoctorDashboardTest:200 - Step 1: Start recording...
+2025-07-29 17:09:59 INFO  DoctorDashboardPage:256 - Starting recording...
+2025-07-29 17:10:09 INFO  DoctorDashboardTest:205 - Step 2: Click Pause (should switch to Review)
+2025-07-29 17:10:09 INFO  DoctorDashboardPage:262 - Pausing recording...
+2025-07-29 17:10:09 INFO  DoctorDashboardTest:211 - Step 3: Open review popup
+2025-07-29 17:10:10 INFO  DoctorDashboardTest:216 - Step 4: Click 'Record Again'
+2025-07-29 17:10:10 INFO  DoctorDashboardPage:294 - Clicking 'Record Again'...
+2025-07-29 17:10:20 INFO  DoctorDashboardTest:223 - Step 2: Click Pause (should switch to Review)
+2025-07-29 17:10:20 INFO  DoctorDashboardPage:262 - Pausing recording...
+2025-07-29 17:10:20 INFO  DoctorDashboardTest:229 - Step 3: Open review popup
+2025-07-29 17:10:21 INFO  DoctorDashboardTest:234 - Step 7: Upload the recording
+2025-07-29 17:10:21 INFO  DoctorDashboardPage:288 - Uploading recordings...
+2025-07-29 17:10:31 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:10:32 INFO  DoctorDashboardTest:66 - Closing browser
+2025-07-29 17:13:02 INFO  DoctorDashboardTest:31 - Setting up browser and logging in as Doctor
+2025-07-29 17:13:07 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-29 17:13:07 INFO  LoginPage:44 - Entered password.
+2025-07-29 17:13:07 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 17:13:07 INFO  DoctorDashboardTest:53 - Login successful
+2025-07-29 17:13:07 INFO  DoctorDashboardTest:73 - Executing TC07 - Language Toggle
+2025-07-29 17:13:09 INFO  DoctorDashboardTest:77 - Language toggle dropdown clicked
+2025-07-29 17:13:09 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:13:11 INFO  DoctorDashboardTest:82 - Executing TC08 - Dark to Light Theme Toggle
+2025-07-29 17:13:11 INFO  DoctorDashboardPage:35 - Selecting Dark Mode
+2025-07-29 17:13:11 INFO  DoctorDashboardPage:39 - Dark Mode selected
+2025-07-29 17:13:11 INFO  DoctorDashboardTest:84 - Dark mode selected
+2025-07-29 17:13:12 INFO  DoctorDashboardPage:43 - Selecting Light Mode
+2025-07-29 17:13:13 INFO  DoctorDashboardPage:47 - Light Mode selected
+2025-07-29 17:13:13 INFO  DoctorDashboardTest:87 - Light mode selected
+2025-07-29 17:13:14 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:13:15 INFO  DoctorDashboardTest:93 - Executing TC09 - Filter by Task ID
+2025-07-29 17:13:15 INFO  DoctorDashboardPage:63 - Entering Task ID filter: 120061
+2025-07-29 17:13:17 INFO  DoctorDashboardTest:96 - Filtered with Task ID: 120061
+2025-07-29 17:13:27 WARN  DoctorDashboardPage:76 - Task ID 120061 not found
+2025-07-29 17:13:27 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:13:28 INFO  DoctorDashboardTest:102 - Executing TC10 - Sort by Task ID
+2025-07-29 17:13:28 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-29 17:13:29 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:13:30 INFO  DoctorDashboardTest:112 - Executing TC11 - Sort by Patient Initials
+2025-07-29 17:13:30 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-29 17:13:32 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:13:33 INFO  DoctorDashboardTest:122 - Executing TC12 - Sort by Status
+2025-07-29 17:13:33 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-29 17:13:35 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:13:36 INFO  DoctorDashboardTest:132 - Executing TC13 - Sort by Priority
+2025-07-29 17:13:36 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-29 17:13:37 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:13:38 INFO  DoctorDashboardTest:142 - Executing TC14 - Sort by Upload Date
+2025-07-29 17:13:38 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-29 17:13:40 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:13:41 INFO  DoctorDashboardTest:152 - Executing TC15 - Sort by Upload Time
+2025-07-29 17:13:41 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-29 17:13:43 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:13:44 INFO  DoctorDashboardTest:162 - Executing TC16 - Sort by Audio Duration
+2025-07-29 17:13:44 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-29 17:13:45 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:13:47 INFO  DoctorDashboardTest:172 - Executing TC17 - Filter by Status = In Progress
+2025-07-29 17:13:47 INFO  DoctorDashboardPage:115 - Filtering status: In Progress
+2025-07-29 17:13:54 ERROR DoctorDashboardPage:126 - No data or status rows not loaded
+2025-07-29 17:13:54 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:13:55 INFO  DoctorDashboardTest:180 - Executing TC18 - Filter by Priority = Medium
+2025-07-29 17:13:55 INFO  DoctorDashboardPage:154 - Filtering priority: Medium
+2025-07-29 17:14:02 ERROR DoctorDashboardPage:165 - No data or priority rows not loaded
+2025-07-29 17:14:02 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:14:03 INFO  DoctorDashboardTest:188 - Executing TC19 - View Task & Hide
+2025-07-29 17:14:05 INFO  DoctorDashboardPage:191 - First task ID: 120100
+2025-07-29 17:14:05 INFO  DoctorDashboardPage:197 - Clicking View button
+2025-07-29 17:14:05 INFO  DoctorDashboardPage:203 - Clicking first task in View dropdown
+2025-07-29 17:14:05 INFO  DoctorDashboardPage:208 - Verifying if Task ID 120100 is present in list
+2025-07-29 17:14:05 WARN  DoctorDashboardPage:215 - Task ID 120100 not found in list
+2025-07-29 17:14:05 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:14:06 INFO  DoctorDashboardTest:197 - Executing TC15 - Record → Pause → Review → Record Again → Pause → Review → Upload
+2025-07-29 17:14:06 INFO  DoctorDashboardTest:200 - Step 1: Start recording...
+2025-07-29 17:14:06 INFO  DoctorDashboardPage:256 - Starting recording...
+2025-07-29 17:14:16 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:14:17 INFO  DoctorDashboardTest:66 - Closing browser
+2025-07-29 17:28:00 INFO  LoginTests:23 - Loading login test data from Excel...
+2025-07-29 17:28:05 INFO  LoginTests:29 - Starting test case: TC01
+2025-07-29 17:28:05 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-29 17:28:05 INFO  LoginPage:44 - Entered password.
+2025-07-29 17:28:05 INFO  LoginTests:38 - Clicking submit...
+2025-07-29 17:28:05 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 17:28:05 INFO  LoginTests:46 - Expecting successful login...
+2025-07-29 17:28:07 INFO  LoginTests:52 - Login successful for: testprovider@gmail.com
+2025-07-29 17:28:07 INFO  LoginTests:88 - Finished test case: TC01
+2025-07-29 17:28:11 INFO  LoginTests:29 - Starting test case: TC02
+2025-07-29 17:28:11 INFO  LoginPage:33 - Entered email: wrongemail@example.com
+2025-07-29 17:28:11 INFO  LoginPage:44 - Entered password.
+2025-07-29 17:28:11 INFO  LoginTests:38 - Clicking submit...
+2025-07-29 17:28:11 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 17:28:11 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-29 17:28:12 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-29 17:28:12 INFO  LoginTests:88 - Finished test case: TC02
+2025-07-29 17:28:15 INFO  LoginTests:29 - Starting test case: TC03
+2025-07-29 17:28:15 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-29 17:28:15 INFO  LoginPage:44 - Entered password.
+2025-07-29 17:28:15 INFO  LoginTests:38 - Clicking submit...
+2025-07-29 17:28:15 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 17:28:15 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-29 17:28:16 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-29 17:28:16 INFO  LoginTests:88 - Finished test case: TC03
+2025-07-29 17:28:20 INFO  LoginTests:29 - Starting test case: TC04
+2025-07-29 17:28:20 INFO  LoginPage:33 - Entered email: 
+2025-07-29 17:28:20 INFO  LoginPage:44 - Entered password.
+2025-07-29 17:28:20 INFO  LoginTests:38 - Clicking submit...
+2025-07-29 17:28:20 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 17:28:20 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-29 17:28:21 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-29 17:28:21 INFO  LoginTests:88 - Finished test case: TC04
+2025-07-29 17:28:24 INFO  LoginTests:29 - Starting test case: TC05
+2025-07-29 17:28:24 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-29 17:28:24 INFO  LoginPage:44 - Entered password.
+2025-07-29 17:28:24 INFO  LoginTests:38 - Clicking submit...
+2025-07-29 17:28:24 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 17:28:24 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-29 17:28:25 INFO  LoginPage:62 - Captured error message: Password must be at least 8 characters.
+2025-07-29 17:28:25 INFO  LoginTests:88 - Finished test case: TC05
+2025-07-29 17:28:29 INFO  LoginTests:29 - Starting test case: TC06
+2025-07-29 17:28:29 INFO  LoginPage:33 - Entered email: 
+2025-07-29 17:28:29 INFO  LoginPage:44 - Entered password.
+2025-07-29 17:28:29 INFO  LoginTests:38 - Clicking submit...
+2025-07-29 17:28:29 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 17:28:29 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-29 17:28:30 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-29 17:28:30 INFO  LoginTests:88 - Finished test case: TC06
+2025-07-29 17:28:33 INFO  LoginTests:29 - Starting test case: TC07
+2025-07-29 17:28:33 INFO  LoginPage:33 - Entered email: doctor@@example
+2025-07-29 17:28:33 INFO  LoginPage:44 - Entered password.
+2025-07-29 17:28:33 INFO  LoginTests:38 - Clicking submit...
+2025-07-29 17:28:33 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 17:28:33 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-29 17:28:34 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-29 17:28:34 INFO  LoginTests:88 - Finished test case: TC07
+2025-07-29 17:28:38 INFO  LoginTests:29 - Starting test case: TC10
+2025-07-29 17:28:38 INFO  LoginPage:33 - Entered email: special@!#$.com
+2025-07-29 17:28:38 INFO  LoginPage:44 - Entered password.
+2025-07-29 17:28:38 INFO  LoginTests:38 - Clicking submit...
+2025-07-29 17:28:38 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 17:28:38 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-29 17:28:39 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-29 17:28:39 INFO  LoginTests:88 - Finished test case: TC10
+2025-07-29 17:28:42 INFO  LoginTests:29 - Starting test case: TC11
+2025-07-29 17:28:42 INFO  LoginPage:33 - Entered email: verylongemail@exampletoolonglonglongdomain.com
+2025-07-29 17:28:42 INFO  LoginPage:44 - Entered password.
+2025-07-29 17:28:42 INFO  LoginTests:38 - Clicking submit...
+2025-07-29 17:28:42 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 17:28:42 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-29 17:28:43 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-29 17:28:43 INFO  LoginTests:88 - Finished test case: TC11
+2025-07-29 17:28:47 INFO  LoginTests:29 - Starting test case: TC12
+2025-07-29 17:28:47 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-29 17:28:47 INFO  LoginPage:44 - Entered password.
+2025-07-29 17:28:47 INFO  LoginTests:38 - Clicking submit...
+2025-07-29 17:28:47 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 17:28:47 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-29 17:28:48 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-29 17:28:48 INFO  LoginTests:88 - Finished test case: TC12
+2025-07-29 17:28:51 INFO  LoginTests:29 - Starting test case: TC15
+2025-07-29 17:28:51 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-29 17:28:51 INFO  LoginPage:44 - Entered password.
+2025-07-29 17:28:51 INFO  LoginTests:38 - Clicking submit...
+2025-07-29 17:28:51 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 17:28:51 INFO  LoginTests:46 - Expecting successful login...
+2025-07-29 17:28:53 INFO  LoginTests:52 - Login successful for: testprovider@gmail.com
+2025-07-29 17:28:53 INFO  LoginTests:81 - Waiting to prevent rate-limiting...
+2025-07-29 17:28:58 INFO  LoginTests:88 - Finished test case: TC15
+2025-07-29 17:29:01 INFO  LoginTests:29 - Starting test case: TC19
+2025-07-29 17:29:01 INFO  LoginPage:33 - Entered email: Testprovider@gmail.com
+2025-07-29 17:29:01 INFO  LoginPage:44 - Entered password.
+2025-07-29 17:29:01 INFO  LoginTests:38 - Clicking submit...
+2025-07-29 17:29:01 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 17:29:01 INFO  LoginTests:46 - Expecting successful login...
+2025-07-29 17:29:04 INFO  LoginTests:52 - Login successful for: Testprovider@gmail.com
+2025-07-29 17:29:04 INFO  LoginTests:88 - Finished test case: TC19
+2025-07-29 17:29:07 INFO  LoginTests:29 - Starting test case: TC20
+2025-07-29 17:29:07 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-29 17:29:07 INFO  LoginPage:44 - Entered password.
+2025-07-29 17:29:07 INFO  LoginTests:38 - Clicking submit...
+2025-07-29 17:29:07 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 17:29:07 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-29 17:29:08 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-29 17:29:08 INFO  LoginTests:88 - Finished test case: TC20
+2025-07-29 17:29:12 INFO  LoginTests:29 - Starting test case: TC23
+2025-07-29 17:29:12 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-29 17:29:12 INFO  LoginPage:44 - Entered password.
+2025-07-29 17:29:12 INFO  LoginTests:38 - Clicking submit...
+2025-07-29 17:29:12 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 17:29:12 INFO  LoginTests:46 - Expecting successful login...
+2025-07-29 17:29:14 INFO  LoginTests:52 - Login successful for: testprovider@gmail.com
+2025-07-29 17:29:14 INFO  LoginTests:81 - Waiting to prevent rate-limiting...
+2025-07-29 17:29:19 INFO  LoginTests:88 - Finished test case: TC23
+2025-07-29 17:29:22 INFO  LoginTests:29 - Starting test case: TC24
+2025-07-29 17:29:22 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-07-29 17:29:22 INFO  LoginPage:44 - Entered password.
+2025-07-29 17:29:22 INFO  LoginTests:38 - Clicking submit...
+2025-07-29 17:29:22 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 17:29:22 INFO  LoginTests:46 - Expecting successful login...
+2025-07-29 17:29:24 INFO  LoginTests:52 - Login successful for: testscribe@gmail.com
+2025-07-29 17:29:24 INFO  LoginTests:88 - Finished test case: TC24
+2025-07-29 17:29:27 INFO  LoginTests:93 - Starting TC09 - Forgot Password flow
+2025-07-29 17:29:27 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-29 17:29:27 INFO  LoginTests:102 - Clicked 'Forgot Password'
+2025-07-29 17:29:30 INFO  LoginTests:109 - Reset password alert displayed successfully
+2025-07-29 17:29:34 INFO  LoginTests:114 - Starting TC25 - Epic Login Redirect test
+2025-07-29 17:29:34 INFO  LoginPage:88 - Clicked Epic login button.
+2025-07-29 17:29:48 INFO  LoginPage:90 - Redirected to Epic login URL.
+2025-07-29 17:29:48 INFO  LoginTests:123 - Epic login redirect successful
+2025-07-29 17:29:48 INFO  ScribeDashboardTest:29 - Setting up browser and logging in as Scribe
+2025-07-29 17:29:52 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-07-29 17:29:52 INFO  LoginPage:44 - Entered password.
+2025-07-29 17:29:52 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 17:29:52 INFO  ScribeDashboardTest:51 - Login successful
+2025-07-29 17:29:52 INFO  ScribeDashboardTest:72 - Executing TC01 - Dark to Light Theme Toggle
+2025-07-29 17:29:52 INFO  ScribeDashboardPage:35 - Selecting Dark Mode
+2025-07-29 17:29:54 INFO  ScribeDashboardPage:39 - Dark Mode selected
+2025-07-29 17:29:54 INFO  ScribeDashboardTest:74 - Dark mode selected
+2025-07-29 17:29:55 INFO  ScribeDashboardPage:43 - Selecting Light Mode
+2025-07-29 17:29:55 INFO  ScribeDashboardPage:47 - Light Mode selected
+2025-07-29 17:29:55 INFO  ScribeDashboardTest:77 - Light mode selected
+2025-07-29 17:29:57 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-29 17:29:59 INFO  ScribeDashboardTest:83 - Executing TC02 - Filter by Task ID
+2025-07-29 17:29:59 INFO  ScribeDashboardPage:55 - Entering Task ID filter: 120061
+2025-07-29 17:30:00 INFO  ScribeDashboardTest:86 - Filtered with Task ID: 120061
+2025-07-29 17:30:10 WARN  ScribeDashboardPage:68 - Task ID 120061 not found
+2025-07-29 17:30:10 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-29 17:30:14 INFO  ScribeDashboardTest:92 - Executing TC03 - Sort by Task ID
+2025-07-29 17:30:14 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-29 17:30:14 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-29 17:30:17 INFO  ScribeDashboardTest:102 - Executing TC04 - Sort by Patient Initials
+2025-07-29 17:30:17 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-29 17:30:17 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-29 17:30:20 INFO  ScribeDashboardTest:112 - Executing TC05 - Sort by Status
+2025-07-29 17:30:20 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-29 17:30:20 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-29 17:30:22 INFO  ScribeDashboardTest:122 - Executing TC06 - Sort by Priority
+2025-07-29 17:30:22 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-29 17:30:22 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-29 17:30:25 INFO  ScribeDashboardTest:132 - Executing TC07 - Sort by Upload Date
+2025-07-29 17:30:25 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-29 17:30:25 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-29 17:30:28 INFO  ScribeDashboardTest:142 - Executing TC08 - Sort by Upload Time
+2025-07-29 17:30:28 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-29 17:30:28 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-29 17:30:31 INFO  ScribeDashboardTest:152 - Executing TC09 - Sort by Audio Duration
+2025-07-29 17:30:31 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-29 17:30:31 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-29 17:30:34 INFO  ScribeDashboardTest:162 - Executing TC10 - Filter by Status = In Progress
+2025-07-29 17:30:34 INFO  ScribeDashboardPage:107 - Filtering status: In Progress
+2025-07-29 17:30:39 ERROR ScribeDashboardPage:118 - No data or status rows not loaded
+2025-07-29 17:30:39 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-29 17:30:42 INFO  ScribeDashboardTest:170 - Executing TC11 - Filter by Priority = Medium
+2025-07-29 17:30:42 INFO  ScribeDashboardPage:146 - Filtering priority: Medium
+2025-07-29 17:30:48 ERROR ScribeDashboardPage:157 - No data or priority rows not loaded
+2025-07-29 17:30:48 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-29 17:30:51 INFO  ScribeDashboardTest:178 - Executing TC12 - View Task & Hide
+2025-07-29 17:30:52 INFO  ScribeDashboardPage:183 - First task ID: 120100
+2025-07-29 17:30:52 INFO  ScribeDashboardPage:189 - Clicking View button
+2025-07-29 17:30:52 INFO  ScribeDashboardPage:195 - Clicking first task in View dropdown
+2025-07-29 17:30:52 INFO  ScribeDashboardPage:200 - Verifying if Task ID 120100 is present in list
+2025-07-29 17:30:52 WARN  ScribeDashboardPage:207 - Task ID 120100 not found in list
+2025-07-29 17:30:52 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-29 17:30:54 INFO  ScribeDashboardTest:65 - Closing browser
+2025-07-29 17:30:54 INFO  DoctorDashboardTest:31 - Setting up browser and logging in as Doctor
+2025-07-29 17:30:58 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-29 17:30:58 INFO  LoginPage:44 - Entered password.
+2025-07-29 17:30:58 INFO  LoginPage:53 - Clicked login button.
+2025-07-29 17:30:58 INFO  DoctorDashboardTest:53 - Login successful
+2025-07-29 17:30:58 INFO  DoctorDashboardTest:73 - Executing TC07 - Language Toggle
+2025-07-29 17:31:00 INFO  DoctorDashboardTest:77 - Language toggle dropdown clicked
+2025-07-29 17:31:00 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:31:01 INFO  DoctorDashboardTest:82 - Executing TC08 - Dark to Light Theme Toggle
+2025-07-29 17:31:01 INFO  DoctorDashboardPage:35 - Selecting Dark Mode
+2025-07-29 17:31:02 INFO  DoctorDashboardPage:39 - Dark Mode selected
+2025-07-29 17:31:02 INFO  DoctorDashboardTest:84 - Dark mode selected
+2025-07-29 17:31:02 INFO  DoctorDashboardPage:43 - Selecting Light Mode
+2025-07-29 17:31:03 INFO  DoctorDashboardPage:47 - Light Mode selected
+2025-07-29 17:31:03 INFO  DoctorDashboardTest:87 - Light mode selected
+2025-07-29 17:31:04 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:31:05 INFO  DoctorDashboardTest:93 - Executing TC09 - Filter by Task ID
+2025-07-29 17:31:05 INFO  DoctorDashboardPage:63 - Entering Task ID filter: 120061
+2025-07-29 17:31:07 INFO  DoctorDashboardTest:96 - Filtered with Task ID: 120061
+2025-07-29 17:31:17 WARN  DoctorDashboardPage:76 - Task ID 120061 not found
+2025-07-29 17:31:17 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:31:18 INFO  DoctorDashboardTest:102 - Executing TC10 - Sort by Task ID
+2025-07-29 17:31:18 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-29 17:31:20 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:31:21 INFO  DoctorDashboardTest:112 - Executing TC11 - Sort by Patient Initials
+2025-07-29 17:31:21 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-29 17:31:22 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:31:23 INFO  DoctorDashboardTest:122 - Executing TC12 - Sort by Status
+2025-07-29 17:31:23 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-29 17:31:25 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:31:26 INFO  DoctorDashboardTest:132 - Executing TC13 - Sort by Priority
+2025-07-29 17:31:26 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-29 17:31:28 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:31:29 INFO  DoctorDashboardTest:142 - Executing TC14 - Sort by Upload Date
+2025-07-29 17:31:29 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-29 17:31:31 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:31:31 INFO  DoctorDashboardTest:152 - Executing TC15 - Sort by Upload Time
+2025-07-29 17:31:31 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-29 17:31:33 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:31:34 INFO  DoctorDashboardTest:162 - Executing TC16 - Sort by Audio Duration
+2025-07-29 17:31:34 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-29 17:31:36 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:31:37 INFO  DoctorDashboardTest:172 - Executing TC17 - Filter by Status = In Progress
+2025-07-29 17:31:37 INFO  DoctorDashboardPage:115 - Filtering status: In Progress
+2025-07-29 17:31:45 ERROR DoctorDashboardPage:126 - No data or status rows not loaded
+2025-07-29 17:31:45 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:31:46 INFO  DoctorDashboardTest:180 - Executing TC18 - Filter by Priority = Medium
+2025-07-29 17:31:46 INFO  DoctorDashboardPage:154 - Filtering priority: Medium
+2025-07-29 17:31:53 ERROR DoctorDashboardPage:165 - No data or priority rows not loaded
+2025-07-29 17:31:53 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:31:54 INFO  DoctorDashboardTest:188 - Executing TC19 - View Task & Hide
+2025-07-29 17:31:56 INFO  DoctorDashboardPage:191 - First task ID: 120100
+2025-07-29 17:31:56 INFO  DoctorDashboardPage:197 - Clicking View button
+2025-07-29 17:31:56 INFO  DoctorDashboardPage:203 - Clicking first task in View dropdown
+2025-07-29 17:31:56 INFO  DoctorDashboardPage:208 - Verifying if Task ID 120100 is present in list
+2025-07-29 17:31:56 WARN  DoctorDashboardPage:215 - Task ID 120100 not found in list
+2025-07-29 17:31:56 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:31:57 INFO  DoctorDashboardTest:197 - Executing TC15 - Record → Pause → Review → Record Again → Pause → Review → Upload
+2025-07-29 17:31:57 INFO  DoctorDashboardTest:200 - Step 1: Start recording...
+2025-07-29 17:31:57 INFO  DoctorDashboardPage:256 - Starting recording...
+2025-07-29 17:32:07 INFO  DoctorDashboardTest:58 - Refreshing page after test
+2025-07-29 17:32:08 INFO  DoctorDashboardTest:66 - Closing browser
