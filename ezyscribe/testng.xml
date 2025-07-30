@@ -8,8 +8,7 @@
    		   <class name="tests.LoginTests"/> 
      	 <class name="tests.DoctorDashboardTest"/> 
      	  <class name="tests.ScribeDashboardTest">
-     	  
-     <!-- <methods>
+     	   <!-- <methods>
           <include name="verifyFilterByTaskId"/>
         </methods>--> 
         </class>
