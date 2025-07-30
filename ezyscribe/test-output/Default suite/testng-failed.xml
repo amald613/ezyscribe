@@ -5,11 +5,9 @@
     <classes>
       <class name="tests.DoctorDashboardTest">
         <methods>
-          <include name="verifySortByUploadTimeActuallySorts"/>
-          <include name="verifyFilterByTaskId"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="verifyFilterByStatusInProgress"/>
+          <include name="verifyRecordingWorkflow_ReviewAfterRecordAgain"/>
           <include name="refreshPageAfterEachTest"/>
         </methods>
       </class> <!-- tests.DoctorDashboardTest -->

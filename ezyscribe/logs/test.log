@@ -4278,3 +4278,839 @@ Session ID: d4f1183ee6605f7238579ce3e87182ee
 2025-07-30 21:35:18 WARN  ScribeDashboardPage:207 - Task ID 120120 not found in list
 2025-07-30 21:35:18 INFO  ScribeDashboardTest:56 - Refreshing page after test
 2025-07-30 21:35:20 INFO  ScribeDashboardTest:65 - Closing browser
+2025-07-30 21:39:43 INFO  DoctorDashboardTest:31 - Setting up Brave browser with mic permissions and logging in as Doctor
+2025-07-30 21:39:45 ERROR LoginPage:35 - Failed to enter email: testprovider@gmail.com
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='email']"}
+  (Session info: chrome=138.0.7204.168)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b286c7ab7abf71e3c6dc154543111fb, findElement {using=name, value=email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.168, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Temp\BraveProfile}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63171}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63171/devtoo..., se:cdpVersion: 138.0.7204.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b286c7ab7abf71e3c6dc154543111fb
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.21.0.jar:?]
+	at pages.LoginPage.enterEmail(LoginPage.java:30) ~[classes/:?]
+	at tests.DoctorDashboardTest.setup(DoctorDashboardTest.java:59) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-07-30 21:39:45 ERROR LoginPage:46 - Failed to enter password.
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='password']"}
+  (Session info: chrome=138.0.7204.168)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b286c7ab7abf71e3c6dc154543111fb, findElement {using=name, value=password}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.168, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Temp\BraveProfile}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63171}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63171/devtoo..., se:cdpVersion: 138.0.7204.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b286c7ab7abf71e3c6dc154543111fb
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.21.0.jar:?]
+	at pages.LoginPage.enterPassword(LoginPage.java:41) ~[classes/:?]
+	at tests.DoctorDashboardTest.setup(DoctorDashboardTest.java:60) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-07-30 21:39:45 ERROR LoginPage:55 - Failed to click login button.
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@type='submit']"}
+  (Session info: chrome=138.0.7204.168)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b286c7ab7abf71e3c6dc154543111fb, findElement {using=xpath, value=//button[@type='submit']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.168, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Temp\BraveProfile}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63171}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63171/devtoo..., se:cdpVersion: 138.0.7204.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b286c7ab7abf71e3c6dc154543111fb
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.21.0.jar:?]
+	at pages.LoginPage.clickSubmit(LoginPage.java:52) ~[classes/:?]
+	at tests.DoctorDashboardTest.setup(DoctorDashboardTest.java:61) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-07-30 21:39:45 INFO  DoctorDashboardTest:64 - Login successful and browser configured for mic access
+2025-07-30 21:39:45 INFO  DoctorDashboardTest:216 - Executing TC15 - Record → Pause → Review → Record Again → Pause → Review → Upload
+2025-07-30 21:39:45 INFO  DoctorDashboardTest:219 - [Step 1] Starting initial recording...
+2025-07-30 21:39:45 INFO  DoctorDashboardPage:256 - Starting recording...
+2025-07-30 21:39:49 INFO  DoctorDashboardTest:224 - [Step 2] Pausing recording (Pause changes to Review)...
+2025-07-30 21:39:49 INFO  DoctorDashboardPage:262 - Pausing recording...
+2025-07-30 21:39:49 INFO  DoctorDashboardTest:230 - [Step 3] Opening Review popup...
+2025-07-30 21:39:49 INFO  DoctorDashboardTest:236 - [Step 4] Clicking 'Record Again'...
+2025-07-30 21:39:49 INFO  DoctorDashboardPage:294 - Clicking 'Record Again'...
+2025-07-30 21:39:50 INFO  DoctorDashboardTest:240 - [Step 5] Pausing second recording (Pause changes to Review)...
+2025-07-30 21:39:50 INFO  DoctorDashboardPage:262 - Pausing recording...
+2025-07-30 21:39:50 INFO  DoctorDashboardTest:246 - [Step 6] Opening Review popup again...
+2025-07-30 21:40:00 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 21:40:01 INFO  DoctorDashboardTest:78 - Closing browser
+2025-07-30 21:41:21 INFO  LoginTests:23 - Loading login test data from Excel...
+2025-07-30 21:41:25 INFO  LoginTests:29 - Starting test case: TC01
+2025-07-30 21:41:25 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-30 21:41:25 INFO  LoginPage:44 - Entered password.
+2025-07-30 21:41:25 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 21:41:25 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 21:41:25 INFO  LoginTests:46 - Expecting successful login...
+2025-07-30 21:41:27 INFO  LoginTests:52 - Login successful for: testprovider@gmail.com
+2025-07-30 21:41:27 INFO  LoginTests:88 - Finished test case: TC01
+2025-07-30 21:41:30 INFO  LoginTests:29 - Starting test case: TC02
+2025-07-30 21:41:30 INFO  LoginPage:33 - Entered email: wrongemail@example.com
+2025-07-30 21:41:30 INFO  LoginPage:44 - Entered password.
+2025-07-30 21:41:30 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 21:41:30 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 21:41:30 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-30 21:41:31 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-30 21:41:31 INFO  LoginTests:88 - Finished test case: TC02
+2025-07-30 21:41:35 INFO  LoginTests:29 - Starting test case: TC03
+2025-07-30 21:41:35 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-30 21:41:35 INFO  LoginPage:44 - Entered password.
+2025-07-30 21:41:35 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 21:41:35 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 21:41:35 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-30 21:41:36 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-30 21:41:36 INFO  LoginTests:88 - Finished test case: TC03
+2025-07-30 21:41:39 INFO  LoginTests:29 - Starting test case: TC04
+2025-07-30 21:41:39 INFO  LoginPage:33 - Entered email: 
+2025-07-30 21:41:39 INFO  LoginPage:44 - Entered password.
+2025-07-30 21:41:39 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 21:41:39 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 21:41:39 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-30 21:41:40 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-30 21:41:40 INFO  LoginTests:88 - Finished test case: TC04
+2025-07-30 21:41:43 INFO  LoginTests:29 - Starting test case: TC05
+2025-07-30 21:41:44 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-30 21:41:44 INFO  LoginPage:44 - Entered password.
+2025-07-30 21:41:44 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 21:41:44 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 21:41:44 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-30 21:41:45 INFO  LoginPage:62 - Captured error message: Password must be at least 8 characters.
+2025-07-30 21:41:45 INFO  LoginTests:88 - Finished test case: TC05
+2025-07-30 21:41:48 INFO  LoginTests:29 - Starting test case: TC06
+2025-07-30 21:41:48 INFO  LoginPage:33 - Entered email: 
+2025-07-30 21:41:48 INFO  LoginPage:44 - Entered password.
+2025-07-30 21:41:48 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 21:41:48 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 21:41:48 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-30 21:41:49 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-30 21:41:49 INFO  LoginTests:88 - Finished test case: TC06
+2025-07-30 21:41:52 INFO  LoginTests:29 - Starting test case: TC07
+2025-07-30 21:41:53 INFO  LoginPage:33 - Entered email: doctor@@example
+2025-07-30 21:41:53 INFO  LoginPage:44 - Entered password.
+2025-07-30 21:41:53 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 21:41:53 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 21:41:53 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-30 21:41:54 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-30 21:41:54 INFO  LoginTests:88 - Finished test case: TC07
+2025-07-30 21:41:57 INFO  LoginTests:29 - Starting test case: TC10
+2025-07-30 21:41:57 INFO  LoginPage:33 - Entered email: special@!#$.com
+2025-07-30 21:41:57 INFO  LoginPage:44 - Entered password.
+2025-07-30 21:41:57 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 21:41:57 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 21:41:57 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-30 21:41:58 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-30 21:41:58 INFO  LoginTests:88 - Finished test case: TC10
+2025-07-30 21:42:02 INFO  LoginTests:29 - Starting test case: TC11
+2025-07-30 21:42:02 INFO  LoginPage:33 - Entered email: verylongemail@exampletoolonglonglongdomain.com
+2025-07-30 21:42:02 INFO  LoginPage:44 - Entered password.
+2025-07-30 21:42:02 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 21:42:02 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 21:42:02 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-30 21:42:03 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-30 21:42:03 INFO  LoginTests:88 - Finished test case: TC11
+2025-07-30 21:42:06 INFO  LoginTests:29 - Starting test case: TC12
+2025-07-30 21:42:06 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-30 21:42:06 INFO  LoginPage:44 - Entered password.
+2025-07-30 21:42:06 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 21:42:06 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 21:42:06 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-30 21:42:07 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-30 21:42:07 INFO  LoginTests:88 - Finished test case: TC12
+2025-07-30 21:42:11 INFO  LoginTests:29 - Starting test case: TC15
+2025-07-30 21:42:11 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-30 21:42:11 INFO  LoginPage:44 - Entered password.
+2025-07-30 21:42:11 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 21:42:11 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 21:42:11 INFO  LoginTests:46 - Expecting successful login...
+2025-07-30 21:42:12 INFO  LoginTests:52 - Login successful for: testprovider@gmail.com
+2025-07-30 21:42:12 INFO  LoginTests:81 - Waiting to prevent rate-limiting...
+2025-07-30 21:42:17 INFO  LoginTests:88 - Finished test case: TC15
+2025-07-30 21:42:21 INFO  LoginTests:29 - Starting test case: TC19
+2025-07-30 21:42:21 INFO  LoginPage:33 - Entered email: Testprovider@gmail.com
+2025-07-30 21:42:21 INFO  LoginPage:44 - Entered password.
+2025-07-30 21:42:21 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 21:42:21 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 21:42:21 INFO  LoginTests:46 - Expecting successful login...
+2025-07-30 21:42:23 INFO  LoginTests:52 - Login successful for: Testprovider@gmail.com
+2025-07-30 21:42:23 INFO  LoginTests:88 - Finished test case: TC19
+2025-07-30 21:42:26 INFO  LoginTests:29 - Starting test case: TC20
+2025-07-30 21:42:26 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-30 21:42:26 INFO  LoginPage:44 - Entered password.
+2025-07-30 21:42:26 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 21:42:26 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 21:42:26 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-30 21:42:27 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-30 21:42:27 INFO  LoginTests:88 - Finished test case: TC20
+2025-07-30 21:42:30 INFO  LoginTests:29 - Starting test case: TC23
+2025-07-30 21:42:30 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-30 21:42:30 INFO  LoginPage:44 - Entered password.
+2025-07-30 21:42:30 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 21:42:31 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 21:42:31 INFO  LoginTests:46 - Expecting successful login...
+2025-07-30 21:42:32 INFO  LoginTests:52 - Login successful for: testprovider@gmail.com
+2025-07-30 21:42:32 INFO  LoginTests:81 - Waiting to prevent rate-limiting...
+2025-07-30 21:42:37 INFO  LoginTests:88 - Finished test case: TC23
+2025-07-30 21:42:40 INFO  LoginTests:29 - Starting test case: TC24
+2025-07-30 21:42:41 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-07-30 21:42:41 INFO  LoginPage:44 - Entered password.
+2025-07-30 21:42:41 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 21:42:41 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 21:42:41 INFO  LoginTests:46 - Expecting successful login...
+2025-07-30 21:42:42 INFO  LoginTests:52 - Login successful for: testscribe@gmail.com
+2025-07-30 21:42:42 INFO  LoginTests:88 - Finished test case: TC24
+2025-07-30 21:42:45 INFO  LoginTests:93 - Starting TC09 - Forgot Password flow
+2025-07-30 21:42:46 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-30 21:42:46 INFO  LoginTests:102 - Clicked 'Forgot Password'
+2025-07-30 21:42:47 INFO  LoginTests:109 - Reset password alert displayed successfully
+2025-07-30 21:42:50 INFO  LoginTests:114 - Starting TC25 - Epic Login Redirect test
+2025-07-30 21:42:50 INFO  LoginPage:88 - Clicked Epic login button.
+2025-07-30 21:43:05 INFO  LoginPage:90 - Redirected to Epic login URL.
+2025-07-30 21:43:05 INFO  LoginTests:123 - Epic login redirect successful
+2025-07-30 21:43:05 INFO  DoctorDashboardTest:31 - Setting up Brave browser with mic permissions and logging in as Doctor
+2025-07-30 21:43:08 ERROR LoginPage:35 - Failed to enter email: testprovider@gmail.com
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='email']"}
+  (Session info: chrome=138.0.7204.168)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aacd9ed879b4b5c357889065c7e5a0c9, findElement {value=email, using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.168, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Temp\BraveProfile}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63697}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63697/devtoo..., se:cdpVersion: 138.0.7204.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aacd9ed879b4b5c357889065c7e5a0c9
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.21.0.jar:?]
+	at pages.LoginPage.enterEmail(LoginPage.java:30) ~[classes/:?]
+	at tests.DoctorDashboardTest.setup(DoctorDashboardTest.java:59) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-07-30 21:43:08 ERROR LoginPage:46 - Failed to enter password.
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='password']"}
+  (Session info: chrome=138.0.7204.168)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aacd9ed879b4b5c357889065c7e5a0c9, findElement {value=password, using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.168, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Temp\BraveProfile}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63697}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63697/devtoo..., se:cdpVersion: 138.0.7204.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aacd9ed879b4b5c357889065c7e5a0c9
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.21.0.jar:?]
+	at pages.LoginPage.enterPassword(LoginPage.java:41) ~[classes/:?]
+	at tests.DoctorDashboardTest.setup(DoctorDashboardTest.java:60) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-07-30 21:43:08 ERROR LoginPage:55 - Failed to click login button.
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@type='submit']"}
+  (Session info: chrome=138.0.7204.168)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aacd9ed879b4b5c357889065c7e5a0c9, findElement {value=//button[@type='submit'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.168, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Temp\BraveProfile}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63697}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63697/devtoo..., se:cdpVersion: 138.0.7204.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aacd9ed879b4b5c357889065c7e5a0c9
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.21.0.jar:?]
+	at pages.LoginPage.clickSubmit(LoginPage.java:52) ~[classes/:?]
+	at tests.DoctorDashboardTest.setup(DoctorDashboardTest.java:61) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-07-30 21:43:08 INFO  DoctorDashboardTest:64 - Login successful and browser configured for mic access
+2025-07-30 21:43:08 INFO  DoctorDashboardTest:85 - Executing TC07 - Language Toggle
+2025-07-30 21:43:08 INFO  DoctorDashboardTest:89 - Language toggle dropdown clicked
+2025-07-30 21:43:08 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 21:43:09 INFO  DoctorDashboardTest:94 - Executing TC08 - Dark to Light Theme Toggle
+2025-07-30 21:43:09 INFO  DoctorDashboardPage:35 - Selecting Dark Mode
+2025-07-30 21:43:10 INFO  DoctorDashboardPage:39 - Dark Mode selected
+2025-07-30 21:43:10 INFO  DoctorDashboardTest:96 - Dark mode selected
+2025-07-30 21:43:10 INFO  DoctorDashboardPage:43 - Selecting Light Mode
+2025-07-30 21:43:11 INFO  DoctorDashboardPage:47 - Light Mode selected
+2025-07-30 21:43:11 INFO  DoctorDashboardTest:99 - Light mode selected
+2025-07-30 21:43:12 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 21:43:13 INFO  DoctorDashboardTest:104 - Executing TC09 - Filter by Task ID (Dynamic)
+2025-07-30 21:43:14 INFO  DoctorDashboardPage:191 - First task ID: 120120
+2025-07-30 21:43:14 INFO  DoctorDashboardTest:108 - Captured first Task ID from list: 120120
+2025-07-30 21:43:14 INFO  DoctorDashboardPage:63 - Entering Task ID filter: 120120
+2025-07-30 21:43:15 INFO  DoctorDashboardTest:112 - Filtered with Task ID: 120120
+2025-07-30 21:43:25 WARN  DoctorDashboardPage:76 - Task ID 120120 not found
+2025-07-30 21:43:25 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 21:43:25 INFO  DoctorDashboardTest:121 - Executing TC10 - Sort by Task ID
+2025-07-30 21:43:25 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-30 21:43:27 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 21:43:28 INFO  DoctorDashboardTest:131 - Executing TC11 - Sort by Patient Initials
+2025-07-30 21:43:28 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-30 21:43:30 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 21:43:31 INFO  DoctorDashboardTest:141 - Executing TC12 - Sort by Status
+2025-07-30 21:43:31 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-30 21:43:32 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 21:43:33 INFO  DoctorDashboardTest:151 - Executing TC13 - Sort by Priority
+2025-07-30 21:43:33 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-30 21:43:35 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 21:43:36 INFO  DoctorDashboardTest:161 - Executing TC14 - Sort by Upload Date
+2025-07-30 21:43:36 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-30 21:43:38 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 21:43:39 INFO  DoctorDashboardTest:171 - Executing TC15 - Sort by Upload Time
+2025-07-30 21:43:39 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-30 21:43:40 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 21:43:41 INFO  DoctorDashboardTest:181 - Executing TC16 - Sort by Audio Duration
+2025-07-30 21:43:41 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-30 21:43:43 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 21:43:44 INFO  DoctorDashboardTest:191 - Executing TC17 - Filter by Status = In Progress
+2025-07-30 21:43:44 INFO  DoctorDashboardPage:115 - Filtering status: In Progress
+2025-07-30 21:43:51 ERROR DoctorDashboardPage:126 - No data or status rows not loaded
+2025-07-30 21:43:51 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 21:43:52 INFO  DoctorDashboardTest:199 - Executing TC18 - Filter by Priority = Medium
+2025-07-30 21:43:52 INFO  DoctorDashboardPage:154 - Filtering priority: Medium
+2025-07-30 21:43:59 ERROR DoctorDashboardPage:165 - No data or priority rows not loaded
+2025-07-30 21:43:59 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 21:44:00 INFO  DoctorDashboardTest:207 - Executing TC19 - View Task & Hide
+2025-07-30 21:44:01 INFO  DoctorDashboardPage:191 - First task ID: 120120
+2025-07-30 21:44:01 INFO  DoctorDashboardPage:197 - Clicking View button
+2025-07-30 21:44:01 INFO  DoctorDashboardPage:203 - Clicking first task in View dropdown
+2025-07-30 21:44:01 INFO  DoctorDashboardPage:208 - Verifying if Task ID 120120 is present in list
+2025-07-30 21:44:01 WARN  DoctorDashboardPage:215 - Task ID 120120 not found in list
+2025-07-30 21:44:01 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 21:44:02 INFO  DoctorDashboardTest:216 - Executing TC15 - Record → Pause → Review → Record Again → Pause → Review → Upload
+2025-07-30 21:44:02 INFO  DoctorDashboardTest:219 - [Step 1] Starting initial recording...
+2025-07-30 21:44:02 INFO  DoctorDashboardPage:256 - Starting recording...
+2025-07-30 21:44:05 INFO  DoctorDashboardTest:224 - [Step 2] Pausing recording (Pause changes to Review)...
+2025-07-30 21:44:05 INFO  DoctorDashboardPage:262 - Pausing recording...
+2025-07-30 21:44:05 INFO  DoctorDashboardTest:230 - [Step 3] Opening Review popup...
+2025-07-30 21:44:06 INFO  DoctorDashboardTest:236 - [Step 4] Clicking 'Record Again'...
+2025-07-30 21:44:06 INFO  DoctorDashboardPage:294 - Clicking 'Record Again'...
+2025-07-30 21:44:06 INFO  DoctorDashboardTest:240 - [Step 5] Pausing second recording (Pause changes to Review)...
+2025-07-30 21:44:06 INFO  DoctorDashboardPage:262 - Pausing recording...
+2025-07-30 21:44:06 INFO  DoctorDashboardTest:246 - [Step 6] Opening Review popup again...
+2025-07-30 21:44:07 INFO  DoctorDashboardTest:252 - [Step 7] Uploading the recordings...
+2025-07-30 21:44:07 INFO  DoctorDashboardPage:288 - Uploading recordings...
+2025-07-30 21:44:17 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 21:44:19 INFO  DoctorDashboardTest:78 - Closing browser
+2025-07-30 21:44:19 INFO  ScribeDashboardTest:29 - Setting up browser and logging in as Scribe
+2025-07-30 21:44:23 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-07-30 21:44:23 INFO  LoginPage:44 - Entered password.
+2025-07-30 21:44:23 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 21:44:23 INFO  ScribeDashboardTest:51 - Login successful
+2025-07-30 21:44:23 INFO  ScribeDashboardTest:72 - Executing TC01 - Dark to Light Theme Toggle
+2025-07-30 21:44:23 INFO  ScribeDashboardPage:35 - Selecting Dark Mode
+2025-07-30 21:44:26 INFO  ScribeDashboardPage:39 - Dark Mode selected
+2025-07-30 21:44:26 INFO  ScribeDashboardTest:74 - Dark mode selected
+2025-07-30 21:44:27 INFO  ScribeDashboardPage:43 - Selecting Light Mode
+2025-07-30 21:44:27 INFO  ScribeDashboardPage:47 - Light Mode selected
+2025-07-30 21:44:27 INFO  ScribeDashboardTest:77 - Light mode selected
+2025-07-30 21:44:28 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-30 21:44:31 INFO  ScribeDashboardTest:83 - Executing TC09 - Filter by Task ID (Dynamic)
+2025-07-30 21:44:31 INFO  ScribeDashboardPage:183 - First task ID: 120121
+2025-07-30 21:44:31 INFO  ScribeDashboardTest:87 - Captured first Task ID from list: 120121
+2025-07-30 21:44:31 INFO  ScribeDashboardPage:55 - Entering Task ID filter: 120121
+2025-07-30 21:44:31 INFO  ScribeDashboardTest:91 - Filtered with Task ID: 120121
+2025-07-30 21:44:41 WARN  ScribeDashboardPage:68 - Task ID 120121 not found
+2025-07-30 21:44:41 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-30 21:44:44 INFO  ScribeDashboardTest:100 - Executing TC03 - Sort by Task ID
+2025-07-30 21:44:44 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-30 21:44:44 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-30 21:44:47 INFO  ScribeDashboardTest:110 - Executing TC04 - Sort by Patient Initials
+2025-07-30 21:44:47 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-30 21:44:47 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-30 21:44:50 INFO  ScribeDashboardTest:120 - Executing TC05 - Sort by Status
+2025-07-30 21:44:50 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-30 21:44:50 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-30 21:44:53 INFO  ScribeDashboardTest:130 - Executing TC06 - Sort by Priority
+2025-07-30 21:44:53 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-30 21:44:53 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-30 21:44:56 INFO  ScribeDashboardTest:140 - Executing TC07 - Sort by Upload Date
+2025-07-30 21:44:56 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-30 21:44:56 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-30 21:44:59 INFO  ScribeDashboardTest:150 - Executing TC08 - Sort by Upload Time
+2025-07-30 21:44:59 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-30 21:45:00 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-30 21:45:02 INFO  ScribeDashboardTest:160 - Executing TC09 - Sort by Audio Duration
+2025-07-30 21:45:02 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-30 21:45:02 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-30 21:45:05 INFO  ScribeDashboardTest:170 - Executing TC10 - Filter by Status = In Progress
+2025-07-30 21:45:05 INFO  ScribeDashboardPage:107 - Filtering status: In Progress
+2025-07-30 21:45:11 ERROR ScribeDashboardPage:118 - No data or status rows not loaded
+2025-07-30 21:45:11 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-30 21:45:13 INFO  ScribeDashboardTest:178 - Executing TC11 - Filter by Priority = Medium
+2025-07-30 21:45:13 INFO  ScribeDashboardPage:146 - Filtering priority: Medium
+2025-07-30 21:45:19 ERROR ScribeDashboardPage:157 - No data or priority rows not loaded
+2025-07-30 21:45:19 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-30 21:45:21 INFO  ScribeDashboardTest:186 - Executing TC12 - View Task & Hide
+2025-07-30 21:45:21 INFO  ScribeDashboardPage:183 - First task ID: 120121
+2025-07-30 21:45:21 INFO  ScribeDashboardPage:189 - Clicking View button
+2025-07-30 21:45:22 INFO  ScribeDashboardPage:195 - Clicking first task in View dropdown
+2025-07-30 21:45:22 INFO  ScribeDashboardPage:200 - Verifying if Task ID 120121 is present in list
+2025-07-30 21:45:22 WARN  ScribeDashboardPage:207 - Task ID 120121 not found in list
+2025-07-30 21:45:22 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-30 21:45:24 INFO  ScribeDashboardTest:65 - Closing browser
+2025-07-30 22:35:14 INFO  LoginTests:23 - Loading login test data from Excel...
+2025-07-30 22:35:19 INFO  LoginTests:29 - Starting test case: TC01
+2025-07-30 22:35:19 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-30 22:35:19 INFO  LoginPage:44 - Entered password.
+2025-07-30 22:35:19 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 22:35:19 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 22:35:19 INFO  LoginTests:46 - Expecting successful login...
+2025-07-30 22:35:21 INFO  LoginTests:52 - Login successful for: testprovider@gmail.com
+2025-07-30 22:35:21 INFO  LoginTests:88 - Finished test case: TC01
+2025-07-30 22:35:24 INFO  LoginTests:29 - Starting test case: TC02
+2025-07-30 22:35:25 INFO  LoginPage:33 - Entered email: wrongemail@example.com
+2025-07-30 22:35:25 INFO  LoginPage:44 - Entered password.
+2025-07-30 22:35:25 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 22:35:25 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 22:35:25 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-30 22:35:26 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-30 22:35:26 INFO  LoginTests:88 - Finished test case: TC02
+2025-07-30 22:35:29 INFO  LoginTests:29 - Starting test case: TC03
+2025-07-30 22:35:29 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-30 22:35:29 INFO  LoginPage:44 - Entered password.
+2025-07-30 22:35:29 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 22:35:29 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 22:35:29 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-30 22:35:30 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-30 22:35:30 INFO  LoginTests:88 - Finished test case: TC03
+2025-07-30 22:35:34 INFO  LoginTests:29 - Starting test case: TC04
+2025-07-30 22:35:34 INFO  LoginPage:33 - Entered email: 
+2025-07-30 22:35:34 INFO  LoginPage:44 - Entered password.
+2025-07-30 22:35:34 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 22:35:34 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 22:35:34 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-30 22:35:35 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-30 22:35:35 INFO  LoginTests:88 - Finished test case: TC04
+2025-07-30 22:35:38 INFO  LoginTests:29 - Starting test case: TC05
+2025-07-30 22:35:38 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-30 22:35:38 INFO  LoginPage:44 - Entered password.
+2025-07-30 22:35:38 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 22:35:38 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 22:35:38 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-30 22:35:39 INFO  LoginPage:62 - Captured error message: Password must be at least 8 characters.
+2025-07-30 22:35:39 INFO  LoginTests:88 - Finished test case: TC05
+2025-07-30 22:35:43 INFO  LoginTests:29 - Starting test case: TC06
+2025-07-30 22:35:43 INFO  LoginPage:33 - Entered email: 
+2025-07-30 22:35:43 INFO  LoginPage:44 - Entered password.
+2025-07-30 22:35:43 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 22:35:43 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 22:35:43 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-30 22:35:44 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-30 22:35:44 INFO  LoginTests:88 - Finished test case: TC06
+2025-07-30 22:35:47 INFO  LoginTests:29 - Starting test case: TC07
+2025-07-30 22:35:47 INFO  LoginPage:33 - Entered email: doctor@@example
+2025-07-30 22:35:47 INFO  LoginPage:44 - Entered password.
+2025-07-30 22:35:47 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 22:35:47 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 22:35:47 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-30 22:35:48 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-30 22:35:48 INFO  LoginTests:88 - Finished test case: TC07
+2025-07-30 22:35:52 INFO  LoginTests:29 - Starting test case: TC10
+2025-07-30 22:35:52 INFO  LoginPage:33 - Entered email: special@!#$.com
+2025-07-30 22:35:52 INFO  LoginPage:44 - Entered password.
+2025-07-30 22:35:52 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 22:35:52 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 22:35:52 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-30 22:35:53 INFO  LoginPage:62 - Captured error message: Invalid email format
+2025-07-30 22:35:53 INFO  LoginTests:88 - Finished test case: TC10
+2025-07-30 22:35:56 INFO  LoginTests:29 - Starting test case: TC11
+2025-07-30 22:35:56 INFO  LoginPage:33 - Entered email: verylongemail@exampletoolonglonglongdomain.com
+2025-07-30 22:35:56 INFO  LoginPage:44 - Entered password.
+2025-07-30 22:35:56 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 22:35:56 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 22:35:56 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-30 22:35:58 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-30 22:35:58 INFO  LoginTests:88 - Finished test case: TC11
+2025-07-30 22:36:01 INFO  LoginTests:29 - Starting test case: TC12
+2025-07-30 22:36:01 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-30 22:36:01 INFO  LoginPage:44 - Entered password.
+2025-07-30 22:36:01 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 22:36:01 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 22:36:01 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-30 22:36:02 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-30 22:36:02 INFO  LoginTests:88 - Finished test case: TC12
+2025-07-30 22:36:05 INFO  LoginTests:29 - Starting test case: TC15
+2025-07-30 22:36:05 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-30 22:36:05 INFO  LoginPage:44 - Entered password.
+2025-07-30 22:36:05 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 22:36:06 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 22:36:06 INFO  LoginTests:46 - Expecting successful login...
+2025-07-30 22:36:08 INFO  LoginTests:52 - Login successful for: testprovider@gmail.com
+2025-07-30 22:36:08 INFO  LoginTests:81 - Waiting to prevent rate-limiting...
+2025-07-30 22:36:13 INFO  LoginTests:88 - Finished test case: TC15
+2025-07-30 22:36:16 INFO  LoginTests:29 - Starting test case: TC19
+2025-07-30 22:36:16 INFO  LoginPage:33 - Entered email: Testprovider@gmail.com
+2025-07-30 22:36:16 INFO  LoginPage:44 - Entered password.
+2025-07-30 22:36:16 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 22:36:16 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 22:36:16 INFO  LoginTests:46 - Expecting successful login...
+2025-07-30 22:36:18 INFO  LoginTests:52 - Login successful for: Testprovider@gmail.com
+2025-07-30 22:36:18 INFO  LoginTests:88 - Finished test case: TC19
+2025-07-30 22:36:21 INFO  LoginTests:29 - Starting test case: TC20
+2025-07-30 22:36:22 INFO  LoginPage:33 - Entered email: doctor@example.com
+2025-07-30 22:36:22 INFO  LoginPage:44 - Entered password.
+2025-07-30 22:36:22 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 22:36:22 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 22:36:22 INFO  LoginTests:56 - Expecting error message for invalid credentials...
+2025-07-30 22:36:23 INFO  LoginPage:62 - Captured error message: Invalid email or password
+2025-07-30 22:36:23 INFO  LoginTests:88 - Finished test case: TC20
+2025-07-30 22:36:26 INFO  LoginTests:29 - Starting test case: TC23
+2025-07-30 22:36:26 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-30 22:36:26 INFO  LoginPage:44 - Entered password.
+2025-07-30 22:36:26 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 22:36:26 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 22:36:26 INFO  LoginTests:46 - Expecting successful login...
+2025-07-30 22:36:28 INFO  LoginTests:52 - Login successful for: testprovider@gmail.com
+2025-07-30 22:36:28 INFO  LoginTests:81 - Waiting to prevent rate-limiting...
+2025-07-30 22:36:33 INFO  LoginTests:88 - Finished test case: TC23
+2025-07-30 22:36:37 INFO  LoginTests:29 - Starting test case: TC24
+2025-07-30 22:36:37 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-07-30 22:36:37 INFO  LoginPage:44 - Entered password.
+2025-07-30 22:36:37 INFO  LoginTests:38 - Clicking submit...
+2025-07-30 22:36:37 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 22:36:37 INFO  LoginTests:46 - Expecting successful login...
+2025-07-30 22:36:38 INFO  LoginTests:52 - Login successful for: testscribe@gmail.com
+2025-07-30 22:36:38 INFO  LoginTests:88 - Finished test case: TC24
+2025-07-30 22:36:42 INFO  LoginTests:93 - Starting TC09 - Forgot Password flow
+2025-07-30 22:36:42 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-30 22:36:42 INFO  LoginTests:102 - Clicked 'Forgot Password'
+2025-07-30 22:36:43 INFO  LoginTests:109 - Reset password alert displayed successfully
+2025-07-30 22:36:47 INFO  LoginTests:114 - Starting TC25 - Epic Login Redirect test
+2025-07-30 22:36:47 INFO  LoginPage:88 - Clicked Epic login button.
+2025-07-30 22:37:02 INFO  LoginPage:90 - Redirected to Epic login URL.
+2025-07-30 22:37:02 INFO  LoginTests:123 - Epic login redirect successful
+2025-07-30 22:37:03 INFO  DoctorDashboardTest:31 - Setting up Brave browser with mic permissions and logging in as Doctor
+2025-07-30 22:37:05 INFO  LoginPage:33 - Entered email: testprovider@gmail.com
+2025-07-30 22:37:05 INFO  LoginPage:44 - Entered password.
+2025-07-30 22:37:05 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 22:37:05 INFO  DoctorDashboardTest:64 - Login successful and browser configured for mic access
+2025-07-30 22:37:05 INFO  DoctorDashboardTest:85 - Executing TC07 - Language Toggle
+2025-07-30 22:37:07 INFO  DoctorDashboardTest:89 - Language toggle dropdown clicked
+2025-07-30 22:37:07 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 22:37:08 INFO  DoctorDashboardTest:94 - Executing TC08 - Dark to Light Theme Toggle
+2025-07-30 22:37:08 INFO  DoctorDashboardPage:35 - Selecting Dark Mode
+2025-07-30 22:37:08 INFO  DoctorDashboardPage:39 - Dark Mode selected
+2025-07-30 22:37:08 INFO  DoctorDashboardTest:96 - Dark mode selected
+2025-07-30 22:37:08 INFO  DoctorDashboardPage:43 - Selecting Light Mode
+2025-07-30 22:37:09 INFO  DoctorDashboardPage:47 - Light Mode selected
+2025-07-30 22:37:09 INFO  DoctorDashboardTest:99 - Light mode selected
+2025-07-30 22:37:10 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 22:37:12 INFO  DoctorDashboardTest:104 - Executing TC09 - Filter by Task ID (Dynamic)
+2025-07-30 22:37:13 INFO  DoctorDashboardPage:191 - First task ID: 120121
+2025-07-30 22:37:13 INFO  DoctorDashboardTest:108 - Captured first Task ID from list: 120121
+2025-07-30 22:37:13 INFO  DoctorDashboardPage:63 - Entering Task ID filter: 120121
+2025-07-30 22:37:13 INFO  DoctorDashboardTest:112 - Filtered with Task ID: 120121
+2025-07-30 22:37:24 WARN  DoctorDashboardPage:76 - Task ID 120121 not found
+2025-07-30 22:37:24 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 22:37:25 INFO  DoctorDashboardTest:121 - Executing TC10 - Sort by Task ID
+2025-07-30 22:37:25 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-30 22:37:27 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 22:37:28 INFO  DoctorDashboardTest:131 - Executing TC11 - Sort by Patient Initials
+2025-07-30 22:37:28 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-30 22:37:30 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 22:37:31 INFO  DoctorDashboardTest:141 - Executing TC12 - Sort by Status
+2025-07-30 22:37:31 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-30 22:37:33 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 22:37:33 INFO  DoctorDashboardTest:151 - Executing TC13 - Sort by Priority
+2025-07-30 22:37:33 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-30 22:37:35 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 22:37:36 INFO  DoctorDashboardTest:161 - Executing TC14 - Sort by Upload Date
+2025-07-30 22:37:36 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-30 22:37:38 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 22:37:39 INFO  DoctorDashboardTest:171 - Executing TC15 - Sort by Upload Time
+2025-07-30 22:37:39 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-30 22:37:41 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 22:37:42 INFO  DoctorDashboardTest:181 - Executing TC16 - Sort by Audio Duration
+2025-07-30 22:37:42 INFO  DoctorDashboardPage:91 - Sorting by column
+2025-07-30 22:37:43 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 22:37:44 INFO  DoctorDashboardTest:191 - Executing TC17 - Filter by Status = In Progress
+2025-07-30 22:37:44 INFO  DoctorDashboardPage:115 - Filtering status: In Progress
+2025-07-30 22:37:51 ERROR DoctorDashboardPage:126 - No data or status rows not loaded
+2025-07-30 22:37:51 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 22:37:53 INFO  DoctorDashboardTest:199 - Executing TC18 - Filter by Priority = Medium
+2025-07-30 22:37:53 INFO  DoctorDashboardPage:154 - Filtering priority: Medium
+2025-07-30 22:38:00 ERROR DoctorDashboardPage:165 - No data or priority rows not loaded
+2025-07-30 22:38:00 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 22:38:01 INFO  DoctorDashboardTest:207 - Executing TC19 - View Task & Hide
+2025-07-30 22:38:03 INFO  DoctorDashboardPage:191 - First task ID: 120121
+2025-07-30 22:38:03 INFO  DoctorDashboardPage:197 - Clicking View button
+2025-07-30 22:38:03 INFO  DoctorDashboardPage:203 - Clicking first task in View dropdown
+2025-07-30 22:38:03 INFO  DoctorDashboardPage:208 - Verifying if Task ID 120121 is present in list
+2025-07-30 22:38:03 WARN  DoctorDashboardPage:215 - Task ID 120121 not found in list
+2025-07-30 22:38:03 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 22:38:04 INFO  DoctorDashboardTest:216 - Executing TC15 - Record → Pause → Review → Record Again → Pause → Review → Upload
+2025-07-30 22:38:04 INFO  DoctorDashboardTest:219 - [Step 1] Starting initial recording...
+2025-07-30 22:38:04 INFO  DoctorDashboardPage:256 - Starting recording...
+2025-07-30 22:38:07 INFO  DoctorDashboardTest:224 - [Step 2] Pausing recording (Pause changes to Review)...
+2025-07-30 22:38:07 INFO  DoctorDashboardPage:262 - Pausing recording...
+2025-07-30 22:38:07 INFO  DoctorDashboardTest:230 - [Step 3] Opening Review popup...
+2025-07-30 22:38:07 INFO  DoctorDashboardTest:236 - [Step 4] Clicking 'Record Again'...
+2025-07-30 22:38:07 INFO  DoctorDashboardPage:294 - Clicking 'Record Again'...
+2025-07-30 22:38:08 INFO  DoctorDashboardTest:240 - [Step 5] Pausing second recording (Pause changes to Review)...
+2025-07-30 22:38:08 INFO  DoctorDashboardPage:262 - Pausing recording...
+2025-07-30 22:38:08 INFO  DoctorDashboardTest:246 - [Step 6] Opening Review popup again...
+2025-07-30 22:38:08 INFO  DoctorDashboardTest:252 - [Step 7] Uploading the recordings...
+2025-07-30 22:38:08 INFO  DoctorDashboardPage:288 - Uploading recordings...
+2025-07-30 22:38:19 INFO  DoctorDashboardTest:70 - Refreshing page after test
+2025-07-30 22:38:20 INFO  DoctorDashboardTest:78 - Closing browser
+2025-07-30 22:38:20 INFO  ScribeDashboardTest:29 - Setting up browser and logging in as Scribe
+2025-07-30 22:38:24 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-07-30 22:38:24 INFO  LoginPage:44 - Entered password.
+2025-07-30 22:38:24 INFO  LoginPage:53 - Clicked login button.
+2025-07-30 22:38:24 INFO  ScribeDashboardTest:51 - Login successful
+2025-07-30 22:38:24 INFO  ScribeDashboardTest:72 - Executing TC01 - Dark to Light Theme Toggle
+2025-07-30 22:38:24 INFO  ScribeDashboardPage:35 - Selecting Dark Mode
+2025-07-30 22:38:27 INFO  ScribeDashboardPage:39 - Dark Mode selected
+2025-07-30 22:38:27 INFO  ScribeDashboardTest:74 - Dark mode selected
+2025-07-30 22:38:27 INFO  ScribeDashboardPage:43 - Selecting Light Mode
+2025-07-30 22:38:28 INFO  ScribeDashboardPage:47 - Light Mode selected
+2025-07-30 22:38:28 INFO  ScribeDashboardTest:77 - Light mode selected
+2025-07-30 22:38:29 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-30 22:38:32 INFO  ScribeDashboardTest:83 - Executing TC09 - Filter by Task ID (Dynamic)
+2025-07-30 22:38:32 INFO  ScribeDashboardPage:183 - First task ID: 120122
+2025-07-30 22:38:32 INFO  ScribeDashboardTest:87 - Captured first Task ID from list: 120122
+2025-07-30 22:38:32 INFO  ScribeDashboardPage:55 - Entering Task ID filter: 120122
+2025-07-30 22:38:32 INFO  ScribeDashboardTest:91 - Filtered with Task ID: 120122
+2025-07-30 22:38:42 WARN  ScribeDashboardPage:68 - Task ID 120122 not found
+2025-07-30 22:38:42 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-30 22:38:45 INFO  ScribeDashboardTest:100 - Executing TC03 - Sort by Task ID
+2025-07-30 22:38:45 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-30 22:38:46 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-30 22:38:48 INFO  ScribeDashboardTest:110 - Executing TC04 - Sort by Patient Initials
+2025-07-30 22:38:48 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-30 22:38:49 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-30 22:38:52 INFO  ScribeDashboardTest:120 - Executing TC05 - Sort by Status
+2025-07-30 22:38:52 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-30 22:38:52 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-30 22:38:55 INFO  ScribeDashboardTest:130 - Executing TC06 - Sort by Priority
+2025-07-30 22:38:55 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-30 22:38:55 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-30 22:38:58 INFO  ScribeDashboardTest:140 - Executing TC07 - Sort by Upload Date
+2025-07-30 22:38:58 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-30 22:38:58 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-30 22:39:01 INFO  ScribeDashboardTest:150 - Executing TC08 - Sort by Upload Time
+2025-07-30 22:39:01 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-30 22:39:01 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-30 22:39:04 INFO  ScribeDashboardTest:160 - Executing TC09 - Sort by Audio Duration
+2025-07-30 22:39:04 INFO  ScribeDashboardPage:83 - Sorting by column
+2025-07-30 22:39:04 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-30 22:39:07 INFO  ScribeDashboardTest:170 - Executing TC10 - Filter by Status = In Progress
+2025-07-30 22:39:07 INFO  ScribeDashboardPage:107 - Filtering status: In Progress
+2025-07-30 22:39:13 ERROR ScribeDashboardPage:118 - No data or status rows not loaded
+2025-07-30 22:39:13 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-30 22:39:15 INFO  ScribeDashboardTest:178 - Executing TC11 - Filter by Priority = Medium
+2025-07-30 22:39:15 INFO  ScribeDashboardPage:146 - Filtering priority: Medium
+2025-07-30 22:39:21 ERROR ScribeDashboardPage:157 - No data or priority rows not loaded
+2025-07-30 22:39:21 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-30 22:39:24 INFO  ScribeDashboardTest:186 - Executing TC12 - View Task & Hide
+2025-07-30 22:39:24 INFO  ScribeDashboardPage:183 - First task ID: 120122
+2025-07-30 22:39:24 INFO  ScribeDashboardPage:189 - Clicking View button
+2025-07-30 22:39:24 INFO  ScribeDashboardPage:195 - Clicking first task in View dropdown
+2025-07-30 22:39:24 INFO  ScribeDashboardPage:200 - Verifying if Task ID 120122 is present in list
+2025-07-30 22:39:24 WARN  ScribeDashboardPage:207 - Task ID 120122 not found in list
+2025-07-30 22:39:24 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-07-30 22:39:27 INFO  ScribeDashboardTest:65 - Closing browser

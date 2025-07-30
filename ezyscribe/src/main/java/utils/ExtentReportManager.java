@@ -2,15 +2,21 @@ package utils;
 
 import com.aventstack.extentreports.*;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class ExtentReportManager {
     private static ExtentReports extent;
     private static ExtentTest test;
 
-    public static ExtentReports createInstance(String fileName) {
-        ExtentSparkReporter reporter = new ExtentSparkReporter(fileName);
-        reporter.config().setDocumentTitle("Automation Report");
-        reporter.config().setReportName("UI Automation Results");
+    // Use timestamped file name to avoid overwriting in Jenkins
+    private static final String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+    private static final String reportPath = "test-output/ExtentReport_" + timestamp + ".html";
+
+    public static ExtentReports createInstance() {
+        ExtentSparkReporter reporter = new ExtentSparkReporter(reportPath);
+        reporter.config().setDocumentTitle("EzyScribe Automation Report");
+        reporter.config().setReportName("UI Test Results");
 
         extent = new ExtentReports();
         extent.attachReporter(reporter);
@@ -20,7 +26,7 @@ public class ExtentReportManager {
 
     public static ExtentReports getExtent() {
         if (extent == null)
-            extent = createInstance("test-output/ExtentReport.html");
+            extent = createInstance();
         return extent;
     }
 
@@ -38,4 +44,3 @@ public class ExtentReportManager {
         return test;
     }
 }
-
