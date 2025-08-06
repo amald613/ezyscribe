@@ -9,14 +9,13 @@ public class ExtentReportManager {
     private static ExtentReports extent;
     private static ExtentTest test;
 
-    // Use timestamped file name to avoid overwriting in Jenkins
     private static final String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
     private static final String reportPath = "test-output/ExtentReport_" + timestamp + ".html";
 
     public static ExtentReports createInstance() {
         ExtentSparkReporter reporter = new ExtentSparkReporter(reportPath);
         reporter.config().setDocumentTitle("EzyScribe Automation Report");
-        reporter.config().setReportName("UI Test Results");
+        reporter.config().setReportName("Scribe UI Test Results");
 
         extent = new ExtentReports();
         extent.attachReporter(reporter);

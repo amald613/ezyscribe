@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+<testng-results ignored="0" total="30" passed="27" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-06T20:28:45 IST" name="EzyScribe Login Suite" finished-at="2025-08-06T20:29:59 IST" duration-ms="73640">
+  <suite started-at="2025-08-06T21:41:49 IST" name="EzyScribe Login Suite" finished-at="2025-08-06T21:45:30 IST" duration-ms="220956">
     <groups>
     </groups>
-    <test started-at="2025-08-06T20:28:45 IST" name="LoginTests" finished-at="2025-08-06T20:29:59 IST" duration-ms="73640">
+    <test started-at="2025-08-06T21:41:49 IST" name="LoginTests" finished-at="2025-08-06T21:45:30 IST" duration-ms="220956">
       <class name="tests.ScribeDashboardTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ScribeDashboardTest@7770f470]" started-at="2025-08-06T20:28:45 IST" name="setup" finished-at="2025-08-06T20:28:47 IST" duration-ms="1643" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ScribeDashboardTest@1ae67cad]" started-at="2025-08-06T21:44:59 IST" name="setup" finished-at="2025-08-06T21:45:00 IST" duration-ms="638" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="ensureLoggedInAndRefresh()[pri:0, instance:tests.ScribeDashboardTest@7770f470]" started-at="2025-08-06T20:28:47 IST" name="ensureLoggedInAndRefresh" finished-at="2025-08-06T20:28:50 IST" duration-ms="3170" status="PASS">
+        <test-method is-config="true" signature="ensureLoggedInAndRefresh()[pri:0, instance:tests.ScribeDashboardTest@1ae67cad]" started-at="2025-08-06T21:45:00 IST" name="ensureLoggedInAndRefresh" finished-at="2025-08-06T21:45:03 IST" duration-ms="2751" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ensureLoggedInAndRefresh -->
-        <test-method signature="themeSwitch()[pri:1, instance:tests.ScribeDashboardTest@7770f470]" started-at="2025-08-06T20:28:50 IST" name="themeSwitch" finished-at="2025-08-06T20:28:55 IST" duration-ms="4582" status="PASS">
+        <test-method signature="themeSwitch()[pri:1, instance:tests.ScribeDashboardTest@1ae67cad]" started-at="2025-08-06T21:45:03 IST" name="themeSwitch" finished-at="2025-08-06T21:45:07 IST" duration-ms="4624" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- themeSwitch -->
-        <test-method is-config="true" signature="ensureLoggedInAndRefresh()[pri:0, instance:tests.ScribeDashboardTest@7770f470]" started-at="2025-08-06T20:28:55 IST" name="ensureLoggedInAndRefresh" finished-at="2025-08-06T20:28:56 IST" duration-ms="836" status="PASS">
+        <test-method is-config="true" signature="ensureLoggedInAndRefresh()[pri:0, instance:tests.ScribeDashboardTest@1ae67cad]" started-at="2025-08-06T21:45:07 IST" name="ensureLoggedInAndRefresh" finished-at="2025-08-06T21:45:08 IST" duration-ms="757" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ensureLoggedInAndRefresh -->
-        <test-method signature="searchByFirstTaskId()[pri:2, instance:tests.ScribeDashboardTest@7770f470]" started-at="2025-08-06T20:28:56 IST" name="searchByFirstTaskId" finished-at="2025-08-06T20:29:31 IST" duration-ms="35216" status="FAIL">
+        <test-method signature="searchByFirstTaskId()[pri:2, instance:tests.ScribeDashboardTest@1ae67cad]" started-at="2025-08-06T21:45:08 IST" name="searchByFirstTaskId" finished-at="2025-08-06T21:45:15 IST" duration-ms="6436" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[❌ First row does not match expected Task ID after retries. Expected: 120131]]>
@@ -31,7 +31,7 @@
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: ❌ First row does not match expected Task ID after retries. Expected: 120131
 at pages.ScribeDashboardPage.assertFirstRowHasTaskId(ScribeDashboardPage.java:178)
-at tests.ScribeDashboardTest.searchByFirstTaskId(ScribeDashboardTest.java:84)
+at tests.ScribeDashboardTest.searchByFirstTaskId(ScribeDashboardTest.java:93)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -64,43 +64,735 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchByFirstTaskId -->
-        <test-method is-config="true" signature="ensureLoggedInAndRefresh()[pri:0, instance:tests.ScribeDashboardTest@7770f470]" started-at="2025-08-06T20:29:31 IST" name="ensureLoggedInAndRefresh" finished-at="2025-08-06T20:29:32 IST" duration-ms="1280" status="PASS">
+        <test-method is-config="true" signature="ensureLoggedInAndRefresh()[pri:0, instance:tests.ScribeDashboardTest@1ae67cad]" started-at="2025-08-06T21:45:15 IST" name="ensureLoggedInAndRefresh" finished-at="2025-08-06T21:45:15 IST" duration-ms="707" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ensureLoggedInAndRefresh -->
-        <test-method signature="testStatusFilter()[pri:3, instance:tests.ScribeDashboardTest@7770f470]" started-at="2025-08-06T20:29:32 IST" name="testStatusFilter" finished-at="2025-08-06T20:29:35 IST" duration-ms="2991" status="PASS">
+        <test-method signature="testStatusFilter()[pri:3, instance:tests.ScribeDashboardTest@1ae67cad]" started-at="2025-08-06T21:45:15 IST" name="testStatusFilter" finished-at="2025-08-06T21:45:17 IST" duration-ms="1742" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStatusFilter -->
-        <test-method is-config="true" signature="ensureLoggedInAndRefresh()[pri:0, instance:tests.ScribeDashboardTest@7770f470]" started-at="2025-08-06T20:29:35 IST" name="ensureLoggedInAndRefresh" finished-at="2025-08-06T20:29:36 IST" duration-ms="698" status="PASS">
+        <test-method is-config="true" signature="ensureLoggedInAndRefresh()[pri:0, instance:tests.ScribeDashboardTest@1ae67cad]" started-at="2025-08-06T21:45:17 IST" name="ensureLoggedInAndRefresh" finished-at="2025-08-06T21:45:18 IST" duration-ms="781" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ensureLoggedInAndRefresh -->
-        <test-method signature="testPriorityFilter()[pri:4, instance:tests.ScribeDashboardTest@7770f470]" started-at="2025-08-06T20:29:36 IST" name="testPriorityFilter" finished-at="2025-08-06T20:29:39 IST" duration-ms="3527" status="PASS">
+        <test-method signature="testPriorityFilter()[pri:4, instance:tests.ScribeDashboardTest@1ae67cad]" started-at="2025-08-06T21:45:18 IST" name="testPriorityFilter" finished-at="2025-08-06T21:45:20 IST" duration-ms="2496" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPriorityFilter -->
-        <test-method is-config="true" signature="ensureLoggedInAndRefresh()[pri:0, instance:tests.ScribeDashboardTest@7770f470]" started-at="2025-08-06T20:29:39 IST" name="ensureLoggedInAndRefresh" finished-at="2025-08-06T20:29:40 IST" duration-ms="710" status="PASS">
+        <test-method is-config="true" signature="ensureLoggedInAndRefresh()[pri:0, instance:tests.ScribeDashboardTest@1ae67cad]" started-at="2025-08-06T21:45:20 IST" name="ensureLoggedInAndRefresh" finished-at="2025-08-06T21:45:21 IST" duration-ms="822" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ensureLoggedInAndRefresh -->
-        <test-method signature="testToggleTaskIdColumnView()[pri:5, instance:tests.ScribeDashboardTest@7770f470]" started-at="2025-08-06T20:29:40 IST" name="testToggleTaskIdColumnView" finished-at="2025-08-06T20:29:41 IST" duration-ms="529" status="PASS">
+        <test-method signature="testToggleTaskIdColumnView()[pri:5, instance:tests.ScribeDashboardTest@1ae67cad]" started-at="2025-08-06T21:45:21 IST" name="testToggleTaskIdColumnView" finished-at="2025-08-06T21:45:21 IST" duration-ms="158" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testToggleTaskIdColumnView -->
-        <test-method is-config="true" signature="ensureLoggedInAndRefresh()[pri:0, instance:tests.ScribeDashboardTest@7770f470]" started-at="2025-08-06T20:29:41 IST" name="ensureLoggedInAndRefresh" finished-at="2025-08-06T20:29:41 IST" duration-ms="482" status="PASS">
+        <test-method is-config="true" signature="ensureLoggedInAndRefresh()[pri:0, instance:tests.ScribeDashboardTest@1ae67cad]" started-at="2025-08-06T21:45:21 IST" name="ensureLoggedInAndRefresh" finished-at="2025-08-06T21:45:22 IST" duration-ms="884" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ensureLoggedInAndRefresh -->
-        <test-method signature="testTaskIdAscendingSort()[pri:6, instance:tests.ScribeDashboardTest@7770f470]" started-at="2025-08-06T20:29:41 IST" name="testTaskIdAscendingSort" finished-at="2025-08-06T20:29:59 IST" duration-ms="17696" status="PASS">
+        <test-method signature="testTaskIdAscendingSort()[pri:6, instance:tests.ScribeDashboardTest@1ae67cad]" started-at="2025-08-06T21:45:22 IST" name="testTaskIdAscendingSort" finished-at="2025-08-06T21:45:29 IST" duration-ms="7122" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTaskIdAscendingSort -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.ScribeDashboardTest@7770f470]" started-at="2025-08-06T20:29:59 IST" name="teardown" finished-at="2025-08-06T20:29:59 IST" duration-ms="199" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.ScribeDashboardTest@1ae67cad]" started-at="2025-08-06T21:45:29 IST" name="teardown" finished-at="2025-08-06T21:45:30 IST" duration-ms="552" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- tests.ScribeDashboardTest -->
+      <class name="tests.LoginTests">
+        <test-method is-config="true" signature="setupClass()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:41:49 IST" name="setupClass" finished-at="2025-08-06T21:41:49 IST" duration-ms="385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:41:50 IST" name="setup" finished-at="2025-08-06T21:41:54 IST" duration-ms="3790" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:41:54 IST" name="loginTest" description="TC01-TC24 - Login test for various valid/invalid credentials" data-provider="loginData" finished-at="2025-08-06T21:41:57 IST" duration-ms="2922" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testprovider@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[success_doctor]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:41:57 IST" name="tearDown" finished-at="2025-08-06T21:41:57 IST" duration-ms="160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:41:57 IST" name="setup" finished-at="2025-08-06T21:42:00 IST" duration-ms="3261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:00 IST" name="loginTest" description="TC01-TC24 - Login test for various valid/invalid credentials" data-provider="loginData" finished-at="2025-08-06T21:42:01 IST" duration-ms="1288" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongemail@example.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[DocPass123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[error]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:01 IST" name="tearDown" finished-at="2025-08-06T21:42:01 IST" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:01 IST" name="setup" finished-at="2025-08-06T21:42:05 IST" duration-ms="3262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:05 IST" name="loginTest" description="TC01-TC24 - Login test for various valid/invalid credentials" data-provider="loginData" finished-at="2025-08-06T21:42:06 IST" duration-ms="1276" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC03]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[doctor@example.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[wrongpass]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[error]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:06 IST" name="tearDown" finished-at="2025-08-06T21:42:06 IST" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:06 IST" name="setup" finished-at="2025-08-06T21:42:09 IST" duration-ms="3050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:09 IST" name="loginTest" description="TC01-TC24 - Login test for various valid/invalid credentials" data-provider="loginData" finished-at="2025-08-06T21:42:10 IST" duration-ms="1246" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC04]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[DocPass123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[error]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:10 IST" name="tearDown" finished-at="2025-08-06T21:42:10 IST" duration-ms="117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:10 IST" name="setup" finished-at="2025-08-06T21:42:14 IST" duration-ms="3305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:14 IST" name="loginTest" description="TC01-TC24 - Login test for various valid/invalid credentials" data-provider="loginData" finished-at="2025-08-06T21:42:15 IST" duration-ms="1252" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC05]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[doctor@example.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[error]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:15 IST" name="tearDown" finished-at="2025-08-06T21:42:15 IST" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:15 IST" name="setup" finished-at="2025-08-06T21:42:18 IST" duration-ms="3222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:18 IST" name="loginTest" description="TC01-TC24 - Login test for various valid/invalid credentials" data-provider="loginData" finished-at="2025-08-06T21:42:20 IST" duration-ms="1232" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC06]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[error]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:20 IST" name="tearDown" finished-at="2025-08-06T21:42:20 IST" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:20 IST" name="setup" finished-at="2025-08-06T21:42:23 IST" duration-ms="3057" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:23 IST" name="loginTest" description="TC01-TC24 - Login test for various valid/invalid credentials" data-provider="loginData" finished-at="2025-08-06T21:42:24 IST" duration-ms="1257" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC07]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[doctor@@example]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[DocPass123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[error]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:24 IST" name="tearDown" finished-at="2025-08-06T21:42:24 IST" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:24 IST" name="setup" finished-at="2025-08-06T21:42:27 IST" duration-ms="3248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:27 IST" name="loginTest" description="TC01-TC24 - Login test for various valid/invalid credentials" data-provider="loginData" finished-at="2025-08-06T21:42:29 IST" duration-ms="1253" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[special@!#$.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[special123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[error]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:29 IST" name="tearDown" finished-at="2025-08-06T21:42:29 IST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:29 IST" name="setup" finished-at="2025-08-06T21:42:32 IST" duration-ms="3221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:32 IST" name="loginTest" description="TC01-TC24 - Login test for various valid/invalid credentials" data-provider="loginData" finished-at="2025-08-06T21:42:33 IST" duration-ms="1306" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC11]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[verylongemail@exampletoolonglonglongdomain.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[DocPass123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[error]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:33 IST" name="tearDown" finished-at="2025-08-06T21:42:33 IST" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:33 IST" name="setup" finished-at="2025-08-06T21:42:37 IST" duration-ms="3214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:37 IST" name="loginTest" description="TC01-TC24 - Login test for various valid/invalid credentials" data-provider="loginData" finished-at="2025-08-06T21:42:38 IST" duration-ms="1304" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC12]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[doctor@example.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[passwordWithVeryLongText1234567890!@#]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[error]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:38 IST" name="tearDown" finished-at="2025-08-06T21:42:38 IST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:38 IST" name="setup" finished-at="2025-08-06T21:42:41 IST" duration-ms="3205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:41 IST" name="loginTest" description="TC01-TC24 - Login test for various valid/invalid credentials" data-provider="loginData" finished-at="2025-08-06T21:42:49 IST" duration-ms="7308" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC15]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testprovider@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[success_doctor]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:49 IST" name="tearDown" finished-at="2025-08-06T21:42:49 IST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:49 IST" name="setup" finished-at="2025-08-06T21:42:52 IST" duration-ms="3278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:52 IST" name="loginTest" description="TC01-TC24 - Login test for various valid/invalid credentials" data-provider="loginData" finished-at="2025-08-06T21:42:54 IST" duration-ms="2305" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC19]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Testprovider@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[success_doctor]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:54 IST" name="tearDown" finished-at="2025-08-06T21:42:56 IST" duration-ms="1636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:56 IST" name="setup" finished-at="2025-08-06T21:42:59 IST" duration-ms="3251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:42:59 IST" name="loginTest" description="TC01-TC24 - Login test for various valid/invalid credentials" data-provider="loginData" finished-at="2025-08-06T21:43:00 IST" duration-ms="1272" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC20]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[doctor@example.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[DOCPASS123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[error]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:43:00 IST" name="tearDown" finished-at="2025-08-06T21:43:01 IST" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:43:01 IST" name="setup" finished-at="2025-08-06T21:43:04 IST" duration-ms="3205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:43:04 IST" name="loginTest" description="TC01-TC24 - Login test for various valid/invalid credentials" data-provider="loginData" finished-at="2025-08-06T21:43:12 IST" duration-ms="7873" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC23]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testprovider@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[success_doctor]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:43:12 IST" name="tearDown" finished-at="2025-08-06T21:43:12 IST" duration-ms="248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:43:12 IST" name="setup" finished-at="2025-08-06T21:43:15 IST" duration-ms="3270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:43:15 IST" name="loginTest" description="TC01-TC24 - Login test for various valid/invalid credentials" data-provider="loginData" finished-at="2025-08-06T21:43:18 IST" duration-ms="2787" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC24]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testscribe@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[success_scribe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:43:18 IST" name="tearDown" finished-at="2025-08-06T21:43:18 IST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:43:18 IST" name="setup" finished-at="2025-08-06T21:43:21 IST" duration-ms="3276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="forgotPasswordTest_TC09()[pri:2, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:43:21 IST" name="forgotPasswordTest_TC09" description="TC09 - Verify &#039;Forgot Password&#039; triggers email alert" finished-at="2025-08-06T21:43:23 IST" duration-ms="1238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotPasswordTest_TC09 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:43:23 IST" name="tearDown" finished-at="2025-08-06T21:43:23 IST" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:43:23 IST" name="setup" finished-at="2025-08-06T21:43:26 IST" duration-ms="3155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="epicLoginRedirectTest()[pri:3, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:43:26 IST" name="epicLoginRedirectTest" description="TC25 - Verify Epic Login Redirect" finished-at="2025-08-06T21:43:44 IST" duration-ms="18581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- epicLoginRedirectTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTests@784b990c]" started-at="2025-08-06T21:43:44 IST" name="tearDown" finished-at="2025-08-06T21:43:45 IST" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTests -->
+      <class name="tests.DoctorDashboardTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.DoctorDashboardTest@e98770d]" started-at="2025-08-06T21:43:45 IST" name="setup" finished-at="2025-08-06T21:43:45 IST" duration-ms="659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="ensureLoggedInAndRefresh()[pri:0, instance:tests.DoctorDashboardTest@e98770d]" started-at="2025-08-06T21:43:45 IST" name="ensureLoggedInAndRefresh" finished-at="2025-08-06T21:43:48 IST" duration-ms="2803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ensureLoggedInAndRefresh -->
+        <test-method signature="themeSwitch()[pri:1, instance:tests.DoctorDashboardTest@e98770d]" started-at="2025-08-06T21:43:48 IST" name="themeSwitch" finished-at="2025-08-06T21:43:53 IST" duration-ms="4663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- themeSwitch -->
+        <test-method is-config="true" signature="ensureLoggedInAndRefresh()[pri:0, instance:tests.DoctorDashboardTest@e98770d]" started-at="2025-08-06T21:43:53 IST" name="ensureLoggedInAndRefresh" finished-at="2025-08-06T21:43:54 IST" duration-ms="779" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ensureLoggedInAndRefresh -->
+        <test-method signature="searchByFirstTaskId()[pri:2, instance:tests.DoctorDashboardTest@e98770d]" started-at="2025-08-06T21:43:54 IST" name="searchByFirstTaskId" finished-at="2025-08-06T21:44:28 IST" duration-ms="34783" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[❌ First row does not match expected Task ID after retries. Expected: 120129]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: ❌ First row does not match expected Task ID after retries. Expected: 120129
+at pages.DoctorDashboardPage.assertFirstRowHasTaskId(DoctorDashboardPage.java:142)
+at tests.DoctorDashboardTest.searchByFirstTaskId(DoctorDashboardTest.java:82)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByFirstTaskId -->
+        <test-method is-config="true" signature="ensureLoggedInAndRefresh()[pri:0, instance:tests.DoctorDashboardTest@e98770d]" started-at="2025-08-06T21:44:28 IST" name="ensureLoggedInAndRefresh" finished-at="2025-08-06T21:44:30 IST" duration-ms="1214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ensureLoggedInAndRefresh -->
+        <test-method signature="testStatusFilter()[pri:3, instance:tests.DoctorDashboardTest@e98770d]" started-at="2025-08-06T21:44:30 IST" name="testStatusFilter" finished-at="2025-08-06T21:44:31 IST" duration-ms="1483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStatusFilter -->
+        <test-method is-config="true" signature="ensureLoggedInAndRefresh()[pri:0, instance:tests.DoctorDashboardTest@e98770d]" started-at="2025-08-06T21:44:31 IST" name="ensureLoggedInAndRefresh" finished-at="2025-08-06T21:44:31 IST" duration-ms="465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ensureLoggedInAndRefresh -->
+        <test-method signature="testPriorityFilter()[pri:4, instance:tests.DoctorDashboardTest@e98770d]" started-at="2025-08-06T21:44:31 IST" name="testPriorityFilter" finished-at="2025-08-06T21:44:34 IST" duration-ms="2497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPriorityFilter -->
+        <test-method is-config="true" signature="ensureLoggedInAndRefresh()[pri:0, instance:tests.DoctorDashboardTest@e98770d]" started-at="2025-08-06T21:44:34 IST" name="ensureLoggedInAndRefresh" finished-at="2025-08-06T21:44:34 IST" duration-ms="437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ensureLoggedInAndRefresh -->
+        <test-method signature="testToggleTaskIdColumnView()[pri:5, instance:tests.DoctorDashboardTest@e98770d]" started-at="2025-08-06T21:44:34 IST" name="testToggleTaskIdColumnView" finished-at="2025-08-06T21:44:35 IST" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testToggleTaskIdColumnView -->
+        <test-method is-config="true" signature="ensureLoggedInAndRefresh()[pri:0, instance:tests.DoctorDashboardTest@e98770d]" started-at="2025-08-06T21:44:35 IST" name="ensureLoggedInAndRefresh" finished-at="2025-08-06T21:44:35 IST" duration-ms="920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ensureLoggedInAndRefresh -->
+        <test-method signature="testTaskIdAscendingSort()[pri:6, instance:tests.DoctorDashboardTest@e98770d]" started-at="2025-08-06T21:44:35 IST" name="testTaskIdAscendingSort" finished-at="2025-08-06T21:44:41 IST" duration-ms="5975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTaskIdAscendingSort -->
+        <test-method is-config="true" signature="ensureLoggedInAndRefresh()[pri:0, instance:tests.DoctorDashboardTest@e98770d]" started-at="2025-08-06T21:44:41 IST" name="ensureLoggedInAndRefresh" finished-at="2025-08-06T21:44:42 IST" duration-ms="702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ensureLoggedInAndRefresh -->
+        <test-method signature="verifyRecordingWorkflow_ReviewAfterRecordAgain()[pri:7, instance:tests.DoctorDashboardTest@e98770d]" started-at="2025-08-06T21:44:42 IST" name="verifyRecordingWorkflow_ReviewAfterRecordAgain" finished-at="2025-08-06T21:44:59 IST" duration-ms="17023" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for invisibility of [[ChromeDriver: chrome on windows (108384c47d96964b2968eb62f36168e4)] -> xpath: //div[@role='dialog' and contains(., 'Review Recordings')]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\Amaldev\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63241/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 108384c47d96964b2968eb62f36168e4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for invisibility of [[ChromeDriver: chrome on windows (108384c47d96964b2968eb62f36168e4)] -> xpath: //div[@role='dialog' and contains(., 'Review Recordings')]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\Amaldev\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63241/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 108384c47d96964b2968eb62f36168e4
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at pages.DoctorDashboardPage.uploadRecordings(DoctorDashboardPage.java:403)
+at tests.DoctorDashboardTest.verifyRecordingWorkflow_ReviewAfterRecordAgain(DoctorDashboardTest.java:162)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRecordingWorkflow_ReviewAfterRecordAgain -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.DoctorDashboardTest@e98770d]" started-at="2025-08-06T21:44:59 IST" name="teardown" finished-at="2025-08-06T21:44:59 IST" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.DoctorDashboardTest -->
     </test> <!-- LoginTests -->
   </suite> <!-- EzyScribe Login Suite -->
 </testng-results>

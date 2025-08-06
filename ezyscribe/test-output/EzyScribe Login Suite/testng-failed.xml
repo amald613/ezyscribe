@@ -6,6 +6,15 @@
   </listeners>
   <test thread-count="5" name="LoginTests(failed)">
     <classes>
+      <class name="tests.DoctorDashboardTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="searchByFirstTaskId"/>
+          <include name="verifyRecordingWorkflow_ReviewAfterRecordAgain"/>
+          <include name="ensureLoggedInAndRefresh"/>
+        </methods>
+      </class> <!-- tests.DoctorDashboardTest -->
       <class name="tests.ScribeDashboardTest">
         <methods>
           <include name="ensureLoggedInAndRefresh"/>

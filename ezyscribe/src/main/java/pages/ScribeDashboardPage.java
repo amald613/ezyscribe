@@ -368,7 +368,6 @@ public class ScribeDashboardPage {
         }
     }
 
-
     public void verifyTaskIdsInAscendingOrder() {
         By rowLocator = By.xpath("//table//tbody/tr");
 
@@ -394,19 +393,22 @@ public class ScribeDashboardPage {
 
                 if (ids.size() < 2) {
                     System.out.println("⚠️ Not enough IDs found. Retry " + attempt);
-                    Thread.sleep(800);
+                    Thread.sleep(1000); // Increase wait
                     continue;
                 }
 
                 List<Integer> sorted = new ArrayList<>(ids);
                 Collections.sort(sorted);
 
+                System.out.println("📋 Actual Order:   " + ids);
+                System.out.println("📋 Expected Order: " + sorted);
+
                 if (ids.equals(sorted)) {
                     System.out.println("✅ Task IDs are in correct ascending order.");
-                    return; // Success
+                    return; // success
                 } else {
                     System.out.println("⚠️ Attempt " + attempt + ": IDs not yet sorted ascending");
-                    Thread.sleep(800);
+                    Thread.sleep(1000); // Wait more before retrying
                 }
 
             } catch (Exception e) {
@@ -416,6 +418,7 @@ public class ScribeDashboardPage {
 
         throw new AssertionError("❌ Task IDs not in ascending order after retries.");
     }
+
 
 
 }
