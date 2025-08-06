@@ -1,210 +1,421 @@
 package pages;
 
-import org.openqa.selenium.*;
-import org.openqa.selenium.support.*;
-import org.openqa.selenium.support.ui.*;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
-import java.util.stream.Collectors;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ScribeDashboardPage {
-    WebDriver driver;
-    WebDriverWait wait;
-    private static final Logger logger = LogManager.getLogger(ScribeDashboardPage.class);
+
+    private WebDriver driver;
+    private WebDriverWait wait;
 
     public ScribeDashboardPage(WebDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(driver, this);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    // ========== THEME TOGGLE ==========
-    @FindBy(xpath = "(//button[@data-slot='dropdown-menu-trigger'])[3]")
-    WebElement themeToggleButton;
+    // Locators
+    private By taskIdSearchBox = By.xpath("//input[@placeholder='Search task numbers...']");
+    private By themeToggleButton = By.xpath("//button[@data-slot='dropdown-menu-trigger' and descendant::span[text()='Toggle theme']]");
+    private By darkModeOption = By.xpath("//div[@role='menuitem' and normalize-space()='Dark']");
+    private By lightModeOption = By.xpath("//div[@role='menuitem' and normalize-space()='Light']");
+    private By anyMenuItem = By.xpath("//div[@role='menuitem' and (normalize-space()='Dark' or normalize-space()='Light')]");
+    private By emailField = By.xpath("//input[@name='email']");
+    private By passwordField = By.xpath("//input[@type='password']");
+    private By loginButton = By.xpath("//button[@type='submit']");
+    private By statusFilterButton = By.xpath("//button[@data-slot='popover-trigger' and contains(text(), 'Status')]");
+    private By statusOptionsGroup = By.xpath("//div[@role='group']");
+    private By firstStatusOption = By.xpath("(//div[@role='option' and @cmdk-item=''])[2]");
+    private By tableRows = By.xpath("//table//tbody/tr");
+    private By clearStatusFilterButton = By.xpath("//div[@role='button' and @aria-label='Clear Status filter']");
+    private By clearPriorityFilterButton = By.xpath("//div[@role='button' and @aria-label='Clear Priority filter']");
+    private By viewButton = By.xpath("//button[@aria-label='Toggle columns']");
+    private By columnOptionsGroup = By.xpath("//div[@role='group']");
+    private By firstViewOption = By.xpath("(//div[@role='option' and @cmdk-item=''])[1]");
+    private By taskIdColumnHeader = By.xpath("//th[.='Task ID']");
+    private By priorityFilterButton = By.xpath("//button[@data-slot='popover-trigger' and contains(text(), 'Priority')]");
+    private By priorityOptionsGroup = By.xpath("//div[@role='group']");
+    private By secondPriorityOption = By.xpath("(//div[@role='option' and @cmdk-item=''])[2]");
+    private By taskIdCells = By.xpath("//table//tbody//tr/td[1]//a");
+    private By resetFiltersButton = By.xpath("//button[@aria-label='Reset filters' and normalize-space(text())='Reset']");
 
-    @FindBy(xpath = "//div[@role='menuitem' and normalize-space()='Dark']")
-    WebElement darkModeOption;
+    // ====================== CORE UTILITIES ===========================
 
-    @FindBy(xpath = "//div[@role='menuitem' and normalize-space()='Light']")
-    WebElement lightModeOption;
+    public void loginAsScribe(String email, String password) {
+        driver.get("https://appv2.ezyscribe.com/auth/login");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(emailField)).sendKeys(email);
+        driver.findElement(passwordField).sendKeys(password);
+        driver.findElement(loginButton).click();
+    }
+
+    public void refreshDashboard() {
+        driver.navigate().refresh();
+        waitForDashboardToLoad();
+    }
+
+    public void waitForDashboardToLoad() {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(taskIdSearchBox));
+    }
+
+    public void clickResetFiltersIfPresent() {
+        try {
+            List<WebElement> resetButtons = driver.findElements(resetFiltersButton);
+            if (!resetButtons.isEmpty()) {
+                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", resetButtons.get(0));
+                System.out.println("🔁 Clicked Reset Filters.");
+                Thread.sleep(1000);
+                refreshDashboard();
+            }
+        } catch (Exception e) {
+            System.out.println("⚠️ Reset Filters failed: " + e.getMessage());
+        }
+    }
+
+    // ====================== THEME TOGGLE ===========================
+
+    public void safeClickThemeToggleWithRetry() {
+        try {
+            clickThemeToggle();
+        } catch (RuntimeException e) {
+            clickThemeToggle();
+        }
+    }
+
+    public void clickThemeToggle() {
+        WebElement toggle = wait.until(ExpectedConditions.elementToBeClickable(themeToggleButton));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", toggle);
+        new Actions(driver).moveToElement(toggle).pause(200).click().perform();
+        new WebDriverWait(driver, Duration.ofSeconds(3))
+                .until(ExpectedConditions.presenceOfElementLocated(anyMenuItem));
+    }
+
+    public boolean isDarkModeActive() {
+        return driver.findElement(By.tagName("html")).getAttribute("class").contains("dark");
+    }
+
+    public boolean isLightModeActive() {
+        return !isDarkModeActive();
+    }
 
     public void selectDarkMode() {
-        logger.info("Selecting Dark Mode");
-        wait.until(ExpectedConditions.elementToBeClickable(themeToggleButton)).click();
-        wait.until(ExpectedConditions.visibilityOf(darkModeOption));
-        wait.until(ExpectedConditions.elementToBeClickable(darkModeOption)).click();
-        logger.info("Dark Mode selected");
+        safeClickThemeToggleWithRetry();
+        WebElement dark = wait.until(ExpectedConditions.elementToBeClickable(darkModeOption));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", dark);
+        wait.until(driver -> isDarkModeActive());
     }
 
     public void selectLightMode() {
-        logger.info("Selecting Light Mode");
-        wait.until(ExpectedConditions.elementToBeClickable(themeToggleButton)).click();
-        wait.until(ExpectedConditions.visibilityOf(lightModeOption));
-        wait.until(ExpectedConditions.elementToBeClickable(lightModeOption)).click();
-        logger.info("Light Mode selected");
+        safeClickThemeToggleWithRetry();
+        WebElement light = wait.until(ExpectedConditions.elementToBeClickable(lightModeOption));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", light);
+        wait.until(driver -> isLightModeActive());
     }
 
-    // ========== TASK ID FILTER ==========
-    @FindBy(xpath = "//input[@placeholder='Filter task by id']")
-    WebElement taskIdFilterInput;
+   
+ // ====================== SEARCH + ASSERT ===========================
+    public String searchSecondTaskIdInTableAndSearch() {
+        By secondTaskIdCell = By.xpath("(//td[@data-slot='table-cell']//a)[2]");
+        String taskId = wait.until(ExpectedConditions.visibilityOfElementLocated(secondTaskIdCell)).getText().trim();
 
-    public void enterTaskIdFilter(String taskId) {
-        logger.info("Entering Task ID filter: {}", taskId);
-        wait.until(ExpectedConditions.visibilityOf(taskIdFilterInput)).clear();
-        taskIdFilterInput.sendKeys(taskId);
-        taskIdFilterInput.sendKeys(Keys.ENTER);
-    }
+        WebElement searchInput = wait.until(ExpectedConditions.elementToBeClickable(taskIdSearchBox));
+        searchInput.clear();
+        searchInput.sendKeys(taskId);
+        System.out.println("🔍 Searched for second Task ID: " + taskId);
 
-    public boolean verifyTaskIdPresent(String taskId) {
+        // Step 1: Wait 1 second after sending input
         try {
-            By taskLocator = By.xpath("//td[contains(text(),'" + taskId + "')]");
-            wait.until(ExpectedConditions.visibilityOfElementLocated(taskLocator));
-            logger.info("Task ID {} found", taskId);
-            return true;
-        } catch (TimeoutException e) {
-            logger.warn("Task ID {} not found", taskId);
-            return false;
-        }
-    }
+            Thread.sleep(1000);
+        } catch (InterruptedException ignored) {}
 
-    // ========== SORTING ==========
-    private final By taskIdSortBtn = By.xpath("//th[contains(., 'Task ID')]/button");
-    private final By patientInitialsSortBtn = By.xpath("//th[contains(., 'Patient Initials')]/button");
-    private final By statusSortBtn = By.xpath("//th[contains(., 'Status')]/button");
-    private final By prioritySortBtn = By.xpath("//th[contains(., 'Priority')]/button");
-    private final By uploadDateSortBtn = By.xpath("//th[contains(., 'Provider Upload Date')]/button");
-    private final By uploadTimeSortBtn = By.xpath("//th[contains(., 'Provider Upload Time')]/button");
-    private final By audioDurationSortBtn = By.xpath("//th[contains(., 'Audio duration')]/button");
+        // Step 2: Refresh the page
+        driver.navigate().refresh();
 
-    public void sortBy(By columnSortBtn) {
-        logger.info("Sorting by column");
-        wait.until(ExpectedConditions.elementToBeClickable(columnSortBtn)).click();
-    }
+        // Step 3: Wait for dashboard to fully load
+        waitForDashboardToLoad();
 
-    public void sortByTaskId()           { sortBy(taskIdSortBtn); }
-    public void sortByPatientInitials()  { sortBy(patientInitialsSortBtn); }
-    public void sortByStatus()           { sortBy(statusSortBtn); }
-    public void sortByPriority()         { sortBy(prioritySortBtn); }
-    public void sortByUploadDate()       { sortBy(uploadDateSortBtn); }
-    public void sortByUploadTime()       { sortBy(uploadTimeSortBtn); }
-    public void sortByAudioDuration()    { sortBy(audioDurationSortBtn); }
-
-    public List<String> getColumnValues(By columnSelector) {
-        logger.debug("Getting column values");
-        List<WebElement> elements = driver.findElements(columnSelector);
-        return elements.stream().map(e -> e.getText().trim()).collect(Collectors.toList());
-    }
-
-    // ========== STATUS FILTER ==========
-    private final By statusFilterBtn = By.xpath("//button[@data-slot=\"popover-trigger\" and normalize-space()=\"Status\"]");
-    private final By inProgressOption = By.xpath("//div[@cmdk-item='' and normalize-space()='In Progress']");
-    private final By statusColumnCells = By.cssSelector("tbody tr td:nth-child(3)");
-
-    public void filterStatusInProgress() {
-        logger.info("Filtering status: In Progress");
-        wait.until(ExpectedConditions.elementToBeClickable(statusFilterBtn)).click();
-        wait.until(ExpectedConditions.elementToBeClickable(inProgressOption)).click();
-
+        // Step 4: Wait another 1 second after dashboard reload
         try {
-            WebDriverWait shortWait = new WebDriverWait(driver, Duration.ofSeconds(5));
-            shortWait.until(ExpectedConditions.or(
-                ExpectedConditions.presenceOfElementLocated(statusColumnCells),
-                ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(text(), 'No data')]"))
-            ));
-        } catch (TimeoutException e) {
-            logger.error("No data or status rows not loaded");
-            throw new AssertionError("Neither rows nor 'No data' message appeared after filtering.");
-        }
-    }
+            Thread.sleep(1000);
+        } catch (InterruptedException ignored) {}
 
-    public boolean allStatusesAreInProgress() {
-        List<WebElement> statusCells = driver.findElements(statusColumnCells);
-        if (statusCells.isEmpty()) {
-            logger.warn("No rows found. Likely 'No data' displayed.");
-            return false;
-        }
-
-        for (WebElement cell : statusCells) {
-            String status = cell.getText().trim();
-            if (!status.equalsIgnoreCase("Inprogress")) {
-                logger.error("Unexpected status: {}", status);
-                return false;
-            }
-        }
-        return true;
-    }
-
-    // ========== PRIORITY FILTER ==========
-    private final By priorityFilterBtn = By.xpath("//button[@data-slot='popover-trigger' and normalize-space()='Priority']");
-    private final By mediumPriorityOption = By.xpath("//div[@cmdk-item='' and normalize-space()='Medium']");
-    private final By priorityColumnCells = By.cssSelector("tbody tr td:nth-child(4)");
-
-    public void filterPriorityMedium() {
-        logger.info("Filtering priority: Medium");
-        wait.until(ExpectedConditions.elementToBeClickable(priorityFilterBtn)).click();
-        wait.until(ExpectedConditions.elementToBeClickable(mediumPriorityOption)).click();
-
-        try {
-            WebDriverWait shortWait = new WebDriverWait(driver, Duration.ofSeconds(5));
-            shortWait.until(ExpectedConditions.or(
-                ExpectedConditions.presenceOfElementLocated(priorityColumnCells),
-                ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(text(), 'No data')]"))
-            ));
-        } catch (TimeoutException e) {
-            logger.error("No data or priority rows not loaded");
-            throw new AssertionError("Neither rows nor 'No data' message appeared after filtering by Medium priority.");
-        }
-    }
-
-    public boolean allPrioritiesAreMedium() {
-        List<WebElement> priorityCells = driver.findElements(priorityColumnCells);
-        if (priorityCells.isEmpty()) {
-            logger.warn("No rows found. Likely 'No data' displayed.");
-            return false;
-        }
-
-        for (WebElement cell : priorityCells) {
-            String priority = cell.getText().trim();
-            if (!priority.equalsIgnoreCase("Medium")) {
-                logger.error("Unexpected priority: {}", priority);
-                return false;
-            }
-        }
-        return true;
-    }
-
-    // ========== VIEW & VERIFY TASK HIDE ==========
-    public String getFirstTaskId() {
-        By firstTaskIdCell = By.cssSelector("tbody tr td:nth-child(1)");
-        String taskId = wait.until(ExpectedConditions.visibilityOfElementLocated(firstTaskIdCell)).getText().trim();
-        logger.info("First task ID: {}", taskId);
         return taskId;
     }
 
-    public void clickViewButton() {
-        By viewBtn = By.xpath("//button[normalize-space()='View']");
-        logger.info("Clicking View button");
-        wait.until(ExpectedConditions.elementToBeClickable(viewBtn)).click();
-    }
 
-    public void clickFirstTaskInView() {
-        By firstTaskInView = By.xpath("(//div[@role='menuitemcheckbox' and normalize-space()='taskNo'])[1]");
-        logger.info("Clicking first task in View dropdown");
-        wait.until(ExpectedConditions.elementToBeClickable(firstTaskInView)).click();
-    }
 
-    public boolean isTaskIdPresentInList(String taskId) {
-        logger.info("Verifying if Task ID {} is present in list", taskId);
-        List<WebElement> taskIds = driver.findElements(By.cssSelector("tbody tr td:nth-child(1)"));
-        for (WebElement idCell : taskIds) {
-            if (idCell.getText().trim().equals(taskId)) {
-                return true;
+    public void assertFirstRowHasTaskId(String expectedTaskId) {
+        By firstTaskIdCell = By.xpath("(//td[@data-slot='table-cell']//a)[1]");
+
+        for (int i = 1; i <= 3; i++) {
+            try {
+                WebElement cell = wait.until(ExpectedConditions.visibilityOfElementLocated(firstTaskIdCell));
+                String actual = cell.getText().trim();
+
+                if (actual.equals(expectedTaskId)) {
+                    System.out.println("✅ First row matches searched Task ID: " + actual);
+                    return;
+                } else {
+                    System.out.println("⚠️ Attempt " + i + ": Mismatch - Found: " + actual + ", Expected: " + expectedTaskId);
+                    Thread.sleep(500); // Let table reload if needed
+                }
+            } catch (StaleElementReferenceException e) {
+                System.out.println("🔁 Retry due to stale element...");
+            } catch (Exception e) {
+                System.out.println("⚠️ Retry due to exception: " + e.getMessage());
             }
         }
-        logger.warn("Task ID {} not found in list", taskId);
-        return false;
+
+        throw new AssertionError("❌ First row does not match expected Task ID after retries. Expected: " + expectedTaskId);
     }
+
+    public void clearTaskIdSearchBoxWithWait() {
+        WebElement searchInput = wait.until(ExpectedConditions.elementToBeClickable(taskIdSearchBox));
+        boolean cleared = false;
+
+        for (int i = 0; i < 5; i++) {
+            try {
+                searchInput.clear();
+                ((JavascriptExecutor) driver).executeScript("arguments[0].value = '';", searchInput);
+                Thread.sleep(300);
+                if (searchInput.getAttribute("value").isEmpty()) {
+                    cleared = true;
+                    break;
+                }
+            } catch (Exception e) {
+                System.out.println("⚠️ Search box clearing attempt failed: " + e.getMessage());
+            }
+        }
+
+        if (!cleared) {
+            throw new RuntimeException("❌ Could not clear Task ID search box after retries.");
+        }
+
+        // Wait for table to repopulate after clearing search
+        By rowLocator = By.xpath("//table//tbody//tr");
+        try {
+            wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(rowLocator, 0));
+        } catch (Exception e) {
+            System.out.println("⚠️ Table did not reload after clearing search. Continuing anyway.");
+        }
+
+        System.out.println("🧹 Search box cleared and table loaded.");
+    }
+
+
+    // ====================== FILTERS ===========================
+
+    public void applyFirstStatusFilterAndVerify() {
+        clearTaskIdSearchBoxWithWait();
+        wait.until(ExpectedConditions.elementToBeClickable(statusFilterButton)).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(statusOptionsGroup));
+        WebElement option = wait.until(ExpectedConditions.visibilityOfElementLocated(firstStatusOption));
+        String selectedStatus = option.findElement(By.cssSelector("span.truncate")).getText().trim();
+        option.click();
+        By statusCell = By.xpath("(//table//tbody/tr)[1]/td[4]//span[contains(@class,'capitalize')]");
+        wait.until(ExpectedConditions.textToBePresentInElementLocated(statusCell, selectedStatus));
+    }
+
+    public void clearStatusFilter() {
+        wait.until(ExpectedConditions.elementToBeClickable(clearStatusFilterButton)).click();
+    }
+
+    public void applyPriorityFilterAndVerify() {
+        clearTaskIdSearchBoxWithWait();
+        wait.until(ExpectedConditions.elementToBeClickable(priorityFilterButton)).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(priorityOptionsGroup));
+        WebElement option = wait.until(ExpectedConditions.visibilityOfElementLocated(secondPriorityOption));
+        String selectedPriority = option.findElement(By.cssSelector("span.truncate")).getText().trim();
+        option.click();
+        By priorityCell = By.xpath("(//table//tbody/tr)[1]/td[5]//span[contains(@class,'capitalize')]");
+        wait.until(ExpectedConditions.textToBePresentInElementLocated(priorityCell, selectedPriority));
+    }
+
+    public void clearPriorityFilter() {
+        wait.until(ExpectedConditions.elementToBeClickable(clearPriorityFilterButton)).click();
+    }
+
+    // ====================== COLUMN VISIBILITY ===========================
+
+    public void toggleTaskIdColumnVisibility() {
+        wait.until(ExpectedConditions.elementToBeClickable(viewButton)).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(columnOptionsGroup));
+        WebElement firstOption = wait.until(ExpectedConditions.elementToBeClickable(firstViewOption));
+        firstOption.click();
+    }
+
+    public void assertTaskIdColumnHidden() {
+        List<WebElement> headers = driver.findElements(taskIdColumnHeader);
+        if (!headers.isEmpty()) {
+            throw new AssertionError("❌ 'Task ID' column should be hidden but is still visible.");
+        }
+    }
+
+    // ====================== ASCENDING SORT ===========================
+    public void ensureTaskIdColumnVisible() {
+        List<WebElement> headers = driver.findElements(taskIdColumnHeader);
+        if (headers.isEmpty()) {
+            System.out.println("🔎 Task ID column hidden. Re-enabling it...");
+            toggleTaskIdColumnVisibility();
+            refreshDashboard();
+            waitForDashboardToLoad();
+        } else {
+            System.out.println("✅ Task ID column already visible.");
+        }
+    }
+    public void applyAscendingSortOnTaskId() {
+        try {
+            System.out.println("🟡 Applying ascending sort on Task ID...");
+
+            clickResetFiltersIfPresent();
+            ensureTaskIdColumnVisible();
+
+            By sortButtonLocator = By.xpath("//button[contains(., 'Task #') and @aria-haspopup='menu']");
+            By menuLocator = By.xpath("//div[@role='menu']");
+            By ascOption = By.xpath("//div[@role='menuitemcheckbox' and contains(., 'Asc')]");
+            By rowLocator = By.xpath("//table//tbody/tr");
+
+            // Click the sort button
+            WebElement sortButton = wait.until(ExpectedConditions.elementToBeClickable(sortButtonLocator));
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", sortButton);
+            Thread.sleep(300);
+
+            int retries = 3;
+            boolean menuAppeared = false;
+
+            while (retries-- > 0) {
+                try {
+                    sortButton.click();
+                    System.out.println("✅ Clicked Task # sort button");
+                } catch (Exception e) {
+                    System.out.println("⚠️ Fallback to JS click");
+                    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", sortButton);
+                }
+
+                try {
+                    wait.until(ExpectedConditions.visibilityOfElementLocated(menuLocator));
+                    menuAppeared = true;
+                    break;
+                } catch (Exception e) {
+                    System.out.println("🔁 Dropdown not visible yet, retrying...");
+                    sortButton = wait.until(ExpectedConditions.elementToBeClickable(sortButtonLocator));
+                    Thread.sleep(500);
+                }
+            }
+
+            if (!menuAppeared) {
+                throw new RuntimeException("❌ Dropdown did not appear after retries");
+            }
+
+            System.out.println("📂 Dropdown is visible");
+
+            // Click 'Ascending' option
+            WebElement ascItem = null;
+            List<WebElement> options = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(ascOption));
+
+            for (WebElement el : options) {
+                try {
+                    if (el.isDisplayed()) {
+                        ascItem = el;
+                        break;
+                    }
+                } catch (StaleElementReferenceException ignored) {}
+            }
+
+            if (ascItem == null) {
+                throw new RuntimeException("❌ 'Asc' option not found in dropdown");
+            }
+
+            try {
+                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", ascItem);
+                System.out.println("⬆️ Clicked 'Ascending' sort option");
+            } catch (StaleElementReferenceException e) {
+                System.out.println("⚠️ Asc element stale, retrying...");
+                WebElement retryAsc = wait.until(ExpectedConditions.elementToBeClickable(ascOption));
+                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", retryAsc);
+            }
+
+            // Wait for rows to update
+            boolean rowsUpdated = false;
+            for (int i = 0; i < 5; i++) {
+                List<WebElement> rows = driver.findElements(rowLocator);
+                if (!rows.isEmpty()) {
+                    System.out.println("✅ Rows visible after sorting. Count: " + rows.size());
+                    rowsUpdated = true;
+                    break;
+                }
+                Thread.sleep(1000);
+            }
+
+            if (!rowsUpdated) {
+                throw new RuntimeException("❌ Table did not update after ascending sort.");
+            }
+
+            // ⏸️ Add short wait before verifying
+            Thread.sleep(1000);
+
+        } catch (Exception e) {
+            throw new RuntimeException("❌ Failed to apply ascending sort: " + e.getMessage(), e);
+        }
+    }
+
+
+    public void verifyTaskIdsInAscendingOrder() {
+        By rowLocator = By.xpath("//table//tbody/tr");
+
+        for (int attempt = 1; attempt <= 3; attempt++) {
+            try {
+                wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(rowLocator, 1));
+                List<WebElement> rows = driver.findElements(rowLocator);
+                System.out.println("🔍 Total table rows found: " + rows.size());
+
+                List<Integer> ids = new ArrayList<>();
+                for (WebElement row : rows) {
+                    try {
+                        WebElement link = row.findElement(By.xpath(".//a"));
+                        String text = link.getText().replaceAll("[^0-9]", "").trim();
+                        if (!text.isEmpty()) {
+                            ids.add(Integer.parseInt(text));
+                            System.out.println("➡️ Found Task ID: " + text);
+                        }
+                    } catch (StaleElementReferenceException | org.openqa.selenium.NoSuchElementException e) {
+                        System.out.println("⚠️ Skipping stale/missing row: " + e.getMessage());
+                    }
+                }
+
+                if (ids.size() < 2) {
+                    System.out.println("⚠️ Not enough IDs found. Retry " + attempt);
+                    Thread.sleep(800);
+                    continue;
+                }
+
+                List<Integer> sorted = new ArrayList<>(ids);
+                Collections.sort(sorted);
+
+                if (ids.equals(sorted)) {
+                    System.out.println("✅ Task IDs are in correct ascending order.");
+                    return; // Success
+                } else {
+                    System.out.println("⚠️ Attempt " + attempt + ": IDs not yet sorted ascending");
+                    Thread.sleep(800);
+                }
+
+            } catch (Exception e) {
+                System.out.println("⚠️ Retry " + attempt + " due to: " + e.getMessage());
+            }
+        }
+
+        throw new AssertionError("❌ Task IDs not in ascending order after retries.");
+    }
+
+
 }

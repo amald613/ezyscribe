@@ -6,27 +6,12 @@
   </listeners>
   <test thread-count="5" name="LoginTests(failed)">
     <classes>
-      <class name="tests.DoctorDashboardTest">
-        <methods>
-          <include name="verifySortByUploadTimeActuallySorts"/>
-          <include name="verifyFilterByPriorityMedium"/>
-          <include name="setup"/>
-          <include name="verifyFilterByTaskId"/>
-          <include name="tearDown"/>
-          <include name="verifyRecordingWorkflow_ReviewAfterRecordAgain"/>
-          <include name="verifyFilterByStatusInProgress"/>
-          <include name="refreshPageAfterEachTest"/>
-        </methods>
-      </class> <!-- tests.DoctorDashboardTest -->
       <class name="tests.ScribeDashboardTest">
         <methods>
-          <include name="verifyFilterByStatusInProgress"/>
-          <include name="refreshPageAfterEachTest"/>
-          <include name="verifyFilterByPriorityMedium"/>
+          <include name="ensureLoggedInAndRefresh"/>
           <include name="setup"/>
-          <include name="verifyFilterByTaskId"/>
-          <include name="verifySortByUploadTimeActuallySorts"/>
-          <include name="tearDown"/>
+          <include name="teardown"/>
+          <include name="searchByFirstTaskId"/>
         </methods>
       </class> <!-- tests.ScribeDashboardTest -->
     </classes>

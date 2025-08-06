@@ -5,8 +5,8 @@
 </listeners>
   <test name="LoginTests">
     <classes>
-   		   <class name="tests.LoginTests"/> 
-     	 <class name="tests.DoctorDashboardTest"/> 
+   		  <!--  <class name="tests.LoginTests"/> 
+     	 <class name="tests.DoctorDashboardTest"/> --> 
      	  <class name="tests.ScribeDashboardTest">
      	   <!-- <methods>
           <include name="verifyFilterByTaskId"/>

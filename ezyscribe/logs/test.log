@@ -5114,3 +5114,619 @@ Session ID: aacd9ed879b4b5c357889065c7e5a0c9
 2025-07-30 22:39:24 WARN  ScribeDashboardPage:207 - Task ID 120122 not found in list
 2025-07-30 22:39:24 INFO  ScribeDashboardTest:56 - Refreshing page after test
 2025-07-30 22:39:27 INFO  ScribeDashboardTest:65 - Closing browser
+2025-08-01 18:27:15 INFO  ScribeDashboardTest:29 - Setting up browser and logging in as Scribe
+2025-08-01 18:27:22 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-08-01 18:27:22 INFO  LoginPage:44 - Entered password.
+2025-08-01 18:27:22 INFO  LoginPage:53 - Clicked login button.
+2025-08-01 18:27:22 INFO  ScribeDashboardTest:51 - Login successful
+2025-08-01 18:27:22 INFO  ScribeDashboardTest:71 - TC01 - Dark to Light Theme Toggle
+2025-08-01 18:27:22 INFO  ScribeDashboardPage:35 - Selecting Dark Mode
+2025-08-01 18:27:26 INFO  ScribeDashboardPage:41 - Selecting Light Mode
+2025-08-01 18:27:37 INFO  ScribeDashboardTest:56 - Refreshing page after test
+2025-08-01 18:32:50 INFO  ScribeDashboardTest:29 - Setting up browser and logging in as Scribe
+2025-08-01 18:32:55 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-08-01 18:32:55 INFO  LoginPage:44 - Entered password.
+2025-08-01 18:32:55 INFO  LoginPage:53 - Clicked login button.
+2025-08-01 18:32:55 INFO  ScribeDashboardTest:51 - Login successful
+2025-08-01 18:33:00 INFO  ScribeDashboardPage:32 - No default date filter present, skipping reset.
+2025-08-01 18:33:00 INFO  ScribeDashboardTest:54 - Login successful and filters reset (if applied)
+2025-08-01 18:33:00 INFO  ScribeDashboardTest:75 - TC01 - Dark to Light Theme Toggle
+2025-08-01 18:33:00 INFO  ScribeDashboardPage:48 - Selecting Dark Mode
+2025-08-01 18:33:11 INFO  ScribeDashboardTest:60 - Refreshing page after test
+2025-08-01 18:37:06 INFO  ScribeDashboardTest:29 - Setting up browser and logging in as Scribe
+2025-08-01 18:37:10 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-08-01 18:37:10 INFO  LoginPage:44 - Entered password.
+2025-08-01 18:37:11 INFO  LoginPage:53 - Clicked login button.
+2025-08-01 18:37:11 INFO  ScribeDashboardTest:51 - Login successful
+2025-08-01 18:37:13 INFO  ScribeDashboardPage:30 - Default upload date filter cleared.
+2025-08-01 18:37:13 INFO  ScribeDashboardTest:54 - Login successful and filters reset (if applied)
+2025-08-01 18:37:13 INFO  ScribeDashboardTest:75 - TC01 - Dark to Light Theme Toggle
+2025-08-01 18:37:13 INFO  ScribeDashboardPage:48 - Selecting Dark Mode
+2025-08-01 18:37:14 INFO  ScribeDashboardPage:54 - Selecting Light Mode
+2025-08-01 18:37:24 INFO  ScribeDashboardTest:60 - Refreshing page after test
+2025-08-01 18:40:31 INFO  ScribeDashboardTest:29 - Setting up browser and logging in as Scribe
+2025-08-01 18:40:36 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-08-01 18:40:36 INFO  LoginPage:44 - Entered password.
+2025-08-01 18:40:36 INFO  LoginPage:53 - Clicked login button.
+2025-08-01 18:40:36 INFO  ScribeDashboardTest:51 - Login successful
+2025-08-01 18:40:41 INFO  ScribeDashboardPage:32 - No default date filter present, skipping reset.
+2025-08-01 18:40:41 INFO  ScribeDashboardTest:54 - Login successful and filters reset (if applied)
+2025-08-01 18:40:41 INFO  ScribeDashboardTest:75 - TC01 - Dark to Light Theme Toggle
+2025-08-01 18:40:41 INFO  ScribeDashboardPage:48 - Selecting Dark Mode
+2025-08-01 18:40:52 INFO  ScribeDashboardTest:60 - Refreshing page after test
+2025-08-01 18:45:09 INFO  ScribeDashboardTest:29 - Setting up browser and logging in as Scribe
+2025-08-01 18:45:14 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-08-01 18:45:14 INFO  LoginPage:44 - Entered password.
+2025-08-01 18:45:14 INFO  LoginPage:53 - Clicked login button.
+2025-08-01 18:45:14 INFO  ScribeDashboardTest:51 - Login successful
+2025-08-01 18:45:16 INFO  ScribeDashboardPage:30 - Default upload date filter cleared.
+2025-08-01 18:45:16 INFO  ScribeDashboardTest:54 - Login successful and filters reset (if applied)
+2025-08-01 18:45:16 INFO  ScribeDashboardTest:75 - TC01 - Dark to Light Theme Toggle
+2025-08-01 18:45:16 INFO  ScribeDashboardPage:48 - Selecting Dark Mode
+2025-08-01 18:45:25 INFO  ScribeDashboardTest:60 - Refreshing page after test
+2025-08-01 18:48:13 INFO  ScribeDashboardTest:29 - Setting up browser and logging in as Scribe
+2025-08-01 18:48:18 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-08-01 18:48:18 INFO  LoginPage:44 - Entered password.
+2025-08-01 18:48:18 INFO  LoginPage:53 - Clicked login button.
+2025-08-01 18:48:18 INFO  ScribeDashboardTest:51 - Login successful
+2025-08-01 18:48:21 INFO  ScribeDashboardPage:73 - Default date filter cleared.
+2025-08-01 18:48:21 INFO  ScribeDashboardTest:54 - Login successful and filters reset (if applied)
+2025-08-01 18:48:21 INFO  ScribeDashboardTest:75 - TC01 - Dark to Light Theme Toggle
+2025-08-01 18:48:21 INFO  ScribeDashboardPage:30 - Selecting Dark Mode
+2025-08-01 18:48:31 INFO  ScribeDashboardTest:60 - Refreshing page after test
+2025-08-01 19:07:37 INFO  ScribeDashboardTest:29 - Setting up browser and logging in as Scribe
+2025-08-01 19:07:42 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-08-01 19:07:42 INFO  LoginPage:44 - Entered password.
+2025-08-01 19:07:42 INFO  LoginPage:53 - Clicked login button.
+2025-08-01 19:07:42 INFO  ScribeDashboardTest:51 - Login successful
+2025-08-01 19:07:45 INFO  ScribeDashboardPage:31 - Default upload date filter cleared.
+2025-08-01 19:07:45 INFO  ScribeDashboardTest:54 - Login successful and filters reset (if applied)
+2025-08-01 19:07:45 INFO  ScribeDashboardTest:75 - TC01 - Dark to Light Theme Toggle
+2025-08-01 19:07:45 INFO  ScribeDashboardPage:48 - Selecting Dark Mode
+2025-08-01 19:07:46 INFO  ScribeDashboardPage:54 - Selecting Light Mode
+2025-08-01 19:07:57 INFO  ScribeDashboardTest:60 - Refreshing page after test
+2025-08-01 19:12:18 INFO  ScribeDashboardTest:29 - Setting up browser and logging in as Scribe
+2025-08-01 19:12:23 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-08-01 19:12:23 INFO  LoginPage:44 - Entered password.
+2025-08-01 19:12:23 INFO  LoginPage:53 - Clicked login button.
+2025-08-01 19:12:23 INFO  ScribeDashboardTest:51 - Login successful
+2025-08-01 19:12:27 INFO  ScribeDashboardPage:31 - Default upload date filter cleared.
+2025-08-01 19:12:27 INFO  ScribeDashboardTest:54 - Login successful and filters reset (if applied)
+2025-08-01 19:12:27 INFO  ScribeDashboardTest:75 - TC01 - Dark to Light Theme Toggle
+2025-08-01 19:12:27 INFO  ScribeDashboardPage:45 - Selecting Dark Mode
+2025-08-01 19:12:28 INFO  ScribeDashboardPage:51 - Selecting Light Mode
+2025-08-01 19:12:39 INFO  ScribeDashboardTest:60 - Refreshing page after test
+2025-08-01 19:22:38 INFO  ScribeDashboardTest:29 - Setting up browser and logging in as Scribe
+2025-08-01 19:22:43 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-08-01 19:22:43 INFO  LoginPage:44 - Entered password.
+2025-08-01 19:22:44 INFO  LoginPage:53 - Clicked login button.
+2025-08-01 19:22:44 INFO  ScribeDashboardTest:51 - Login successful
+2025-08-01 19:22:47 INFO  ScribeDashboardPage:31 - Default upload date filter cleared.
+2025-08-01 19:22:47 INFO  ScribeDashboardTest:54 - Login successful and filters reset (if applied)
+2025-08-01 19:22:47 INFO  ScribeDashboardTest:75 - TC01 - Dark to Light Theme Toggle
+2025-08-01 19:22:47 INFO  ScribeDashboardPage:45 - Selecting Dark Mode
+2025-08-01 19:22:49 INFO  ScribeDashboardPage:51 - Selecting Light Mode
+2025-08-01 19:22:59 INFO  ScribeDashboardTest:60 - Refreshing page after test
+2025-08-01 19:25:33 INFO  ScribeDashboardTest:29 - Setting up browser and logging in as Scribe
+2025-08-01 19:25:38 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-08-01 19:25:38 INFO  LoginPage:44 - Entered password.
+2025-08-01 19:25:38 INFO  LoginPage:53 - Clicked login button.
+2025-08-01 19:25:38 INFO  ScribeDashboardTest:51 - Login successful
+2025-08-01 19:25:41 INFO  ScribeDashboardPage:31 - Default upload date filter cleared.
+2025-08-01 19:25:41 INFO  ScribeDashboardTest:54 - Login successful and filters reset (if applied)
+2025-08-01 19:25:41 INFO  ScribeDashboardTest:75 - TC01 - Dark to Light Theme Toggle
+2025-08-01 19:25:41 INFO  ScribeDashboardPage:45 - Selecting Dark Mode
+2025-08-01 19:25:52 INFO  ScribeDashboardTest:60 - Refreshing page after test
+2025-08-01 20:23:40 INFO  ScribeDashboardTest:29 - Setting up browser and logging in as Scribe
+2025-08-01 20:23:47 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-08-01 20:23:47 INFO  LoginPage:44 - Entered password.
+2025-08-01 20:23:47 INFO  LoginPage:53 - Clicked login button.
+2025-08-01 20:23:47 INFO  ScribeDashboardTest:51 - Login successful
+2025-08-01 20:23:50 INFO  ScribeDashboardPage:31 - Default upload date filter cleared.
+2025-08-01 20:23:50 INFO  ScribeDashboardTest:54 - Login successful and filters reset (if applied)
+2025-08-01 20:23:50 INFO  ScribeDashboardTest:75 - TC01 - Dark to Light Theme Toggle
+2025-08-01 20:23:50 INFO  ScribeDashboardPage:45 - Selecting Dark Mode
+2025-08-01 20:23:50 INFO  ScribeDashboardPage:64 - Dark mode selected.
+2025-08-01 20:23:51 INFO  ScribeDashboardPage:73 - Selecting Light Mode
+2025-08-01 20:23:57 INFO  ScribeDashboardTest:60 - Refreshing page after test
+2025-08-01 20:24:12 INFO  ScribeDashboardTest:29 - Setting up browser and logging in as Scribe
+2025-08-01 20:24:17 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-08-01 20:24:17 INFO  LoginPage:44 - Entered password.
+2025-08-01 20:24:17 INFO  LoginPage:53 - Clicked login button.
+2025-08-01 20:24:17 INFO  ScribeDashboardTest:51 - Login successful
+2025-08-01 20:24:20 INFO  ScribeDashboardPage:31 - Default upload date filter cleared.
+2025-08-01 20:24:20 INFO  ScribeDashboardTest:54 - Login successful and filters reset (if applied)
+2025-08-01 20:24:20 INFO  ScribeDashboardTest:75 - TC01 - Dark to Light Theme Toggle
+2025-08-01 20:24:20 INFO  ScribeDashboardPage:45 - Selecting Dark Mode
+2025-08-01 20:24:20 INFO  ScribeDashboardTest:60 - Refreshing page after test
+2025-08-01 20:26:24 INFO  ScribeDashboardTest:29 - Setting up browser and logging in as Scribe
+2025-08-01 20:26:29 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-08-01 20:26:29 INFO  LoginPage:44 - Entered password.
+2025-08-01 20:26:29 INFO  LoginPage:53 - Clicked login button.
+2025-08-01 20:26:29 INFO  ScribeDashboardTest:51 - Login successful
+2025-08-01 20:26:32 INFO  ScribeDashboardPage:31 - Default upload date filter cleared.
+2025-08-01 20:26:32 INFO  ScribeDashboardTest:54 - Login successful and filters reset (if applied)
+2025-08-01 20:26:32 INFO  ScribeDashboardTest:75 - TC01 - Dark to Light Theme Toggle
+2025-08-01 20:26:32 INFO  ScribeDashboardPage:45 - Selecting Dark Mode
+2025-08-01 20:26:32 INFO  ScribeDashboardPage:64 - Dark mode selected.
+2025-08-01 20:26:33 INFO  ScribeDashboardPage:74 - Selecting Light Mode
+2025-08-01 20:26:34 INFO  ScribeDashboardPage:91 - Light mode selected.
+2025-08-01 20:26:35 INFO  ScribeDashboardTest:60 - Refreshing page after test
+2025-08-01 20:33:07 INFO  ScribeDashboardTest:29 - Setting up browser and logging in as Scribe
+2025-08-01 20:33:13 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-08-01 20:33:13 INFO  LoginPage:44 - Entered password.
+2025-08-01 20:33:13 INFO  LoginPage:53 - Clicked login button.
+2025-08-01 20:33:13 INFO  ScribeDashboardTest:51 - Login successful
+2025-08-01 20:33:16 INFO  ScribeDashboardPage:31 - Default upload date filter cleared.
+2025-08-01 20:33:16 INFO  ScribeDashboardTest:54 - Login successful and filters reset (if applied)
+2025-08-01 20:33:16 INFO  ScribeDashboardTest:76 - TC01 - Dark to Light Theme Toggle
+2025-08-01 20:33:16 INFO  ScribeDashboardPage:45 - Selecting Dark Mode
+2025-08-01 20:33:21 ERROR ScribeDashboardPage:66 - Dark theme option never appeared or wasn’t clickable.
+2025-08-01 20:33:21 INFO  ScribeDashboardTest:60 - Refreshing page after test
+2025-08-01 20:33:23 INFO  ScribeDashboardTest:85 - TC02 - Filter by Task ID (Dynamic)
+2025-08-01 20:33:23 INFO  ScribeDashboardPage:103 - Entering Task ID filter: 
+2025-08-01 20:33:23 INFO  ScribeDashboardTest:60 - Refreshing page after test
+2025-08-01 20:33:24 INFO  ScribeDashboardTest:69 - Closing browser
+2025-08-01 20:34:30 INFO  ScribeDashboardTest:29 - Setting up browser and logging in as Scribe
+2025-08-01 20:34:36 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-08-01 20:34:36 INFO  LoginPage:44 - Entered password.
+2025-08-01 20:34:36 INFO  LoginPage:53 - Clicked login button.
+2025-08-01 20:34:36 INFO  ScribeDashboardTest:51 - Login successful
+2025-08-01 20:34:40 INFO  ScribeDashboardPage:31 - Default upload date filter cleared.
+2025-08-01 20:34:40 INFO  ScribeDashboardTest:54 - Login successful and filters reset (if applied)
+2025-08-01 20:34:40 INFO  ScribeDashboardTest:76 - TC01 - Dark to Light Theme Toggle
+2025-08-01 20:34:40 INFO  ScribeDashboardPage:45 - Selecting Dark Mode
+2025-08-01 20:34:41 INFO  ScribeDashboardPage:54 - Clicked theme toggle button
+2025-08-01 20:34:48 ERROR ScribeDashboardPage:69 - Dark mode option did not appear in time.
+2025-08-01 20:34:48 INFO  ScribeDashboardTest:60 - Refreshing page after test
+2025-08-01 20:34:49 INFO  ScribeDashboardTest:85 - TC02 - Filter by Task ID (Dynamic)
+2025-08-01 20:34:49 INFO  ScribeDashboardPage:106 - Entering Task ID filter: 
+2025-08-01 20:34:50 INFO  ScribeDashboardTest:60 - Refreshing page after test
+2025-08-01 20:34:50 INFO  ScribeDashboardTest:69 - Closing browser
+2025-08-01 20:41:25 INFO  ScribeDashboardTest:29 - Setting up browser and logging in as Scribe
+2025-08-01 20:41:30 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-08-01 20:41:30 INFO  LoginPage:44 - Entered password.
+2025-08-01 20:41:31 INFO  LoginPage:53 - Clicked login button.
+2025-08-01 20:41:31 INFO  ScribeDashboardTest:51 - Login successful
+2025-08-01 20:41:34 INFO  ScribeDashboardPage:31 - Default upload date filter cleared.
+2025-08-01 20:41:34 INFO  ScribeDashboardTest:53 - Login successful and filters reset (if applied)
+2025-08-01 20:41:34 INFO  ScribeDashboardTest:73 - TC01 - Dark to Light Theme Toggle
+2025-08-01 20:41:34 INFO  ScribeDashboardPage:44 - Selecting Dark Mode
+2025-08-01 20:41:34 INFO  ScribeDashboardPage:65 - Clicked theme toggle button
+2025-08-01 20:41:40 ERROR ScribeDashboardPage:80 - Dark mode option did not appear in time.
+2025-08-01 20:41:40 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:41:41 INFO  ScribeDashboardTest:82 - TC02 - Filter by Task ID (Dynamic)
+2025-08-01 20:41:41 INFO  ScribeDashboardPage:90 - Entering Task ID filter: 
+2025-08-01 20:41:41 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:41:42 INFO  ScribeDashboardTest:91 - TC03 - Sort by Task ID (Asc)
+2025-08-01 20:41:42 INFO  ScribeDashboardPage:122 - Opening column menu
+2025-08-01 20:41:42 INFO  ScribeDashboardPage:127 - Clicking Ascending
+2025-08-01 20:41:51 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:43:13 INFO  ScribeDashboardTest:29 - Setting up browser and logging in as Scribe
+2025-08-01 20:43:18 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-08-01 20:43:18 INFO  LoginPage:44 - Entered password.
+2025-08-01 20:43:18 INFO  LoginPage:53 - Clicked login button.
+2025-08-01 20:43:18 INFO  ScribeDashboardTest:51 - Login successful
+2025-08-01 20:43:21 INFO  ScribeDashboardPage:31 - Default upload date filter cleared.
+2025-08-01 20:43:21 INFO  ScribeDashboardTest:53 - Login successful and filters reset (if applied)
+2025-08-01 20:43:21 INFO  ScribeDashboardTest:81 - TC01 - Dark to Light Theme Toggle
+2025-08-01 20:43:21 INFO  ScribeDashboardPage:44 - Selecting Dark Mode
+2025-08-01 20:43:21 INFO  ScribeDashboardPage:65 - Clicked theme toggle button
+2025-08-01 20:43:21 INFO  ScribeDashboardPage:78 - Dark mode selected.
+2025-08-01 20:43:22 INFO  ScribeDashboardPage:50 - Selecting Light Mode
+2025-08-01 20:43:22 INFO  ScribeDashboardPage:65 - Clicked theme toggle button
+2025-08-01 20:43:28 ERROR ScribeDashboardPage:80 - Light mode option did not appear in time.
+2025-08-01 20:43:28 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:43:29 INFO  ScribeDashboardTest:64 - Dashboard refreshed and task filter input visible.
+2025-08-01 20:43:29 INFO  ScribeDashboardTest:90 - TC02 - Filter by Task ID (Dynamic)
+2025-08-01 20:43:29 INFO  ScribeDashboardPage:90 - Entering Task ID filter: 
+2025-08-01 20:43:29 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:43:30 INFO  ScribeDashboardTest:64 - Dashboard refreshed and task filter input visible.
+2025-08-01 20:43:30 INFO  ScribeDashboardTest:99 - TC03 - Sort by Task ID (Asc)
+2025-08-01 20:43:30 INFO  ScribeDashboardPage:122 - Opening column menu
+2025-08-01 20:43:30 INFO  ScribeDashboardPage:127 - Clicking Ascending
+2025-08-01 20:43:40 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:43:41 INFO  ScribeDashboardTest:64 - Dashboard refreshed and task filter input visible.
+2025-08-01 20:43:41 INFO  ScribeDashboardTest:110 - TC04 - Sort by Patient Initials (only hide available — skip sorting test)
+2025-08-01 20:43:41 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:43:42 INFO  ScribeDashboardTest:64 - Dashboard refreshed and task filter input visible.
+2025-08-01 20:43:42 INFO  ScribeDashboardTest:116 - TC05 - Sort by Status (Asc)
+2025-08-01 20:43:42 INFO  ScribeDashboardPage:122 - Opening column menu
+2025-08-01 20:43:42 INFO  ScribeDashboardPage:127 - Clicking Ascending
+2025-08-01 20:43:52 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:43:53 INFO  ScribeDashboardTest:64 - Dashboard refreshed and task filter input visible.
+2025-08-01 20:43:53 INFO  ScribeDashboardTest:127 - TC06 - Sort by Priority (Asc)
+2025-08-01 20:43:53 INFO  ScribeDashboardPage:122 - Opening column menu
+2025-08-01 20:43:53 INFO  ScribeDashboardPage:127 - Clicking Ascending
+2025-08-01 20:44:03 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:44:04 INFO  ScribeDashboardTest:64 - Dashboard refreshed and task filter input visible.
+2025-08-01 20:44:04 INFO  ScribeDashboardTest:138 - TC07 - Sort by Upload Date (Asc)
+2025-08-01 20:44:04 INFO  ScribeDashboardPage:122 - Opening column menu
+2025-08-01 20:44:04 INFO  ScribeDashboardPage:127 - Clicking Ascending
+2025-08-01 20:44:15 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:44:15 INFO  ScribeDashboardTest:64 - Dashboard refreshed and task filter input visible.
+2025-08-01 20:44:15 INFO  ScribeDashboardTest:149 - TC08 - Sort by Upload Time (Asc)
+2025-08-01 20:44:15 INFO  ScribeDashboardPage:122 - Opening column menu
+2025-08-01 20:44:16 INFO  ScribeDashboardPage:127 - Clicking Ascending
+2025-08-01 20:44:26 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:44:27 INFO  ScribeDashboardTest:64 - Dashboard refreshed and task filter input visible.
+2025-08-01 20:44:27 INFO  ScribeDashboardTest:160 - TC09 - Sort by Audio Duration (Asc)
+2025-08-01 20:44:27 INFO  ScribeDashboardPage:122 - Opening column menu
+2025-08-01 20:44:27 INFO  ScribeDashboardPage:127 - Clicking Ascending
+2025-08-01 20:44:37 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:44:38 INFO  ScribeDashboardTest:64 - Dashboard refreshed and task filter input visible.
+2025-08-01 20:44:38 INFO  ScribeDashboardTest:171 - TC10 - Filter by Status = In Progress
+2025-08-01 20:44:38 INFO  ScribeDashboardPage:160 - Filtering status: In Progress
+2025-08-01 20:44:48 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:44:49 INFO  ScribeDashboardTest:64 - Dashboard refreshed and task filter input visible.
+2025-08-01 20:44:49 INFO  ScribeDashboardTest:178 - TC11 - Filter by Priority = Medium
+2025-08-01 20:44:49 INFO  ScribeDashboardPage:182 - Filtering priority: Medium
+2025-08-01 20:44:59 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:45:00 INFO  ScribeDashboardTest:64 - Dashboard refreshed and task filter input visible.
+2025-08-01 20:45:00 INFO  ScribeDashboardTest:185 - TC12 - View Task & Hide
+2025-08-01 20:45:10 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:45:11 INFO  ScribeDashboardTest:64 - Dashboard refreshed and task filter input visible.
+2025-08-01 20:45:11 INFO  ScribeDashboardTest:194 - TC13 - Hide Patient Initials Column
+2025-08-01 20:45:11 INFO  ScribeDashboardPage:122 - Opening column menu
+2025-08-01 20:45:12 INFO  ScribeDashboardPage:137 - Clicking Hide Column
+2025-08-01 20:45:22 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:45:23 INFO  ScribeDashboardTest:64 - Dashboard refreshed and task filter input visible.
+2025-08-01 20:45:23 INFO  ScribeDashboardTest:201 - TC14 - Reset sort on Task ID Column
+2025-08-01 20:45:23 INFO  ScribeDashboardPage:122 - Opening column menu
+2025-08-01 20:45:23 INFO  ScribeDashboardPage:132 - Clicking Descending
+2025-08-01 20:45:33 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:45:34 INFO  ScribeDashboardTest:64 - Dashboard refreshed and task filter input visible.
+2025-08-01 20:45:34 INFO  ScribeDashboardTest:74 - Closing browser
+2025-08-01 20:51:22 INFO  ScribeDashboardTest:29 - Setting up browser and logging in as Scribe
+2025-08-01 20:51:27 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-08-01 20:51:28 INFO  LoginPage:44 - Entered password.
+2025-08-01 20:51:28 INFO  LoginPage:53 - Clicked login button.
+2025-08-01 20:51:28 INFO  ScribeDashboardTest:51 - Login successful
+2025-08-01 20:51:31 INFO  ScribeDashboardPage:31 - Default upload date filter cleared.
+2025-08-01 20:51:31 INFO  ScribeDashboardTest:53 - Login successful and filters reset (if applied)
+2025-08-01 20:51:31 INFO  ScribeDashboardTest:81 - TC01 - Dark to Light Theme Toggle
+2025-08-01 20:51:31 INFO  ScribeDashboardPage:44 - Selecting Dark Mode
+2025-08-01 20:51:31 INFO  ScribeDashboardPage:65 - Clicked theme toggle button
+2025-08-01 20:51:31 INFO  ScribeDashboardPage:78 - Dark mode selected.
+2025-08-01 20:51:33 INFO  ScribeDashboardPage:50 - Selecting Light Mode
+2025-08-01 20:51:33 INFO  ScribeDashboardPage:65 - Clicked theme toggle button
+2025-08-01 20:51:38 ERROR ScribeDashboardPage:80 - Light mode option did not appear in time.
+2025-08-01 20:51:38 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:51:39 INFO  ScribeDashboardTest:64 - Dashboard refreshed and task filter input visible.
+2025-08-01 20:51:39 INFO  ScribeDashboardTest:90 - TC02 - Filter by Task ID (Dynamic)
+2025-08-01 20:51:39 INFO  ScribeDashboardPage:90 - Entering Task ID filter: 
+2025-08-01 20:51:40 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:51:40 INFO  ScribeDashboardTest:64 - Dashboard refreshed and task filter input visible.
+2025-08-01 20:51:40 INFO  ScribeDashboardTest:99 - TC03 - Sort by Task ID (Asc)
+2025-08-01 20:51:40 INFO  ScribeDashboardPage:122 - Opening column menu
+2025-08-01 20:51:41 INFO  ScribeDashboardPage:127 - Clicking Ascending
+2025-08-01 20:51:51 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:51:52 INFO  ScribeDashboardTest:64 - Dashboard refreshed and task filter input visible.
+2025-08-01 20:51:52 INFO  ScribeDashboardTest:110 - TC04 - Sort by Patient Initials (only hide available — skip sorting test)
+2025-08-01 20:51:52 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:51:53 INFO  ScribeDashboardTest:64 - Dashboard refreshed and task filter input visible.
+2025-08-01 20:51:53 INFO  ScribeDashboardTest:116 - TC05 - Sort by Status (Asc)
+2025-08-01 20:51:53 INFO  ScribeDashboardPage:122 - Opening column menu
+2025-08-01 20:51:53 INFO  ScribeDashboardPage:127 - Clicking Ascending
+2025-08-01 20:52:03 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:52:04 INFO  ScribeDashboardTest:64 - Dashboard refreshed and task filter input visible.
+2025-08-01 20:52:04 INFO  ScribeDashboardTest:127 - TC06 - Sort by Priority (Asc)
+2025-08-01 20:52:04 INFO  ScribeDashboardPage:122 - Opening column menu
+2025-08-01 20:52:05 INFO  ScribeDashboardPage:127 - Clicking Ascending
+2025-08-01 20:52:15 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:52:16 INFO  ScribeDashboardTest:64 - Dashboard refreshed and task filter input visible.
+2025-08-01 20:52:16 INFO  ScribeDashboardTest:138 - TC07 - Sort by Upload Date (Asc)
+2025-08-01 20:52:16 INFO  ScribeDashboardPage:122 - Opening column menu
+2025-08-01 20:52:16 INFO  ScribeDashboardPage:127 - Clicking Ascending
+2025-08-01 20:52:26 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:52:27 INFO  ScribeDashboardTest:64 - Dashboard refreshed and task filter input visible.
+2025-08-01 20:52:27 INFO  ScribeDashboardTest:149 - TC08 - Sort by Upload Time (Asc)
+2025-08-01 20:52:27 INFO  ScribeDashboardPage:122 - Opening column menu
+2025-08-01 20:52:27 INFO  ScribeDashboardPage:127 - Clicking Ascending
+2025-08-01 20:52:37 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:52:38 INFO  ScribeDashboardTest:64 - Dashboard refreshed and task filter input visible.
+2025-08-01 20:52:38 INFO  ScribeDashboardTest:160 - TC09 - Sort by Audio Duration (Asc)
+2025-08-01 20:52:38 INFO  ScribeDashboardPage:122 - Opening column menu
+2025-08-01 20:52:38 INFO  ScribeDashboardPage:127 - Clicking Ascending
+2025-08-01 20:52:48 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:52:49 INFO  ScribeDashboardTest:64 - Dashboard refreshed and task filter input visible.
+2025-08-01 20:52:49 INFO  ScribeDashboardTest:171 - TC10 - Filter by Status = In Progress
+2025-08-01 20:52:49 INFO  ScribeDashboardPage:160 - Filtering status: In Progress
+2025-08-01 20:53:00 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:53:00 INFO  ScribeDashboardTest:64 - Dashboard refreshed and task filter input visible.
+2025-08-01 20:53:00 INFO  ScribeDashboardTest:178 - TC11 - Filter by Priority = Medium
+2025-08-01 20:53:00 INFO  ScribeDashboardPage:182 - Filtering priority: Medium
+2025-08-01 20:53:11 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:53:12 INFO  ScribeDashboardTest:64 - Dashboard refreshed and task filter input visible.
+2025-08-01 20:53:12 INFO  ScribeDashboardTest:185 - TC12 - View Task & Hide
+2025-08-01 20:53:22 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:53:23 INFO  ScribeDashboardTest:64 - Dashboard refreshed and task filter input visible.
+2025-08-01 20:53:23 INFO  ScribeDashboardTest:194 - TC13 - Hide Patient Initials Column
+2025-08-01 20:53:23 INFO  ScribeDashboardPage:122 - Opening column menu
+2025-08-01 20:53:23 INFO  ScribeDashboardPage:137 - Clicking Hide Column
+2025-08-01 20:53:33 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:53:34 INFO  ScribeDashboardTest:64 - Dashboard refreshed and task filter input visible.
+2025-08-01 20:53:34 INFO  ScribeDashboardTest:201 - TC14 - Reset sort on Task ID Column
+2025-08-01 20:53:34 INFO  ScribeDashboardPage:122 - Opening column menu
+2025-08-01 20:53:35 INFO  ScribeDashboardPage:132 - Clicking Descending
+2025-08-01 20:53:45 INFO  ScribeDashboardTest:58 - Refreshing page after test
+2025-08-01 20:53:46 INFO  ScribeDashboardTest:64 - Dashboard refreshed and task filter input visible.
+2025-08-01 20:53:46 INFO  ScribeDashboardTest:74 - Closing browser
+2025-08-01 20:57:14 INFO  ScribeDashboardTest:26 - Setting up browser and logging in as Scribe
+2025-08-01 20:57:19 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-08-01 20:57:19 INFO  LoginPage:44 - Entered password.
+2025-08-01 20:57:19 INFO  LoginPage:53 - Clicked login button.
+2025-08-01 20:57:19 INFO  ScribeDashboardTest:48 - Login successful
+2025-08-01 20:57:22 INFO  ScribeDashboardPage:38 - Default upload date filter cleared.
+2025-08-01 20:57:22 INFO  ScribeDashboardTest:50 - Login successful and filters reset (if applied)
+2025-08-01 20:57:22 INFO  ScribeDashboardTest:70 - TC01 - Dark to Light Theme Toggle
+2025-08-01 20:57:22 INFO  ScribeDashboardPage:53 - Selecting Dark Mode
+2025-08-01 20:57:22 INFO  ScribeDashboardPage:62 - Clicked theme toggle button
+2025-08-01 20:57:23 INFO  ScribeDashboardPage:53 - Selecting Light Mode
+2025-08-01 20:57:23 INFO  ScribeDashboardPage:62 - Clicked theme toggle button
+2025-08-01 20:57:31 ERROR ScribeDashboardPage:67 - Light mode option did not appear in time.
+2025-08-01 20:57:31 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 20:57:32 INFO  ScribeDashboardTest:78 - TC02 - Filter by Task ID (Dynamic)
+2025-08-01 20:57:32 INFO  ScribeDashboardPage:81 - Entering Task ID filter: 
+2025-08-01 20:57:32 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 20:57:33 INFO  ScribeDashboardTest:86 - TC03 - Sort by Task ID (Asc)
+2025-08-01 20:57:41 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 20:57:42 INFO  ScribeDashboardTest:97 - TC04 - Patient Initials column does not support sorting, skipping test
+2025-08-01 20:57:42 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 20:57:43 INFO  ScribeDashboardTest:102 - TC05 - Sort by Status (Asc)
+2025-08-01 20:57:50 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 20:57:51 INFO  ScribeDashboardTest:113 - TC06 - Sort by Priority (Asc)
+2025-08-01 20:57:59 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 20:57:59 INFO  ScribeDashboardTest:124 - TC07 - Sort by Upload Date (Asc)
+2025-08-01 20:58:07 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 20:58:08 INFO  ScribeDashboardTest:135 - TC08 - Sort by Upload Time (Asc)
+2025-08-01 20:58:15 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 20:58:16 INFO  ScribeDashboardTest:146 - TC09 - Sort by Audio Duration (Asc)
+2025-08-01 20:58:24 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 20:58:25 INFO  ScribeDashboardTest:157 - TC10 - Filter by Status = In Progress
+2025-08-01 20:58:32 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 20:58:33 INFO  ScribeDashboardTest:164 - TC11 - Filter by Priority = Medium
+2025-08-01 20:58:40 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 20:58:41 INFO  ScribeDashboardTest:171 - TC12 - View Task & Hide
+2025-08-01 20:58:49 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 20:58:50 INFO  ScribeDashboardTest:180 - TC13 - Hide Patient Initials Column
+2025-08-01 20:58:57 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 20:58:58 INFO  ScribeDashboardTest:188 - TC14 - Reset sort on Task ID Column
+2025-08-01 20:59:02 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:01:35 INFO  ScribeDashboardTest:26 - Setting up browser and logging in as Scribe
+2025-08-01 21:01:40 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-08-01 21:01:41 INFO  LoginPage:44 - Entered password.
+2025-08-01 21:01:41 INFO  LoginPage:53 - Clicked login button.
+2025-08-01 21:01:41 INFO  ScribeDashboardTest:48 - Login successful
+2025-08-01 21:01:44 INFO  ScribeDashboardPage:38 - Default upload date filter cleared.
+2025-08-01 21:01:44 INFO  ScribeDashboardTest:50 - Login successful and filters reset (if applied)
+2025-08-01 21:01:44 INFO  ScribeDashboardTest:70 - TC01 - Dark to Light Theme Toggle
+2025-08-01 21:01:44 INFO  ScribeDashboardPage:53 - Selecting Dark Mode
+2025-08-01 21:01:44 INFO  ScribeDashboardPage:62 - Clicked theme toggle button
+2025-08-01 21:01:45 INFO  ScribeDashboardPage:53 - Selecting Light Mode
+2025-08-01 21:01:45 INFO  ScribeDashboardPage:62 - Clicked theme toggle button
+2025-08-01 21:01:53 ERROR ScribeDashboardPage:67 - Light mode option did not appear in time.
+2025-08-01 21:01:53 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:01:54 INFO  ScribeDashboardTest:78 - TC02 - Filter by Task ID (Dynamic)
+2025-08-01 21:01:54 INFO  ScribeDashboardPage:81 - Entering Task ID filter: 
+2025-08-01 21:01:54 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:01:55 INFO  ScribeDashboardTest:86 - TC03 - Sort by Task ID (Asc)
+2025-08-01 21:01:55 INFO  ScribeDashboardPage:98 - Opening column menu: By.xpath: (//div[@data-slot='column-menu-trigger'])[1]
+2025-08-01 21:02:02 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:02:03 INFO  ScribeDashboardTest:97 - TC04 - Patient Initials column does not support sorting, skipping test
+2025-08-01 21:02:03 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:02:04 INFO  ScribeDashboardTest:102 - TC05 - Sort by Status (Asc)
+2025-08-01 21:02:04 INFO  ScribeDashboardPage:98 - Opening column menu: By.xpath: (//div[@data-slot='column-menu-trigger'])[3]
+2025-08-01 21:02:12 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:02:13 INFO  ScribeDashboardTest:113 - TC06 - Sort by Priority (Asc)
+2025-08-01 21:02:13 INFO  ScribeDashboardPage:98 - Opening column menu: By.xpath: (//div[@data-slot='column-menu-trigger'])[4]
+2025-08-01 21:02:20 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:02:21 INFO  ScribeDashboardTest:124 - TC07 - Sort by Upload Date (Asc)
+2025-08-01 21:02:21 INFO  ScribeDashboardPage:98 - Opening column menu: By.xpath: (//div[@data-slot='column-menu-trigger'])[5]
+2025-08-01 21:02:29 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:02:29 INFO  ScribeDashboardTest:135 - TC08 - Sort by Upload Time (Asc)
+2025-08-01 21:02:29 INFO  ScribeDashboardPage:98 - Opening column menu: By.xpath: (//div[@data-slot='column-menu-trigger'])[6]
+2025-08-01 21:02:37 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:02:38 INFO  ScribeDashboardTest:146 - TC09 - Sort by Audio Duration (Asc)
+2025-08-01 21:02:38 INFO  ScribeDashboardPage:98 - Opening column menu: By.xpath: (//div[@data-slot='column-menu-trigger'])[7]
+2025-08-01 21:02:45 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:02:46 INFO  ScribeDashboardTest:157 - TC10 - Filter by Status = In Progress
+2025-08-01 21:02:54 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:02:55 INFO  ScribeDashboardTest:164 - TC11 - Filter by Priority = Medium
+2025-08-01 21:03:02 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:03:03 INFO  ScribeDashboardTest:171 - TC12 - View Task & Hide
+2025-08-01 21:03:10 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:03:11 INFO  ScribeDashboardTest:180 - TC13 - Hide Patient Initials Column
+2025-08-01 21:03:11 INFO  ScribeDashboardPage:98 - Opening column menu: By.xpath: (//div[@data-slot='column-menu-trigger'])[2]
+2025-08-01 21:03:19 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:03:20 INFO  ScribeDashboardTest:188 - TC14 - Reset sort on Task ID Column
+2025-08-01 21:03:20 INFO  ScribeDashboardPage:98 - Opening column menu: By.xpath: (//div[@data-slot='column-menu-trigger'])[1]
+2025-08-01 21:03:27 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:03:28 INFO  ScribeDashboardTest:63 - Closing browser
+2025-08-01 21:03:56 INFO  ScribeDashboardTest:26 - Setting up browser and logging in as Scribe
+2025-08-01 21:04:01 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-08-01 21:04:01 INFO  LoginPage:44 - Entered password.
+2025-08-01 21:04:02 INFO  LoginPage:53 - Clicked login button.
+2025-08-01 21:04:02 INFO  ScribeDashboardTest:48 - Login successful
+2025-08-01 21:04:04 INFO  ScribeDashboardPage:38 - Default upload date filter cleared.
+2025-08-01 21:04:04 INFO  ScribeDashboardTest:50 - Login successful and filters reset (if applied)
+2025-08-01 21:04:04 INFO  ScribeDashboardTest:97 - TC04 - Patient Initials column does not support sorting, skipping test
+2025-08-01 21:04:04 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:04:06 INFO  ScribeDashboardTest:63 - Closing browser
+2025-08-01 21:04:44 INFO  ScribeDashboardTest:26 - Setting up browser and logging in as Scribe
+2025-08-01 21:04:49 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-08-01 21:04:49 INFO  LoginPage:44 - Entered password.
+2025-08-01 21:04:49 INFO  LoginPage:53 - Clicked login button.
+2025-08-01 21:04:49 INFO  ScribeDashboardTest:48 - Login successful
+2025-08-01 21:04:51 INFO  ScribeDashboardPage:38 - Default upload date filter cleared.
+2025-08-01 21:04:51 INFO  ScribeDashboardTest:50 - Login successful and filters reset (if applied)
+2025-08-01 21:04:52 INFO  ScribeDashboardTest:70 - TC01 - Dark to Light Theme Toggle
+2025-08-01 21:04:52 INFO  ScribeDashboardPage:53 - Selecting Dark Mode
+2025-08-01 21:04:52 INFO  ScribeDashboardPage:62 - Clicked theme toggle button
+2025-08-01 21:04:53 INFO  ScribeDashboardPage:53 - Selecting Light Mode
+2025-08-01 21:04:53 INFO  ScribeDashboardPage:62 - Clicked theme toggle button
+2025-08-01 21:05:00 ERROR ScribeDashboardPage:67 - Light mode option did not appear in time.
+2025-08-01 21:05:00 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:05:02 INFO  ScribeDashboardTest:78 - TC02 - Filter by Task ID (Dynamic)
+2025-08-01 21:05:02 INFO  ScribeDashboardPage:81 - Entering Task ID filter: 
+2025-08-01 21:05:02 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:05:03 INFO  ScribeDashboardTest:86 - TC03 - Sort by Task ID (Asc)
+2025-08-01 21:05:03 INFO  ScribeDashboardPage:98 - Opening column menu: By.xpath: (//div[@data-slot='column-menu-trigger'])[1]
+2025-08-01 21:05:11 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:05:11 INFO  ScribeDashboardTest:97 - TC04 - Patient Initials column does not support sorting, skipping test
+2025-08-01 21:05:11 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:05:12 INFO  ScribeDashboardTest:102 - TC05 - Sort by Status (Asc)
+2025-08-01 21:05:12 INFO  ScribeDashboardPage:98 - Opening column menu: By.xpath: (//div[@data-slot='column-menu-trigger'])[3]
+2025-08-01 21:05:20 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:05:21 INFO  ScribeDashboardTest:113 - TC06 - Sort by Priority (Asc)
+2025-08-01 21:05:21 INFO  ScribeDashboardPage:98 - Opening column menu: By.xpath: (//div[@data-slot='column-menu-trigger'])[4]
+2025-08-01 21:05:28 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:05:29 INFO  ScribeDashboardTest:124 - TC07 - Sort by Upload Date (Asc)
+2025-08-01 21:05:29 INFO  ScribeDashboardPage:98 - Opening column menu: By.xpath: (//div[@data-slot='column-menu-trigger'])[5]
+2025-08-01 21:05:36 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:05:37 INFO  ScribeDashboardTest:135 - TC08 - Sort by Upload Time (Asc)
+2025-08-01 21:05:37 INFO  ScribeDashboardPage:98 - Opening column menu: By.xpath: (//div[@data-slot='column-menu-trigger'])[6]
+2025-08-01 21:05:44 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:05:45 INFO  ScribeDashboardTest:146 - TC09 - Sort by Audio Duration (Asc)
+2025-08-01 21:05:45 INFO  ScribeDashboardPage:98 - Opening column menu: By.xpath: (//div[@data-slot='column-menu-trigger'])[7]
+2025-08-01 21:05:53 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:05:54 INFO  ScribeDashboardTest:157 - TC10 - Filter by Status = In Progress
+2025-08-01 21:06:01 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:06:02 INFO  ScribeDashboardTest:164 - TC11 - Filter by Priority = Medium
+2025-08-01 21:06:09 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:06:10 INFO  ScribeDashboardTest:171 - TC12 - View Task & Hide
+2025-08-01 21:06:18 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:06:19 INFO  ScribeDashboardTest:180 - TC13 - Hide Patient Initials Column
+2025-08-01 21:06:19 INFO  ScribeDashboardPage:98 - Opening column menu: By.xpath: (//div[@data-slot='column-menu-trigger'])[2]
+2025-08-01 21:06:26 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:06:27 INFO  ScribeDashboardTest:188 - TC14 - Reset sort on Task ID Column
+2025-08-01 21:06:27 INFO  ScribeDashboardPage:98 - Opening column menu: By.xpath: (//div[@data-slot='column-menu-trigger'])[1]
+2025-08-01 21:06:34 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:06:35 INFO  ScribeDashboardTest:63 - Closing browser
+2025-08-01 21:11:34 INFO  ScribeDashboardTest:26 - Setting up browser and logging in as Scribe
+2025-08-01 21:11:40 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-08-01 21:11:40 INFO  LoginPage:44 - Entered password.
+2025-08-01 21:11:40 INFO  LoginPage:53 - Clicked login button.
+2025-08-01 21:11:40 INFO  ScribeDashboardTest:48 - Login successful
+2025-08-01 21:11:44 INFO  ScribeDashboardPage:38 - Default upload date filter cleared.
+2025-08-01 21:11:44 INFO  ScribeDashboardTest:50 - Login successful and filters reset (if applied)
+2025-08-01 21:11:44 INFO  ScribeDashboardTest:73 - TC01 - Dark to Light Theme Toggle
+2025-08-01 21:11:44 INFO  ScribeDashboardPage:53 - Selecting Dark Mode
+2025-08-01 21:11:44 INFO  ScribeDashboardPage:62 - Clicked theme toggle button
+2025-08-01 21:11:52 ERROR ScribeDashboardPage:67 - Dark mode option did not appear in time.
+2025-08-01 21:11:53 INFO  ScribeDashboardPage:53 - Selecting Light Mode
+2025-08-01 21:11:53 INFO  ScribeDashboardPage:62 - Clicked theme toggle button
+2025-08-01 21:12:01 ERROR ScribeDashboardPage:67 - Light mode option did not appear in time.
+2025-08-01 21:12:01 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:14:00 INFO  ScribeDashboardTest:26 - Setting up browser and logging in as Scribe
+2025-08-01 21:14:05 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-08-01 21:14:05 INFO  LoginPage:44 - Entered password.
+2025-08-01 21:14:05 INFO  LoginPage:53 - Clicked login button.
+2025-08-01 21:14:05 INFO  ScribeDashboardTest:48 - Login successful
+2025-08-01 21:14:08 INFO  ScribeDashboardPage:38 - Default upload date filter cleared.
+2025-08-01 21:14:08 INFO  ScribeDashboardTest:50 - Login successful and filters reset (if applied)
+2025-08-01 21:14:08 INFO  ScribeDashboardTest:83 - TC01 - Dark to Light Theme Toggle
+2025-08-01 21:14:08 INFO  ScribeDashboardPage:53 - Selecting Dark Mode
+2025-08-01 21:14:08 INFO  ScribeDashboardPage:62 - Clicked theme toggle button
+2025-08-01 21:14:10 INFO  ScribeDashboardPage:53 - Selecting Light Mode
+2025-08-01 21:14:10 INFO  ScribeDashboardPage:62 - Clicked theme toggle button
+2025-08-01 21:14:17 ERROR ScribeDashboardPage:67 - Light mode option did not appear in time.
+2025-08-01 21:14:17 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:14:28 WARN  ScribeDashboardTest:68 - Column menu triggers not found after refresh — continuing anyway
+2025-08-01 21:14:28 INFO  ScribeDashboardTest:91 - TC02 - Filter by Task ID (Dynamic)
+2025-08-01 21:14:28 INFO  ScribeDashboardPage:81 - Entering Task ID filter: 
+2025-08-01 21:14:28 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:14:40 WARN  ScribeDashboardTest:68 - Column menu triggers not found after refresh — continuing anyway
+2025-08-01 21:14:40 INFO  ScribeDashboardTest:99 - TC03 - Sort by Task ID (Asc)
+2025-08-01 21:14:40 INFO  ScribeDashboardPage:98 - Opening column menu: By.xpath: (//div[@data-slot='column-menu-trigger'])[1]
+2025-08-01 21:14:47 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:14:58 WARN  ScribeDashboardTest:68 - Column menu triggers not found after refresh — continuing anyway
+2025-08-01 21:14:58 INFO  ScribeDashboardTest:110 - TC04 - Patient Initials column does not support sorting, skipping test
+2025-08-01 21:14:58 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:15:09 WARN  ScribeDashboardTest:68 - Column menu triggers not found after refresh — continuing anyway
+2025-08-01 21:15:09 INFO  ScribeDashboardTest:115 - TC05 - Sort by Status (Asc)
+2025-08-01 21:15:09 INFO  ScribeDashboardPage:98 - Opening column menu: By.xpath: (//div[@data-slot='column-menu-trigger'])[3]
+2025-08-01 21:15:17 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:15:28 WARN  ScribeDashboardTest:68 - Column menu triggers not found after refresh — continuing anyway
+2025-08-01 21:15:28 INFO  ScribeDashboardTest:126 - TC06 - Sort by Priority (Asc)
+2025-08-01 21:15:28 INFO  ScribeDashboardPage:98 - Opening column menu: By.xpath: (//div[@data-slot='column-menu-trigger'])[4]
+2025-08-01 21:15:36 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:15:47 WARN  ScribeDashboardTest:68 - Column menu triggers not found after refresh — continuing anyway
+2025-08-01 21:15:47 INFO  ScribeDashboardTest:137 - TC07 - Sort by Upload Date (Asc)
+2025-08-01 21:15:47 INFO  ScribeDashboardPage:98 - Opening column menu: By.xpath: (//div[@data-slot='column-menu-trigger'])[5]
+2025-08-01 21:15:54 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:16:05 WARN  ScribeDashboardTest:68 - Column menu triggers not found after refresh — continuing anyway
+2025-08-01 21:16:05 INFO  ScribeDashboardTest:148 - TC08 - Sort by Upload Time (Asc)
+2025-08-01 21:16:05 INFO  ScribeDashboardPage:98 - Opening column menu: By.xpath: (//div[@data-slot='column-menu-trigger'])[6]
+2025-08-01 21:16:13 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:16:24 WARN  ScribeDashboardTest:68 - Column menu triggers not found after refresh — continuing anyway
+2025-08-01 21:16:24 INFO  ScribeDashboardTest:159 - TC09 - Sort by Audio Duration (Asc)
+2025-08-01 21:16:24 INFO  ScribeDashboardPage:98 - Opening column menu: By.xpath: (//div[@data-slot='column-menu-trigger'])[7]
+2025-08-01 21:16:31 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:16:43 WARN  ScribeDashboardTest:68 - Column menu triggers not found after refresh — continuing anyway
+2025-08-01 21:16:43 INFO  ScribeDashboardTest:170 - TC10 - Filter by Status = In Progress
+2025-08-01 21:16:50 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:17:02 WARN  ScribeDashboardTest:68 - Column menu triggers not found after refresh — continuing anyway
+2025-08-01 21:17:02 INFO  ScribeDashboardTest:177 - TC11 - Filter by Priority = Medium
+2025-08-01 21:17:10 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:17:21 WARN  ScribeDashboardTest:68 - Column menu triggers not found after refresh — continuing anyway
+2025-08-01 21:17:21 INFO  ScribeDashboardTest:184 - TC12 - View Task & Hide
+2025-08-01 21:17:29 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:17:41 WARN  ScribeDashboardTest:68 - Column menu triggers not found after refresh — continuing anyway
+2025-08-01 21:17:41 INFO  ScribeDashboardTest:193 - TC13 - Hide Patient Initials Column
+2025-08-01 21:17:41 INFO  ScribeDashboardPage:98 - Opening column menu: By.xpath: (//div[@data-slot='column-menu-trigger'])[2]
+2025-08-01 21:17:48 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:18:00 WARN  ScribeDashboardTest:68 - Column menu triggers not found after refresh — continuing anyway
+2025-08-01 21:18:00 INFO  ScribeDashboardTest:201 - TC14 - Reset sort on Task ID Column
+2025-08-01 21:18:00 INFO  ScribeDashboardPage:98 - Opening column menu: By.xpath: (//div[@data-slot='column-menu-trigger'])[1]
+2025-08-01 21:18:07 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 21:18:18 WARN  ScribeDashboardTest:68 - Column menu triggers not found after refresh — continuing anyway
+2025-08-01 21:18:18 INFO  ScribeDashboardTest:76 - Closing browser
+2025-08-01 22:37:36 INFO  ScribeDashboardTest:25 - Launching browser and logging in
+2025-08-01 22:44:34 INFO  ScribeDashboardTest:26 - Setting up Brave browser and logging in
+2025-08-01 22:44:39 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-08-01 22:44:39 INFO  LoginPage:44 - Entered password.
+2025-08-01 22:44:39 INFO  LoginPage:53 - Clicked login button.
+2025-08-01 22:44:42 INFO  ScribeDashboardPage:69 - Cleared default date filter
+2025-08-01 22:44:42 INFO  ScribeDashboardTest:69 - TC01 - Toggle Theme Dark → Light
+2025-08-01 22:44:52 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 22:44:54 INFO  ScribeDashboardTest:77 - TC02 - Filter by Task ID
+2025-08-01 22:44:54 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 22:44:55 INFO  ScribeDashboardTest:85 - TC03 - Sort by Task ID Ascending
+2025-08-01 22:45:05 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 22:45:07 INFO  ScribeDashboardTest:97 - TC04 - Patient Initials does not support sorting
+2025-08-01 22:45:07 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 22:45:07 INFO  ScribeDashboardTest:103 - TC05 - Sort by Status Ascending
+2025-08-01 22:45:18 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 22:45:19 INFO  ScribeDashboardTest:115 - TC06 - Sort by Priority Ascending
+2025-08-01 22:45:29 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 22:45:31 INFO  ScribeDashboardTest:127 - TC07 - Sort by Upload Date Ascending
+2025-08-01 22:45:41 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 22:45:43 INFO  ScribeDashboardTest:139 - TC08 - Sort by Upload Time Ascending
+2025-08-01 22:45:53 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 22:45:54 INFO  ScribeDashboardTest:151 - TC09 - Sort by Audio Duration Ascending
+2025-08-01 22:46:05 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 22:46:06 INFO  ScribeDashboardTest:163 - TC10 - Filter Status = In Progress
+2025-08-01 22:46:16 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 22:46:17 INFO  ScribeDashboardTest:170 - TC11 - Filter Priority = Medium
+2025-08-01 22:46:28 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 22:46:29 INFO  ScribeDashboardTest:177 - TC12 - View Task then Hide
+2025-08-01 22:46:39 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 22:46:40 INFO  ScribeDashboardTest:186 - TC13 - Hide Patient Initials Column
+2025-08-01 22:46:51 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-01 22:46:52 INFO  ScribeDashboardTest:194 - TC14 - Reset Sort on Task ID
+2025-08-01 22:47:02 INFO  ScribeDashboardTest:55 - Refreshing page after test
+2025-08-02 12:26:20 INFO  ScribeDashboardTest:24 - Launching Brave browser and logging in as Scribe
+2025-08-02 12:26:26 INFO  LoginPage:33 - Entered email: testscribe@gmail.com
+2025-08-02 12:26:26 INFO  LoginPage:44 - Entered password.
+2025-08-02 12:26:26 INFO  LoginPage:53 - Clicked login button.
+2025-08-02 12:26:28 INFO  ScribeDashboardTest:65 - TC01 - Dark → Light Theme Toggle
+2025-08-02 12:26:40 INFO  ScribeDashboardTest:75 - TC02 - Filter by Task ID
+2025-08-02 12:26:41 INFO  ScribeDashboardTest:83 - TC03 - Sort Task ID Asc
+2025-08-02 12:26:52 INFO  ScribeDashboardTest:90 - TC04 - Sort Status Asc
+2025-08-02 12:27:03 INFO  ScribeDashboardTest:97 - TC05 - Sort Priority Asc
+2025-08-02 12:27:15 INFO  ScribeDashboardTest:104 - TC06 - Sort Upload Date Asc
+2025-08-02 12:27:26 INFO  ScribeDashboardTest:111 - TC07 - Sort Upload Time Asc
+2025-08-02 12:27:37 INFO  ScribeDashboardTest:118 - TC08 - Sort Audio Duration Asc
+2025-08-02 12:27:49 INFO  ScribeDashboardTest:125 - TC09 - Reset Sort on Task ID
+2025-08-02 12:28:00 INFO  ScribeDashboardTest:133 - TC10 - Hide Patient Initials Column
